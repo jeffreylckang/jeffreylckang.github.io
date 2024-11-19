@@ -1,26 +1,4 @@
-# Portfolio Jekyll Theme
 
-This is a Jekyll theme built using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). The purpose of this theme is to provide a clean and simple website for your portfolio. Emphasis is placed on your projects, which are shown front and center on the home page.
-
-Everything that you will ever need to know about this Jekyll theme is included in the README below, which you can also find in [the demo site](https://lenpaul.github.io/portfolio-jekyll-theme/). For a guide on how to deploy a Jekyll site using GitHub Pages, please check out [this article](https://paulle.ca/jekyll-tutorials/deploy-jekyll-site-github-pages).
-
-If you like my work then please consider supporting me with [Ko-fi](https://ko-fi.com/paulle).
-
-![alt-text](https://cloud.githubusercontent.com/assets/8409329/26227987/f2583642-3c03-11e7-81c4-28a9353c91ae.jpg)
-
-## Notable features
-
-* Compatible with GitHub Pages.
-
-* Support for Jekyll's built-in Sass/SCSS preprocessor and data files for making customizing easier.
-
-* [Google Analytics](https://www.google.com/analytics/) support.
-
-* Commenting support powered by [Disqus](https://disqus.com/).
-
-* Optimized for search engines.
-
-* LaTeX support through [MathJax](https://www.mathjax.org/).
 
 ## Table of Contents
 
