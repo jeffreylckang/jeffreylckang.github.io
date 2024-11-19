@@ -4,6 +4,8 @@ title: About
 permalink: /about
 ---
 
-# Portfolio Jekyll Theme
+# Jeffrey Kang
 
-This is a personal portfolio theme that I built from the ground up, using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/), and [fork the repository](https://github.com/LeNPaul/portfolio-jekyll-theme/fork), to get started.
+I’m a researcher-turned-data scientist with a passion for uncovering hidden insights in everyday data about people and transforming them into stories that matter. At its heart, this passion stems from my curiosity about the diverse perspectives that shape how people perceive the world. What began with studying psychology and economics to explore individual and societal behavior led me to pursue a PhD in Behavioral Science (Marketing). Now, I'm eager for my next challenge -- building models that can create tangible and meaningful impact (something that I thought was lacking in graduate research). 
+
+When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the combined indignation of my friends and I over a missed foul call on Lebron James.
