@@ -4,14 +4,6 @@ title: About
 permalink: /about
 ---
 
-# Jeffrey Kang
-
-![Jeffrey Kang](../profile.jpg){: style="float: left; margin-right: 1rem; width: 150px; border-radius: 50%;" } 
-
-I’m a researcher-turned-data scientist with a passion for uncovering hidden insights in everyday data about people and transforming them into stories that matter. At its heart, this passion stems from my curiosity about the diverse perspectives that shape how people perceive the world. What began with studying psychology and economics to explore individual and societal behavior led me to pursue a PhD in Behavioral Science (Marketing). Now, I'm eager for my next challenge -- building models that can create tangible and meaningful impact (something that I thought was lacking in graduate research). 
-
-When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the combined indignation of my friends and I over a missed foul call on Lebron James.
-
 <section class="about-content">
   <h1>Jeffrey Kang</h1>
   <div class="about-container">
