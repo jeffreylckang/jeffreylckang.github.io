@@ -11,8 +11,8 @@ menu:
 # Projects Section
 
 projects:
-- {name: 'Using ML to Identify Value Bets',   url: 'proj-1'}
-- {name: 'Understanding Grocery Shopping Payments',   url: 'proj-2'}
+- {name: 'Using ML to Identify Value Bets',   url: 'valuebets'}
+- {name: 'Understanding Grocery Shopping Payments',   url: 'grocery'}
 
 #-------------------------------
 # Contact Section
