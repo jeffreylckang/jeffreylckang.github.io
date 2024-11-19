@@ -1,7 +1,7 @@
 # Build settings
 
 port: 4000
-markdown:  kramdown
+markdown: kramdown
 permalink: /:title
 plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 
