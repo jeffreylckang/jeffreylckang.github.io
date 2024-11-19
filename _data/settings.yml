@@ -15,14 +15,6 @@ projects:
 - {name: 'Understanding Grocery Shopping Payments',   url: 'grocery'}
 
 #-------------------------------
-# Contact Section
-
-social:
-- {icon: 'github',    link: 'https://github.com/lenpaul'}
-- {icon: 'linkedin',  link: 'https://linkedin.com/in/lenpaul'}
-
-
-# social network icons available: 'github' / 'linkedin'
 
 #-------------------------------
 # SEO Section
