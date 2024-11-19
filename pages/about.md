@@ -4,12 +4,12 @@ title: About
 permalink: /
 ---
 
-<section class="about-content">
-  <div class="about-container">
+<section class="about-content" style="background-color: transparent; padding: 2rem;">
+  <div class="about-container" style="text-align: left; max-width: 800px; margin: 0 auto;">
     <img 
       src="../profile.jpg" 
       alt="Jeffrey Kang" 
-      style="margin: 0 auto; display: block; width: 150px; height: 150px; border-radius: 0;"
+      style="margin: 0 auto 1rem auto; display: block; width: 150px; height: 150px; border-radius: 50%; object-fit: cover;"
     >
     <p>
       I’m a researcher-turned-data scientist with a passion for uncovering hidden insights in everyday data about people 
@@ -21,8 +21,8 @@ permalink: /
     </p>
     <p>
       When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: 
-      the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the combined indignation of my friends 
-      and I over a missed foul call on Lebron James.
+      the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the combined indignation my friends 
+      and I share over a missed foul call on Lebron James.
     </p>
   </div>
 </section>
