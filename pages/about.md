@@ -5,7 +5,6 @@ permalink: /about
 ---
 
 <section class="about-content">
-  <h1>Jeffrey Kang</h1>
   <div class="about-container">
     <!-- Profile Image -->
     <img 
