@@ -24,8 +24,8 @@ permalink: /
       </p>
       <p>
         When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: 
-        the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the combined indignation my friends 
-        and I share over a missed foul call on Lebron James.
+        the allure of late-night R&B, the harmony of a perfect food and wine pairing, and the shared indignation my friends 
+        and I feel over a missed foul call against the Lakers.
       </p>
     </div>
   </div>
