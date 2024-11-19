@@ -10,3 +10,10 @@ plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
 title: "Jeffrey Kang"
 description: ""
 author: "Jeffrey Kang"
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: home
