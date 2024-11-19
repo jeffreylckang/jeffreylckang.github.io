@@ -10,7 +10,7 @@ permalink: /
     <img 
       src="../profile.jpg" 
       alt="Jeffrey Kang" 
-      style="margin: 0 auto 1rem auto; display: block; width: 150px; height: 150px; border-radius: 0; object-fit: cover;"
+      style="margin: 0 auto 1rem auto; display: block; width: 300px; height: 300px; border-radius: 0; object-fit: cover;"
     >
     
     <!-- About Text -->
