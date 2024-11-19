@@ -19,3 +19,6 @@ defaults:
       type: "pages"
     values:
       layout: home
+
+sass:
+  sass_dir: assets/css
