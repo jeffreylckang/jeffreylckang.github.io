@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "More Jekyll Themes!"
+title: "Using ML to Identify Value Bets"
 ---
 
-#### Lagrange
+# Enter
 
 Lagrange is a minimalist Jekyll blog theme that I built from scratch. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog.
 
