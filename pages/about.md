@@ -20,10 +20,10 @@ permalink: /
         transforming them into stories that matter. My passion stems from my curiosity about the diverse perspectives 
         that shape how people perceive the world. What began with studying psychology and economics to explore individual
         and societal behavior led me to pursue a PhD in Behavioral Science (Marketing).
-      </p>
+      </p><br>
       <p>
         Now, I'm eager for my next challenge--building models that can create tangible and meaningful impact (something I thought was lacking in graduate research).
-      </p>
+      </p><br>
       <p>
         When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: 
         the delight of discovering new songs (check out what I'm listening to below), the harmony of a perfect food and wine pairing, and the shared indignation my friends 
