@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using ML to Identify Value Bets
-permalink: /valuebets
+permalink: /projects/valuebets
 ---
 
 # Identifying Value Bets in Sports Using Machine Learning
@@ -38,14 +38,10 @@ $$P = \frac{100}{\text{Odds} + 100}$$
 Now for an odds of -200, if you place a $10 bet, you would receive $5 for a total payout of $15. 
 
 Profit for negative odds:
-\[
-\text{Profit} = \frac{\text{Bet Amount}}{|\text{Odds}|} \times 100
-\]
+$$text{Profit} = \frac{\text{Bet Amount}}{|\text{Odds}|} \times 100$$
 
 Profit for positive odds:
-\[
-\text{Profit} = \frac{\text{Bet Amount} \times \text{Odds}}{100}
-\]
+$$text{Profit} = \frac{\text{Bet Amount} \times \text{Odds}}{100}$$
 
 Okay back to my example. If the odds for Lebron James scoring more than 15+ points is listed as -200, but I believe the odds should be closer to -300, then I see this as a "good" bet. This is what is referred to as a value bet: a situation in which I believe the "true" odds are higher than -200, or the probability for this event to occur is higher than 67%. 
 
