@@ -34,7 +34,7 @@ permalink: /
 </section>
 
 <!-- Spotify Playlist -->
-<div style="margin: 2rem auto; max-width: 700px; text-align: center;">
+<div style="margin: 2rem auto; max-width: 600px; text-align: center;">
   <iframe 
     style="border-radius: 12px; width: 100%; height: 152px;" 
     src="https://open.spotify.com/embed/playlist/37i9dQZF1EpeyF17qgYBK0?utm_source=generator&theme=0" 
