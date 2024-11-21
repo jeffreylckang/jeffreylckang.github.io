@@ -14,7 +14,7 @@ permalink: /
     >
     
     <!-- About Text -->
-    <div style="text-align: left;">
+    <div style="text-align: left; max-width: 90%; width: 700px; margin: 0 auto;">
       <p><br>
         I’m a researcher-turned-data scientist with a passion for uncovering hidden insights about human behavior and 
         transforming them into stories that matter. My passion stems from my curiosity about the diverse perspectives 
