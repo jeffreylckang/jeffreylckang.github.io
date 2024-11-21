@@ -19,3 +19,6 @@ defaults:
       type: "pages"
     values:
       layout: page
+
+include:
+  - pages
