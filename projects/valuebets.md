@@ -135,9 +135,9 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - 'away team elo'
     - Elo rating is calculated using a formula to rank teams based on [World Football Elo](https://www.eloratings.net/about), [NBA Elo](https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/#:~:text=Take%20a%20team's%20margin%20of,accounting%20for%20home%2Dcourt%20advantage), [NFL Elo](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/)
         - An important detail is I adjusted the K-factor for the formula (K basically tells you how much weight to give to recent games/performances) based on different sports
-        - Basketball: \( k + (0.2 \times \max(0, (\text{pd} - 5) // 10)) \)  
-        - Football: \( k \times (0.75 + (\text{pd} - 3) / 8) \)  
-        - American Football: \( k + (0.25 \times \max(0, (\text{pd} - 7) // 7)) \)  
+        - Basketball: $$k + (0.2 \times \max(0, (\text{pd} - 5) // 10))$$
+        - Football: $$k \times (0.75 + (\text{pd} - 3) / 8)$$  
+        - American Football: $$k + (0.25 \times \max(0, (\text{pd} - 7) // 7))$$
     - These variables help provide a dynamic measure of team strength.
 
 - **Cross-Sport Elo Similarity**:
