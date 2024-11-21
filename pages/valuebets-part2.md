@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Using ML to Identify Value Bets Part 2
-permalink: /pages/valuebets-part2
+permalink: /valuebets-part2
 ---
 
 ## Identifying Value Bets in Sports Using Machine Learning Part 2
