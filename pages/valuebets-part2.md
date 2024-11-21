@@ -233,7 +233,13 @@ How do this compare for the three sports?
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="950" /> </div>
 
+---
+
+On the topic of bookmakers, it may be interesting to look at the bookmaker margin. This is a percent of the profit
+
+
 plot team historical win rate adjusted for home and away overall and by sport
+rolling score differential mean
 plot ELO ratings per team across seasons
 look at ELO ratings for teams that have a higher than 50% historical win rate vs lower than 50% historical win rate
 plot score differential for home and away teams -> is this a distribution?
@@ -244,7 +250,6 @@ are streaks more prevalent for certain teams or sports?
 plot upsets analysis
 
 
-correlation heatmap
 
 Let's look at bookmaker margins.
 
