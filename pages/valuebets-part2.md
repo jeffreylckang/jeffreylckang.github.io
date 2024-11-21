@@ -17,11 +17,50 @@ Summary of the results here:
 Shape of the entire dataset: (157859, 43). 
 
 <br>
-First let's check the distribution of the home and away probabilites. I'm plotting probabilities and not odds because probabilities are more intuitive to understand.
+First let's examine the average home and away odds given by Oddsportal. This is our main dependent variable in our analysis later on.
+<br>
+
+<table style="border-collapse: collapse; width: 100%; text-align: center; margin: 0 auto;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Statistic</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Average Home Odds</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Average Away Odds</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Mean</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-136.770389</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">132.954518</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Min</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-13333.000000</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">-6667.000000</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Max</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">2413.000000</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">3685.000000</td>
+    </tr>
+    <tr style="background-color: #f9f9f9;">
+      <td style="border: 1px solid #ddd; padding: 8px;">Standard Deviation</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">548.929175</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">402.370724</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+Let's visualize the distribution of the average home and away odds.
+
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_kde_avg_odds.png" alt="Overall Distribution of Odds Type" width="600" /> </div>
 
 --- 
 
 Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are.
+
 <br>
 <div style="text-align: center; margin: 0 auto;">
   <table style="margin: 0 auto;">
@@ -62,7 +101,8 @@ Since we have many bookmakers, let's take a look at how spread out each bookmake
   </table>
 </div>
 <br>
-Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).
+Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).-
+
 <br>
 <div style="text-align: center; margin: 0 auto;">
   <table style="margin: 0 auto; border-collapse: collapse; width: 100%; text-align: center;">
@@ -139,7 +179,7 @@ It seems like we see the greatest deviations in basketball > American-football >
 
 How do this compare for the three sports?
 
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="1200" /> </div>
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="900" /> </div>
 
 plot team historical win rate adjusted for home and away overall and by sport
 plot ELO ratings per team across seasons
@@ -155,15 +195,3 @@ plot upsets analysis
 correlation heatmap
 
 Let's look at bookmaker margins.
-
-#### Preparing the models
-
-To start, let's take a look at the size of my datasets.
-- Training dataset has the shape:
-- Validation dataset has the shape:
-- Test dataset has the shape:
-- Holdout Bball dataset has the shape:
-
-#### Model Results
-
-# Conclusion
