@@ -22,31 +22,37 @@ First let's check the distribution of the home and away probabilites. I'm plotti
 --- 
 
 Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are.
+<br>
+<div style="text-align:center; margin: 0 auto;">
 
-| Statistic       | Home Odds      | Away Odds      | Draw Odds      |
+|                 | Home Odds      | Away Odds      | Draw Odds      |
 |-----------------|----------------|----------------|----------------|
 | **Mean**        | -4.930794      | -0.844018      | 0.102749       |
 | **Min**         | -7586.000000   | -6667.000000   | -506.000000    |
 | **Max**         | 8333.000000    | 3334.000000    | 446.000000     |
 | **Std Dev**     | 164.484117     | 64.243444      | 24.697895      |
 
+</div>
 <br>
 Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).
 <br>
+<div style="text-align:center; margin: 0 auto;">
 
-| Statistic                  | Home Odds Mean | Home Odds Min | Home Odds Max | Home Odds Std Dev | Away Odds Mean | Away Odds Min | Away Odds Max | Away Odds Std Dev | Draw Odds Mean | Draw Odds Min | Draw Odds Max | Draw Odds Std Dev |
+|                            | Home Odds Mean | Home Odds Min | Home Odds Max | Home Odds Std Dev | Away Odds Mean | Away Odds Min | Away Odds Max | Away Odds Std Dev | Draw Odds Mean | Draw Odds Min | Draw Odds Max | Draw Odds Std Dev |
 |----------------------------|----------------|---------------|---------------|-------------------|----------------|---------------|---------------|-------------------|----------------|---------------|---------------|-------------------|
 | **american-football**      | -2.0837        | -3333.0       | 3000.0        | 64.8964           | -0.4665        | -938.0        | 443.0         | 37.1820           | N/A            | N/A           | N/A           | N/A               |
 | **basketball**             | -7.5838        | -7586.0       | 8333.0        | 206.0938          | -1.2306        | -6667.0       | 3334.0        | 69.9314           | N/A            | N/A           | N/A           | N/A               |
 | **football**               | 0.2301         | -2083.0       | 917.0         | 45.0378           | -0.0620        | -1120.0       | 1114.0        | 64.6336           | 0.1027         | -506.0        | 446.0         | 24.6979           |
+
+</div>
 <br>
 It seems like we see the greatest deviations in basketball > American-football > soccer. These descriptive stats may be difficult to interpret, so let's visualize this average deviation by bookmakers for the different odds types. 
 
-<img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Overall Average Deviation Odds by Bookmaker" width="400" />
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Overall Average Deviation Odds by Bookmaker" width="600" /> </div>
 
 How do this compare for the three sports?
 
-<img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="400" />
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="700" /> </div>
 
 plot team historical win rate adjusted for home and away overall and by sport
 plot ELO ratings per team across seasons
