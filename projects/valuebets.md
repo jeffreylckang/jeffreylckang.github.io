@@ -5,11 +5,14 @@ permalink: /projects/valuebets
 ---
 
 ## Identifying Value Bets in Sports Using Machine Learning
-[Part 2](pages/valuebets-part2.md)
+[You can find Part 2 here](pages/valuebets-part2.md)  
 
-*How can I make money in sports betting?* 
+
+*How can I make money in sports betting?*  
+
 
 If you're like me, you probably asked yourself this question after confidently placing what felt like a sure bet--only to end up emotionally damaged at the end of the game. Throughout my entire amateur sports betting career, I can definitively say that I'm net negative. While that isn't ideal, it's something I'm okay with because betting for me has always been about having fun. But recently I've started wondering: what if I actually tried to approach sports betting more seriously? Is there some strategy or method I could use to identify what I think could be considered "good" bets?  
+
 
 So I thought about sports betting and this project is a reflection of my thought process on how to potentially be net positive. But before I dive into the details, let me start off by saying that I'm not an expert in this domain. Furthermore, the findings of this project are not intended as advice or recommendations. This project is for my amusement and an opportunity to see if I can apply some of the critical thinking skills I developed during my PhD to a topic I'm passionate about. 
 
