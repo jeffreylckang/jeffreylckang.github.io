@@ -177,12 +177,13 @@ The data will be split as follows:
 - 10% Test  
 
 <br>
-In addition, I will hold out the 2022-2023 NBA season as a separate test set to evaluate the models' generalizability on completely unseen data.
+In addition, I will hold out the 2022-2023 NBA season as a separate test set to evaluate the models' generalizability on completely unseen data.  
 
+<br>
 The code I used for the analysis can be found on my github [here](https://github.com/jeffreylckang/valuebets.git).  
 <br>
 
-
+---
 Awesome! Next we'll look at some descriptive statistics and explore the data in detail.
 
 [Continue to Part 2](pages/valuebets-part2.md)  
