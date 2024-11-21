@@ -7,7 +7,7 @@ permalink: /projects/valuebets
 ## Identifying Value Bets in Sports Using Machine Learning
 [You can find Part 2 here](pages/valuebets-part2.md)  
 
-
+<br><br>
 *How can I make money in sports betting?*  
 
 
