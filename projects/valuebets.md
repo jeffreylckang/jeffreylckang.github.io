@@ -34,7 +34,8 @@ For positive odds:
 $$\text{Probability} = \frac{100}{\text{Odds} + 100}$$  
 
 <br>
-Now for an odds of -200, if you place a $10 bet, you would receive $5 for a total payout of $15. 
+Now for an odds of -200, if you place a $10 bet, you would receive $5 for a total payout of $15.  
+<br>
 
 Profit for negative odds:
 $$\text{Profit} = \frac{\text{Bet Amount}}{|\text{Odds}|} \times 100$$
@@ -133,7 +134,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - I created two variables for every game which resets every season:
     - 'home team elo'
     - 'away team elo'
-    - Elo rating is calculated using a formula to rank teams based on [World Football Elo](https://www.eloratings.net/about), [NBA Elo](https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/#:~:text=Take%20a%20team's%20margin%20of,accounting%20for%20home%2Dcourt%20advantage), [NFL Elo](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/)
+    - Elo rating is calculated using a formula to rank teams based on [World Football Elo](https://www.eloratings.net/about), [NBA Elo](https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/#:~:text=Take%20a%20team's%20margin%20of,accounting%20for%20home%2Dcourt%20advantage), and [NFL Elo](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
         - An important detail is I adjusted the K-factor for the formula (K basically tells you how much weight to give to recent games/performances) based on different sports
         - Basketball: $$k + (0.2 \times \max(0, (\text{pd} - 5) // 10))$$
         - Football: $$k \times (0.75 + (\text{pd} - 3) / 8)$$  
