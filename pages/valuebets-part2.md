@@ -11,7 +11,7 @@ Skip to [Part 3](/pages/valuebets-part3).
 
 # Results
 
-Summary of the results here:
+In this section, we are going to first understand our data.
 
 #### Exploring the Data
 
@@ -158,10 +158,10 @@ Since we have many bookmakers, let's take a look at how spread out each bookmake
   </tbody>
 </table>
 <br>
-Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).-
+Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).
 
 <br>
-<table style="border-collapse: collapse; width: 70%; text-align: center; font-size: 12px; border: 1px solid #ddd;">
+<table style="border-collapse: collapse; width: 80%; text-align: center; font-size: 12px; border: 1px solid #ddd;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;"></th>
@@ -227,9 +227,11 @@ Generally speaking, it seems that the average bookmaker favors both the home and
     </tr>
   </tbody>
 </table>
-<br>
-It seems like we see the greatest deviations in basketball > American-football > soccer. These descriptive stats may be difficult to interpret, so let's visualize this average deviation by bookmakers for the different odds types. 
 
+<br>
+It seems like we see the greatest deviations in basketball > American-football > soccer. These descriptive stats may be difficult to interpret, so let's visualize this average deviation by bookmakers for the different odds types.
+
+<br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Overall Average Deviation Odds by Bookmaker" width="600" /> </div>
 
 When comparing the three sports, some bookmakers consistently seem to be inflating both home and away team odds simultaneously. There doesn't appear to be any bookmakers inflating home odds while deflating away odds, or vice versa. Interestingly, for soccer, most bookmakers tend to deflate both home and away team odds by making them more positive (lower perceived likelihood for these events). 

@@ -6,10 +6,12 @@ permalink: /pages/valuebets-part3
 
 ## Identifying Value Bets in Sports Using Machine Learning Part 2
 
-Welcome back. If you need to read Part 1, [click here](/projects/valuebets).
-If you need to read Part 2, [click here](/pages/valuebets-part2).
+Return to [Part 1](/projects/valuebets).
+Return to [Part 2](/pages/valuebets-part2).
 
 # Results
+
+In this section, we are going to evaluate our proposed models.
 
 #### Preparing the models
 
