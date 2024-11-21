@@ -1,9 +1,9 @@
 <section style="background: none;">
   <div class="project-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin: 0 auto; max-width: 1200px; padding: 2rem 0;">
     {% for project in site.data.settings.projects %}
-      <a href="{{ site.github.url }}/projects/{{ project.url }}">
-        <div class="project-unit" data-folder="{{ site.github.url }}/projects/{{ project.url }}" style="background-image: url({{ site.github.url }}/assets/img/projects/{{ project.url }}/thumbnail.jpg); width: 600px; height: 250px;">
-          <div class="project-overlay">
+      <a href="{{ site.github.url }}/projects/{{ project.url }}" style="text-decoration: none;">
+        <div class="project-unit" data-folder="{{ site.github.url }}/projects/{{ project.url }}" style="background-image: url({{ site.github.url }}/assets/img/projects/{{ project.url }}/thumbnail.jpg); width: 300px; height: 200px; background-size: cover; background-position: center; display: flex; align-items: flex-end; border: 1px solid #ddd; box-sizing: border-box;">
+          <div class="project-overlay" style="width: 100%; background: rgba(0, 0, 0, 0.6); color: #fff; text-align: center; padding: 1rem; box-sizing: border-box;">
             <strong>{{ project.name }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
           </div>
         </div>
