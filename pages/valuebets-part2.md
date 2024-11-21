@@ -21,7 +21,7 @@ Shape of the entire dataset: (157859, 43).
 First let's examine the average home and away odds given by Oddsportal. This is our main dependent variable in our analysis later on.
 <br>
 
-<table style="border-collapse: collapse; width: 80%; text-align: center; margin: 0 auto;">
+<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Statistic</th>
@@ -60,7 +60,8 @@ We can see that home teams are generally more favored than away teams. We can vi
 
 It appears that the distribution of home and away odds is bi-model, which makes sense given that there are usually teams that are favored to win when playing at home (e.g. top teams) and home teams that are underdogs (e.g. bottom teams). The same goes for teams when playing away. We also see a similar pattern if we break this down by sport.
 
-<table style="border-collapse: collapse; width: 100%; text-align: center; margin: 0 auto;">
+<br>
+<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Sport</th>
@@ -111,14 +112,16 @@ It appears that the distribution of home and away odds is bi-model, which makes 
   </tbody>
 </table>
 
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_kde_odds.png" alt="Overall Distribution of Odds Type" width="600" /> </div>
+<br>
+
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_kde_odds.png" alt="Overall Distribution of Odds Type" width="950" /> </div>
 
 --- 
 
 Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are.
 
 <br>
-<table style="border-collapse: collapse; width: 80%; text-align: center; margin: 0 auto;">
+<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;"></th>
@@ -158,7 +161,7 @@ Since we have many bookmakers, let's take a look at how spread out each bookmake
 Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).-
 
 <br>
-<table style="border-collapse: collapse; width: 90%; text-align: center; margin: 20px auto; font-size: 14px; border: 1px solid #ddd;">
+<table style="border-collapse: collapse; width: 70%; text-align: center; font-size: 12px; border: 1px solid #ddd;">
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;"></th>
@@ -229,29 +232,45 @@ It seems like we see the greatest deviations in basketball > American-football >
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Overall Average Deviation Odds by Bookmaker" width="600" /> </div>
 
-How do this compare for the three sports?
+When comparing the three sports, some bookmakers consistently seem to be inflating both home and away team odds simultaneously. There doesn't appear to be any bookmakers inflating home odds while deflating away odds, or vice versa. Interestingly, for soccer, most bookmakers tend to deflate both home and away team odds by making them more positive (lower perceived likelihood for these events). 
+
+<br>
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="950" /> </div>
 
 ---
 
-On the topic of bookmakers, it may be interesting to look at the bookmaker margin. This is a percent of the profit
+On the topic of bookmakers, let's look at bookmaker margins. This is the charge a bookmaker usually takes for setting the bet. The average margin for all bookmakers and games is 4% (SD = 0.6%). We can also compare the margin across sports.
+
+<br>
+
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/avg_margin_by_bookmaker_sport.png" alt="Avg Margin by Bookmaker and Sport" width="600" /> </div>
+
+---
+
+Now let's check out every team's adjusted historical win rate (win rate conditional on whether the team was favored or an underdog). 
+
+Whats the summary stats for home and away. Show me favorite teams in each sport historical win rate home and away for fun.
 
 
-plot team historical win rate adjusted for home and away overall and by sport
+---
+
+It might also be interesting to examine win and loss streaks. How often does this happen overall? and by sport? and are streaks more prevalent for certain teams?
+
+---
+
+Another interesting variable to examine is upsets. 
+
+---
+
+
 rolling score differential mean
 plot ELO ratings per team across seasons
 look at ELO ratings for teams that have a higher than 50% historical win rate vs lower than 50% historical win rate
 plot score differential for home and away teams -> is this a distribution?
 
-frequency counts for categorical columns
-insert table here.
-are streaks more prevalent for certain teams or sports?
-plot upsets analysis
 
-
-
-Let's look at bookmaker margins.
+---
 
 Now that we have explored our data, let's move onto the modeling.
 
