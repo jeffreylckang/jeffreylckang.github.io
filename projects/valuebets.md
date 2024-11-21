@@ -5,7 +5,7 @@ permalink: /projects/valuebets
 ---
 
 ## Identifying Value Bets in Sports Using Machine Learning
-[You can find Part 2 here](pages/valuebets-part2)  
+[You can find Part 2 here](/pages/valuebets-part2)  
 
 <br><br>
 *How can I make money in sports betting?*  
@@ -186,5 +186,5 @@ The code I used for the analysis can be found on my github [here](https://github
 ---
 Awesome! Next we'll look at some descriptive statistics and explore the data in detail.
 
-[Continue to Part 2](pages/valuebets-part2)  
+[Continue to Part 2](/pages/valuebets-part2)  
 <br><br>
