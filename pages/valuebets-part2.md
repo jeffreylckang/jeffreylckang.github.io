@@ -157,76 +157,79 @@ Since we have many bookmakers, let's take a look at how spread out each bookmake
     </tr>
   </tbody>
 </table>
+
 <br>
 Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).
 
 <br>
-<table style="border-collapse: collapse; width: 80%; text-align: center; font-size: 12px; border: 1px solid #ddd;">
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 8px;"></th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Mean</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Min</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Max</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Std Dev</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Mean</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Min</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Max</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Std Dev</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Mean</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Min</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Max</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Std Dev</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>american-football</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-2.08</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-3333.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">3000.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">64.90</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-0.47</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-938.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">443.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">37.18</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>basketball</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-7.58</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-7586.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">8333.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">206.09</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-1.23</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-6667.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">3334.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">69.93</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>football</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.23</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-2083.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">917.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">45.04</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-0.06</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-1120.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">1114.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">64.63</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.10</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-506.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">446.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">24.70</td>
-    </tr>
-  </tbody>
-</table>
+<div style="text-align: center; margin: 0 auto;">
+  <table style="border-collapse: collapse; margin: 0 auto; text-align: center; font-size: 12px; border: 1px solid #ddd;">
+    <thead>
+      <tr style="background-color: #f2f2f2;">
+        <th style="border: 1px solid #ddd; padding: 8px;"></th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Mean</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Min</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Max</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Std Dev</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Mean</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Min</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Max</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Std Dev</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Mean</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Min</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Max</th>
+        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Std Dev</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;"><strong>american-football</strong></td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-2.08</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-3333.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">3000.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">64.90</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-0.47</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-938.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">443.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">37.18</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;"><strong>basketball</strong></td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-7.58</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-7586.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">8333.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">206.09</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-1.23</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-6667.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">3334.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">69.93</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;"><strong>football</strong></td>
+        <td style="border: 1px solid #ddd; padding: 8px;">0.23</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-2083.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">917.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">45.04</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-0.06</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-1120.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">1114.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">64.63</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">0.10</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">-506.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">446.00</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">24.70</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <br>
 It seems like we see the greatest deviations in basketball > American-football > soccer. These descriptive stats may be difficult to interpret, so let's visualize this average deviation by bookmakers for the different odds types.
@@ -250,7 +253,7 @@ On the topic of bookmakers, let's look at bookmaker margins. This is the charge 
 
 ---
 
-Now let's check out every team's adjusted historical win rate (win rate conditional on whether the team was favored or an underdog). 
+Now let's check out every team's adjusted historical win rate (i.e. the win rate conditional on whether the team was favored or considered an underdog). 
 
 Whats the summary stats for home and away. Show me favorite teams in each sport historical win rate home and away for fun.
 
