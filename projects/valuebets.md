@@ -100,6 +100,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - I created two variables for every game:
         - 'average odds ratio': Ratio of the average home odds to away odds.
         - 'highest odds ratio': Ratio of the highest home odds to away odds.
+        - However, the American odds format makes the odds ratio not interpretable, so I will adjust this ratio by taking the absolute value of both the home and away odds if either of the odds are mixed. If the odds have the same sign, then I will directly take the odds ratio. This should make the odds ratio interpretable.
     - This should capture how bookmakers value the relative strengths of the home and away team for each game.
 
 - **Odds Deviations**:
