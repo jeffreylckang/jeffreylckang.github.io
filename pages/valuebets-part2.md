@@ -253,17 +253,39 @@ On the topic of bookmakers, let's look at bookmaker margins. This is the charge 
 
 ---
 
-Now let's check out every team's adjusted historical win rate (i.e. the win rate conditional on whether the team was favored or considered an underdog). 
+Next, let's look at the adjusted historical win rate variable (i.e. the win rate conditional on whether the team was favored or considered an underdog). For the entire dataset, the average home team adjusted historical win rate is 41% while the away team adjusted historical win rate is 38%. This may not be particularly meaningful to know because those two win rates are averaged across all the teams. Instead, what I'll show you is the adjusted historical win rate for my favorite sports teams.
 
-Whats the summary stats for home and away. Show me favorite teams in each sport historical win rate home and away for fun.
-
+<br>
+<table style="border-collapse: collapse; width: 70%; text-align: center; font-size: 12px; margin: 0 auto; border: 1px solid #ddd;">
+  <thead>
+    <tr style="background-color: #f2f2f2;">
+      <th style="border: 1px solid #ddd; padding: 8px;">Team</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Home Win Rate</th>
+      <th style="border: 1px solid #ddd; padding: 8px;">Away Win Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Los Angeles Lakers</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.4139</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.3785</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">San Francisco 49ers</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.4185</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.3801</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 8px;">Tottenham</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.4771</td>
+      <td style="border: 1px solid #ddd; padding: 8px;">0.4376</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 It might also be interesting to examine win and loss streaks. In the table, we can see that out of all the games, home and away win streaks represent about 14% of the games wherease home and away loss streaks represent about 7% of the games.
-
-<br>
-I was also curious to know which teams have the most win and loss streaks. So across all three sports, Manchester City holds the highest win streak percentage, with 47% of their home games and 43% of their away games resulting in consecutive wins. On the other hand, Sheffield United leads in loss streaks, with 31% of their home games and 33% of their away games ending in consecutive losses. I wouldn't have guessed to see the same team dominating home AND away win streaks and another team consistently dominating home AND away loss streaks.
 
 <br>
 <table style="border-collapse: collapse; width: 80%; text-align: center; margin: 0 auto; font-size: 12px; border: 1px solid #ddd;">
@@ -293,17 +315,22 @@ I was also curious to know which teams have the most win and loss streaks. So ac
   </tbody>
 </table>
 
+<br>
+I was also curious to know which teams have the most win and loss streaks. So across all three sports, Manchester City holds the highest win streak percentage, with 47% of their home games and 43% of their away games resulting in consecutive wins. On the other hand, Sheffield United leads in loss streaks, with 31% of their home games and 33% of their away games ending in consecutive losses. I wouldn't have guessed to see the same team dominating home AND away win streaks and another team consistently dominating home AND away loss streaks.
+
 ---
 
-Another interesting variable to examine is upset frequency. Since this variable is binary, grouping it by season allows me to calculate the proportion of upsets for each season. We can see that this number appears to be around 30% for all sports give or take. Surprisingly, it seems that upset wins are significantly more by the home underdog team upsetting the away favored team. Seems like some real evidence for home court advantage!
+Another interesting variable to examine is upset frequency. Since this variable is binary, grouping it by season allows me to calculate the proportion of upsets for each season. We can see that this number appears to be around 30% for all sports give or take.
 
 <br>
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset_freq.png" alt="Upset Frequency" width="900" /> </div>
 
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset_freq.png" alt="Upset Frequency" width="800" /> </div>
+Are upsets more likely to occur for home or away teams? Surprisingly, what I found was that upsets are significantly more likely for a home underdog defeating a favored away team than the other way around. This could be some evidence to highlight the mythical "home court advantage"! 
 
 <br>
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset.png" alt="Upset Frequency" width="900" /> </div>
 
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset.png" alt="Upset Frequency" width="800" /> </div>
+*** signifies p<0.001.
 
 ---
 
