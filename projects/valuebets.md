@@ -120,9 +120,10 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - This is a binary variable for 1 if the underdog team wins and 0 if the favored team wins.
  
 - **Rolling Score Differential**:
-    - I created two variables for every game that resets every season:
+    - I created two variables for every game that reset upon each new season:
         - 'rolling average home differential': Averages the last 5 score differentials for the team when it is at home.
-        - 'rolling average away differential': Same as above but for the away team.
+        - 'rolling average away differential': Averages the last 5 score differentials for the team when it is away.
+    - The score differentials are standardized by sport to account for the fact that the three sports have different scoring magnitudes.
     - This should help quantify team performance similar to momentum or recent form but numerically.
 
 - **Adjusted Historical Win Rates**:
@@ -132,7 +133,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - These variables help establish a baseline win rate for every team conditional on whether that team was favored to win.
 
 - **Elo Ratings**:
-    - I created two variables for every game which resets every season:
+    - I created two variables for every game that reset upon each new season:
     - 'home team elo'
     - 'away team elo'
     - Elo rating is calculated using a formula to rank teams based on [World Football Elo](https://www.eloratings.net/about), [NBA Elo](https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/#:~:text=Take%20a%20team's%20margin%20of,accounting%20for%20home%2Dcourt%20advantage), and [NFL Elo](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
