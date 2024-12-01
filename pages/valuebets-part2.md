@@ -383,7 +383,7 @@ Lastly, we can examine *similar home and away team ELO ratings*. The overall ave
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_sim_elo_rating.png" alt="Distribution of SIMILAR Home and Away ELO Ratings" width="900" /> </div>
 
-I'll also show the average difference between the team ELO rating and the similar team ELO rating, just to get a sense of how the ELO rating differs from the "cross sport" ELO rating. The average difference between the home team ELO rating and the similar home team ELO rating is -536.44 whereas the average difference between Away team ELO rating and Similar Away team ELO rating is -511.74. 
+I'll also examine the average difference between the team ELO rating and the similar team ELO rating, just to get a sense of how the ELO rating differs from the "cross sport" ELO rating. The average difference between the home team ELO rating and the similar home team ELO rating is -536.44 whereas the average difference between Away team ELO rating and Similar Away team ELO rating is -511.74. 
 
 ---
 
