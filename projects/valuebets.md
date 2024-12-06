@@ -127,7 +127,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - This should help quantify team performance similar to momentum or recent form but numerically.
 
 - **Adjusted Historical Win Rates**:
-    - I created two variables for every game
+    - I created two variables for every game:
         - 'adjusted win rate home': Historical win rate of the home team weighted by the proportion of games they are favored or are underdogs.
         - 'adjusted win rate away': Same as above but for the away team.
     - These variables help establish a baseline win rate for every team conditional on whether that team was favored to win.
