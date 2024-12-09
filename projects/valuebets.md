@@ -71,7 +71,6 @@ Before describing the methodology, let me first provide some context about the d
 - Soccer (English Premier League): 11 seasons of data were collected, also beginning from the 2013-2014 season.
 - Basketball (National Basketball Association): 9 seasons of data were collected, starting from the 2014-2015 season. 
 
-<br>
 Each entry in the dataset corresponds to a single bookmaker's odds for a game. For every game, the data set includes the following information:
 
 - Game details: Home team, away team, game date, home score and away score.
@@ -79,7 +78,6 @@ Each entry in the dataset corresponds to a single bookmaker's odds for a game. F
 - Game Odds: Average home team and away team odds; highest home team and away team odds
 - Game ID: a unique identifier for each game
 
-<br>
 The code I used to collect the data can be found on my github [here](https://github.com/jeffreylckang/OPscraper.git).
 
 # Methodology
@@ -88,29 +86,26 @@ In this section, I'll outline my data preprocessing, feature engineering and pro
 
 #### Data Preprocessing
 
-First I'll filter out all the games in which the outcome ended in a draw. I'll also process some variables:
+First I'll filter out all the games in which the outcome ended in a draw. I did this for two purposes: one, to make the modeling easier because I am evaluating only two outcomes, and two, not all sports have draws an outcome. I'll also process some variables:
 
 - **Home Team Win**:
     - I calculated the outcome of each game by comparing the home and away scores. 
     - A win for the home team is denoted as 1, a win for the away team is denoted as 0, and draws are NaNs.
-    - For this project, I excluded games that ended in a draw because I wanted to focus on bets related to the home or away team wins.
-    
+          
 - **Season**:
     - A 'season' variable was added to track which season each game belongs to, based on the date of the game.
 
 #### Feature Engineering
 
 - **Odds Ratios**:
-    - I created two variables for every game:
-        - 'average odds ratio': Ratio of the average home odds to away odds.
-        - 'highest odds ratio': Ratio of the highest home odds to away odds.
-        - However, the American odds format makes the odds ratio not interpretable, so I will adjust this ratio by taking the absolute value of both the home and away odds if either of the odds are mixed. If the odds have the same sign, then I will directly take the odds ratio. This should make the odds ratio interpretable.
-    - This should capture how bookmakers value the relative strengths of the home and away team for each game.
+    - 'average odds ratio': Ratio of the average home odds to away odds.
+    -  However, the American odds format makes the odds ratio not interpretable, so I will adjust this ratio by taking the absolute value of both the home and away odds if either of the odds' signs are mixed. If the odds have the same sign, then I will directly take the odds ratio. This should make the odds ratio interpretable.
+    - This feature should capture how bookmakers value the relative strengths of the home and away team for each game.
 
 - **Odds Deviations**:
     - I created two variables for every game:
         - 'average deviation of home odds': Deviation between each bookmaker's home odds and the average home odds provided by Oddsportal
-        - 'average deviation of away odds': Same as above but for the away odds
+        - 'average deviation of away odds'
     - This should help quantify the variance in odds across bookmakers for each game.
 
 - **Win and Loss Streaks**:
@@ -126,14 +121,14 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
 - **Rolling Score Differential**:
     - I created two variables for every game that reset upon each new season:
         - 'rolling average home differential': Averages the last 5 score differentials for the team when it is at home.
-        - 'rolling average away differential': Averages the last 5 score differentials for the team when it is away.
+        - 'rolling average away differential'
     - The score differentials are standardized by sport to account for the fact that the three sports have different scoring magnitudes.
-    - This should help quantify team performance similar to momentum or recent form but numerically.
+    - This should help quantify team performance similar to momentum or recent form but in a numerical form.
 
 - **Adjusted Historical Win Rates**:
     - I created two variables for every game:
         - 'adjusted win rate home': Historical win rate of the home team weighted by the proportion of games they are favored or are underdogs.
-        - 'adjusted win rate away': Same as above but for the away team.
+        - 'adjusted win rate away'
     - These variables help establish a baseline win rate for every team conditional on whether that team was favored to win.
 
 - **Elo Ratings**:
@@ -141,7 +136,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
     - 'home team elo'
     - 'away team elo'
     - Elo rating is calculated using a formula to rank teams based on [World Football Elo](https://www.eloratings.net/about), [NBA Elo](https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/#:~:text=Take%20a%20team's%20margin%20of,accounting%20for%20home%2Dcourt%20advantage), and [NFL Elo](https://fivethirtyeight.com/features/introducing-nfl-elo-ratings/).
-        - An important detail is I adjusted the K-factor for the formula (K basically tells you how much weight to give to recent games/performances) based on different sports
+        - An important detail is I adjusted the K-factor for the formula (K basically tells you how much weight to give to recent games/performances) based on different sports.
         - Basketball: $$k + (0.2 \times \max(0, (\text{pd} - 5) // 10))$$
         - Football: $$k \times (0.75 + (\text{pd} - 3) / 8)$$  
         - American Football: $$k + (0.25 \times \max(0, (\text{pd} - 7) // 7))$$
@@ -149,9 +144,9 @@ First I'll filter out all the games in which the outcome ended in a draw. I'll a
 
 - **Cross-Sport Elo Similarity**:
     - Based on the home and away team elo ratings, I created two variables:
-        - 'similar home team elo': Average of the top two most similar elo rated home teams
-        - 'similar away team elo': Average of the top two most similar elo rated away teams
-            - Similarities were first calculated using cosine similarity
+        - 'similar home team elo': Average of the top two most similar elo rated home teams.
+        - 'similar away team elo'
+            - Similarities were first calculated using cosine similarity.
         - This leverages cross-sport data for evaluating matchups.
 
 #### Procedure
@@ -160,18 +155,21 @@ To identify value bets, I will compare the following models:
 
 1. **Historical Win Rate Analysis**: I will first analyze the historical win rate of teams, conditional on the odds favoring the team, to establish a baseline model for identifying value bets.
 
-2. **Random Forest Model**: A random forest model will be trained to see if it can better identify value bets that result in improved betting performance compared to the baseline.
+2. **Random Forest Model**: A random forest model will be trained on data from all sports to see if it can better identify value bets that result in improved betting performance compared to the baseline.
 
 3. **Neural Network (NN) models**:
-    - **Feedforward NN**: I will train a simple feedforward NN with three hidden layers and one output layer. This model will be trained exclusively on basketball data to examine performance for a single sport.
+    - **Feedforward NN**: I will train a simple feedforward NN with three hidden layers and one output layer. This model will be trained exclusively on a single sport data (basketball).
     - **Neural Collaborative Filtering (NCF) Model**: I will train an NCF model with three hidden layers and one output layer using data from all sports. The collaborative filtering component leverages embeddings of teams and sports data to identify cross-sport patterns, potentially improving the ability to evaluate value bets.
 <br>
 To evaluate betting performance, I will compare each model using two key metrics:
 
-1. **Expected Value (EV)**: This assesses the expected return on each incremental value bet, telling us in the short run how profitable strategies are.
+1. **Theoretical Expected Value (EV)**: This assesses the theoretical expected return on each incremental value bet, telling us in the short run how profitable strategies are. The reason this is theoretical is because the formula uses the model implied probability of winning and not the actual probability of winning set by the bookmaker.
+   
+<br>
 $$\text{EV} = (\text{Probability of Win} \times \text{Profit}) - (\text{Probability of Loss} \times \text{Bet Amount})$$
 
-3. **Return on Investment (ROI)**: This metric will evaluate the total returns over time, telling us in the long run how profitable strategies are.
+2. **Return on Investment (ROI)**: This metric will evaluate the total returns over time, telling us in the long run how profitable strategies are.
+<br>
 $$\text{ROI} = \frac{\text{Net Profit}}{\text{Total Bet Amount}} \times 100$$
 
 <br>
