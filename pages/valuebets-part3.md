@@ -55,10 +55,10 @@ To further evaluate the model, we calculated the F1 score, which balances precis
 
 <br>
 Here's a table that summarizes all this information.
-<div style="text-align: center; margin: 0; padding: 0;">
-  <h3 style="margin: 0; font-size: 14px;">Test Data Set Evaluation Using Adj Win Rates</h3>
-</div>
+
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using Adj Win Rates</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -113,10 +113,9 @@ Here's a table that summarizes all this information.
 <br>
 Now lets evaluate the **holdout basketball data set** using the same approach. For brevity, I won't go through the results in detail and I will present the summary table of results instead. You can see that the results are similar to the test data set in terms of both profitability and accuracy.  
 
-<div style="text-align: center; margin: 0; padding:0;">
-  <h3 style="margin: 0; font-size: 14px;">Holdout Basketball Data Set Evaluation Using Adj Win Rates</h3>
-</div>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using Adj Win Rates</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -183,8 +182,9 @@ Now, let’s move on to the machine learning models! The first model we’ll exp
 <br>
 Here are the results for the test data set.
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 0px;">Test Data Set Evaluation Using RF</h3>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using RF</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -237,13 +237,14 @@ Here are the results for the test data set.
 </table>
 
 <br>
-We can see that compared to the baseline model, the RF model classified significantly more home and away bets as value bets. Additionally, of the value bets, many of them were correct value bets (50% for home value bets and 36% for away value bets!). Both home and away value bets offer significantly higher EV than betting on all the home or away team bets. However, in the long-run, betting on the home and away value bets still doesn't seem like a viable strategy (despite the positive ROI of the away value bet) because the returns are negative or tiny (2%). In terms of accuracy and the F1 score, this RF model does significantly better in predicting game outcomes than the baseline model, so at least we see some improvement there.
+We can see that compared to the baseline model, the RF model classified significantly more home and away bets as value bets. Additionally, of the value bets, many of them were correct value bets (50% for home value bets and 36% for away value bets!). Both home and away value bets offer significantly higher EV than betting on all the home or away team bets. However, in the long-run, betting on the home and away value bets still doesn't seem like a viable strategy because the returns are negative. In terms of accuracy and the F1 score, this RF model does significantly better in predicting game outcomes than the baseline model, so at least we see some improvement there.
 
 <br>
 Let's also examine the results for the holdout basketball data set. 
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 0px;">Holdout Basketball Data Set Evaluation Using RF</h3>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using RF</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -296,15 +297,17 @@ Let's also examine the results for the holdout basketball data set.
 </table>
 
 <br>
-We can see similar results as the test data set. Interestingly, we find a positive ROI for away value bets, which suggests that using a RF model to identify away value bets can be profitable. Overall, the RF model appears to offer significant improvement when it comes to profitability compared to the baseline model of using adjusted historical team win rates. In addition, the accuracy and F1 scores have significantly improved.
+We can see similar results as the test data set. Interestingly, we find a positive ROI for away value bets, which suggests that using a RF model to identify away value bets can be barely profitable. Overall, the RF model appears to offer significant improvement when it comes to profitability compared to the baseline model of using adjusted historical team win rates. In addition, the accuracy and F1 scores have significantly improved.
+<br>
 
 ---
 
 <br>
-Instead of estimating probabilites, I can also use the RF model to estimate EV directly. This might produce results that are better optimized for profitability rather than probability. The procedure that follows is exactly the same, except now the dependent variable to estimate is the EV of the home and away bets (this also means that we will be using the root mean squared error or RMSE) as the loss function. 
+Before moving onto the next model, I thought it would be worthwhile to use the RF model to estimate EV directly instead of estimating probabilites. This might produce results that are better optimized for profitability rather than probability. The procedure that follows is exactly the same, except now the dependent variable to estimate is the EV of the home and away bets (this also means that we will be using the root mean squared error or RMSE) as the loss function. 
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Test Data Set Evaluation Using RF (EV)</h3>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using RF (EV)</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -346,8 +349,9 @@ Instead of estimating probabilites, I can also use the RF model to estimate EV d
   </tbody>
 </table>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using RF (EV)</h3>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using RF (EV)</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -390,14 +394,15 @@ Instead of estimating probabilites, I can also use the RF model to estimate EV d
 </table>
 
 <br>
-These results reveal a clear pattern: for both the test data set and the holdout basketball data set, away value bets are more profitable than home value bets in terms of both EV and ROI. Notably, the positive ROI for away value bets suggests that betting on them, as identified by the RF EV model, can yield profits! However, the average EV for both home and away value bets is lower than in the RF model which estimated probabilities. Although I'm not sure why this occurs, I believe this discrepancy isn’t a major concern, as the calculated EVs are theoretical. Lastly, accuracy and F1 scores are not presented for these tables, as these metrics are less meaningful when estimating EV directly. This is because deriving implied win probabilities from EV assumes reliance on the bookmaker’s odds, which may not hold true in this context.
+These results reveal a clear pattern: for both the test data set and the holdout basketball data set, away value bets are more profitable than home value bets in terms of both EV and ROI. Notably, we see a positive return (27.96%) for the away value bet ROI which suggests that this model can yield profits! However, the average EV for both home and away value bets is lower than in the RF model which estimated probabilities. Although I'm not sure why this occurs, I believe this discrepancy isn’t a major concern, as the calculated EVs are theoretical. Lastly, accuracy and F1 scores are not presented for this RF EV model because the EV predictions cannot be directly converted into probabilities without relying on bookmaker odds, which are biased by factors like the bookmaker’s margin. Using these odds to derive win probabilities introduces noise, making accuracy and F1 unreliable. In contrast, directly estimating win probabilities avoids this issue, as it provides a pure measure of the model’s ability to predict outcomes.
 
 #### Model 3: Neural Network on single sport
 
-Can a more complex ML model outperform the RF models in profitability? To test this, I trained a simple neural network (NN) model on basketball data. The NN consists of 3 hidden layers and a softmax activation output layer for predicting binary outcomes (home team win or loss) using binary cross-entropy as the loss function. I employed 5-fold cross-validation during training, with data processed in batches over 20 epochs. Hyperparameters, including dropout rate, learning rate, and weight decay, were tuned to optimize performance. Once trained, I evaluated the model with the best hyperparameters on the validation set and then on the test set. For brevity, I’ll present the NN model’s results on the holdout basketball data to compare with the previous models.
+Can a more complex ML model outperform the RF models in profitability? To test this, I trained a simple neural network (NN) model on only a single sport data (basketball). The NN consists of 3 hidden layers and a softmax activation output layer for predicting binary outcomes (home team win or loss) using binary cross-entropy as the loss function. I employed a 5-fold cross-validation during training, with data processed in batches over 20 epochs. Hyperparameters, including dropout rate, learning rate, and weight decay, were tuned to optimize performance. Once trained, I evaluated the model with the best hyperparameters on the validation set and then on the test set. For brevity, I’ll present the NN model’s results on the holdout basketball data to compare with the previous models.
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NN</h3>
+<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NN</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -451,13 +456,15 @@ Can a more complex ML model outperform the RF models in profitability? To test t
 
 <br>
 The NN model trained on basketball data shows similar patterns to the RF models. Away value bets outperform home value bets, with an EV exceeding $10 (indicating a return greater than the initial wager) and a positive ROI. Notably, the ROI for away value bets is significantly higher than the equivalent RF model (1.68%) and comparable to the ROI of the RF model estimating EV (27.96%). Additionally, the high accuracy and F1 scores suggest this NN model performs well in predicting game outcomes.
+<br>
 
 ---
 
 We can also train the NN model to estimate home and away EV bets directly as well. As mentioned above, this approach uses the same procedure, except the loss function switches to RMSE.
+<br>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NN (EV)</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NN (EV)</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -500,17 +507,18 @@ We can also train the NN model to estimate home and away EV bets directly as wel
 </table>
 
 <br>
-The NN model estimating EV produces results similar to the previous models, with away value bets outperforming home value bets in both EV and ROI. The away value bet ROI (26.87%) closely aligns with the NN model predicting game outcomes (26.93%) and the RF model estimating EV (27.96%). Like the RF model, the theoretical EVs are less than the $10 initial wager. In conclusion, the NN model trained on basketball data seems to effectively identiff profitable away value bets. Because the NN model's performance on profitability is comparable to the RF model estimating EV, it may be preferable to use the RF model due to its lower computational complexity and ease of use.
+The NN model estimating EV produces results similar to the previous models, with away value bets outperforming home value bets in both EV and ROI. The away value bet ROI (26.87%) closely aligns with the NN model predicting game outcomes (26.93%) and the RF EV model (27.96%). Like the RF model, the theoretical EVs are less than the $10 initial wager. In conclusion, the NN model trained on basketball data seems to effectively identify profitable away value bets. Because the NN model's performance on profitability is comparable to the RF model estimating EV, it may be preferable to use the RF model due to its lower computational complexity and ease of use.
 
 #### Model 4: Neural Collaborative Filtering Neural Network
 
 If you recall the primary motivation for this project, I set out to test whether a complex ML model leveraging cross-sport information could effectively identify profitable value bets. To do this, I developed a Neural Collaborative Filtering (NCF) model inspired by recommendation systems like those used by Netflix. These models identify relationships between users and items using embeddings, and I applied a similar approach here by embedding “game features” to identify similarities between teams across different sports. By embedding game features, the model can learn non-linear interactions between teams and games within a shared dimensional space.
 
 <br>
-Similar to the previous NN model, this NCF model architecture includes three hidden layers, a softmax activation function for the final output layer, binary cross-entropy as the loss function, and the same tuning for the hyperparameters. However, this NCF model also includes a sport-specific output layer which produces separate home and away win predictions for each sport to account for sport-specific nuances. 
+Similar to the previous NN model, this NCF model architecture includes three hidden layers, a softmax activation function for the final output layer, binary cross-entropy as the loss function, and the same tuning for the hyperparameters. However, this NCF model also includes a sport-specific output layer which produces separate home and away win predictions for each sport to account for sport-specific nuances.
+<br>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Test Data Set Evaluation Using NCF</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using NCF</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -561,9 +569,10 @@ Similar to the previous NN model, this NCF model architecture includes three hid
     </tr>
   </tbody>
 </table>
+<br>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NCF</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NCF</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -617,13 +626,15 @@ Similar to the previous NN model, this NCF model architecture includes three hid
 
 <br>
 By now it should be no surprise that away value bets consistently outperform home value bets in both EV and ROI. This pattern holds for both the test set and the holdout basktball dataset. This NCF model achieves the highest ROI for away value bets, with 36.44% on the test set data and 28.09% on the holdout basketball data--outperforming all previous models. Lastly, this NCF model demonstrates high accuracy and F1 scores on both datasets, indicating strong performance in predicting game outcomes.
+<br>
 
 ---
 
 Finally, let's investigate the EV and ROI metrics on this NCF model when it is trained to predict EV.
+<br>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Test Data Set Evaluation Using NCF (EV)</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using NCF (EV)</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -664,9 +675,10 @@ Finally, let's investigate the EV and ROI metrics on this NCF model when it is t
     </tr>
   </tbody>
 </table>
+<br>
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NCF (EV)</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
+  <caption style="font-weight: bold; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using NCF (EV)</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -716,16 +728,17 @@ As usual, we observe a similar pattern of results. While the ROI for away value 
 Now that we've made it to the end, let's reflect on the results!
 
 <br>
-The goal of this project was to develop a ML model capable of evaluating moneyline sports bets to identify profitable bets. I tested four statistical models that predicted either game outcomes (home team win or loss) or expected value. Using these predictions, I identified value bets--bets where the model's predicted probability or EV exceeded the bookmaker's implied probability or EV.
+The goal of this project was to develop a ML model capable of evaluating moneyline sports bets to identify profitable bets. I tested four statistical models that predicted either game outcomes (home team win or loss) or expected value. Using these predictions, I identified value bets, or bets where the model's predicted probability or EV exceeded the bookmaker's implied probability or EV.
 
 <br>
-Among all the models, the NCF model leveraging cross-sport information delivered the best results in terms of profitability. It produced the highest ROI for away value bets compared to other models. Thus, this NCF model could then potentially be used to predict future home and away value bets, helping to identify which bets are worth placing. Overall, it seems that betting on away value bets is more profitable than betting on home value bets. The theoretical EVs were consistently higher for away value bets, meaning that on average, betting on away value bets yields higher returns than betting on home value bets.
+Among all the models, the NCF model leveraging cross-sport information delivered the best results in terms of profitability. It produced the highest ROI for away value bets compared to other models. Thus, this NCF model could then potentially be used to predict home and away value bets for future games for any of the three sports (american football, basketball, or football/soccer). Overall, it seems that betting on away value bets is more profitable than betting on home value bets. The returns were consistently higher for away value bets, meaning that on average, betting on away value bets yields higher returns than betting on home value bets.
 
 <br>
 Why might this be the case? Why are away value bets more profitable than home value bets? Well one possible reason could be due to upsets. We know that upsets tend to have higher payouts than regular bets (because underdogs are not favored to win), and away value bets may include more away upsets than home value bets including home upsets. Indeed, I found this to be the case for the NCF model's predictions on the holdout basketball dataset (with similar patterns seen in the test dataset). *50%* of correct away value bets were upsets compared to only *24%* of correct home value bets were upsets. Since upsets offer larger payouts, they may be enough to cover the losses.
 
 <br>
 In addition to upsets, the distribution of payouts may differ between away and home value bets. To see this, I can classify value bets into categories of low (<33%), medium (between 33% and 67%), or high (>67%) win probability and analyze their average payouts. The table below illustrates this distribution.
+<br>
 
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <caption style="font-weight: bold; margin-bottom: 10px;">Summary of Home and Away Value Bets by Probability Category For Holdout Basketball Dataset</caption>
