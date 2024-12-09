@@ -7,11 +7,12 @@ permalink: /pages/valuebets-part3
 ## Identifying Value Bets in Sports Using Machine Learning Part 2
 
 Return to [Part 1](/projects/valuebets).
+<br>
 Return to [Part 2](/pages/valuebets-part2).
 
 # Results
 
-After exploring our variables and engineered features, let's now evaluate our proposed models. As a refresher, my proposed procedure is to compare four sets of model predictions for identifying value bets.  I'll use EV and ROI as the profitability metrics to make these evaluations. 
+After exploring the variables and engineered features, let's now evaluate the proposed models. As a refresher, my plan is to compare four sets of model predictions for identifying value bets.  I'll use EV and ROI as the profitability metrics to make these evaluations. 
 
 <br>
 
@@ -23,33 +24,31 @@ To start, let's take a look at the size of my datasets.
 
 #### "Model 1": Baseline Adjusted Historical Win Rate
 
-To start, I will calculate EV and ROI using the adjusted historical win rates for home and away teams to identify value bets. This approach serves as a simple baseline model to compare against the ML models. The idea behind this is that the ML models should outperform this baseline model in identifying value bets. You can think of this baseline model as betting on your favorite team solely based on their historical home or away win rate when they were favored. Using this approach, we can first establish how effective a simple betting strategy is. 
-<br>
+To start, I will calculate EV and ROI using the adjusted historical win rates for home and away teams to identify value bets. This approach serves as a simple baseline model to compare against the ML models. You can think of this baseline model as betting on your favorite team solely based on their historical home or away win rate when they were favored. Using this approach, we can first establish how effective this simple betting strategy is. 
 
-How do we classify which home or away moneyline bets are considered value bets? Recall that a value bet is defined as a situation where the bettor believes or the model predicts that the odds/probabilites are more favorable than what the bookmaker has set. For example, if the model predicts a higher win probability for the home team than the implied probability derived from the bookmaker's set home odds, than that would be considered a value bet.
+<br>
+Here is how we are going to identify value bets. Recall that a value bet is defined as a situation where the bettor believes or the model predicts that the odds/probabilites are more favorable than what the bookmaker has set. For example, if the model predicts a higher win probability for the home team than the implied probability derived from the bookmaker's set home odds, than that would be considered a value bet.
 
 > Model estimated win probability > Bookmaker set win probability
 
-OR 
+    OR 
 
 > Model estimated win probability - Bookmaker set win probability > 0 
 
-<br>
 One more note. Recall that on the previous page we found that the average bookmaker margin of the entire dataset for home and away moneyline bets is around 4%. I'll round that number up to 5% and consider that as the margin to beat in terms of classifying value bets.
 
 > Model estimated win probability - Bookmaker set win probability > 0.05
 
-<br>
-So how many value bets were identified using this strategy? Let's first examine the **test data set**. Among all home bets, 28% were classified as value bets based on the adjusted historical home win rate for each team. Similarly, 47% of all away bets were identified as value bets using the adjusted historical away win rate. Of the 28% home value bets, 10% were “correct” (i.e., the home team won), while 13% of away value bets were correct.
+Using the adjusted historical win rate, how many value bets can we identify? Let's first examine the **test data set**. Among all home bets, 28% were classified as value bets using the adjusted historical home win rate. Similarly, 47% of all away bets were identified as value bets using the adjusted historical away win rate. Of the 28% home value bets, 10% were “correct” (i.e., the home team won), while 13% of away value bets were correct.
 
 <br>
-Next up, I'll evaluate profitability first in terms of a "per bet" strategy, by calculating the EV of home and away value bets. Normally to calculate EV, I would use the implied probabilities from the bookmakers' odds. However, in this analysis I will calculate it using the adjusted historical win rate because bookmakers set moneyline odds with an EV of zero, meaning any EV calculation using their probabilities would always result in zero. By using the adjusted win rates instead, I can estimate a theoretical EV, which can help us assess how profitable this strategy *could be*, even though it isn’t realistic since we can’t bet directly using model-estimated probabilities/odds.
+Next up, I'll evaluate profitability first in terms of a "per bet" strategy, by calculating the EV of home and away value bets. Normally to calculate EV, I would use the implied probabilities from the bookmakers' odds. However, if I do so, I would find an EV of 0 for all home and away bets. Why? This is because bookmakers set intentionally set the EV to zero. Instead, in this analysis I will calculate EV using the model estimated probability (derived from the adjusted historical win rate). This way I can estimate a theoretical EV, which can help us assess how profitable this strategy *could be*, even though it isn’t realistic since we can’t bet directly using model-estimated probabilities/odds.
 
 <br>
-For home value bets, the average EV for a $10 wager was $7.11, while betting on all home games regardless of value resulted in an average EV of $0.15. This shows that identifying value bets seems to be a better strategy than betting on all home games. However, an average EV of $7.11 per $10 wager means you’re not losing money, but you’re still getting less value than your initial stake, making the strategy only marginally effective. For away value bets, the average EV was $11.14 compared to $3.85 for betting on all away games. We can see that away value bets outperform home value bets in terms of EV.
+For home value bets, the average EV for a $10 wager was $7.11, while betting on all home games regardless of value bet or not resulted in an average EV of $0.15. This shows that betting on a home value bet on average earns you more returns than blindly betting on a home bet. However, the EV of $7.11 for a $10 wager means you’re not losing money, but you’re still getting less value than your initial stake, making the strategy only marginally effective. For away value bets, the average EV was $11.14 compared to $3.85 for betting on all away games. We can see that away value bets outperform home value bets in terms of EV.
 
 <br>
-While EV measures the profitability of each individual bet, we can use ROI to evaluate the long-term viability of this model using the adjusted historical win rate. The ROI for home value bets was -94%, compared to -99% for all home bets. Similarly, the ROI for away value bets was -97%, slightly better than the -98% for all away bets. These results suggest that betting on value bets almost seems equally as unprofitable as betting on actual home and away bets. To conclude, it appears that using the adjusted historical win rate to identify value bets isn't an effective betting strategy.
+While EV measures the profitability of each individual bet, we can use ROI to evaluate the long-term viability of this model. The ROI for home value bets was -94%, compared to -99% for all home bets. Similarly, the ROI for away value bets was -97%, slightly better than the -98% for all away bets. These results suggest that betting on value bets almost seems equally as unprofitable as betting on actual home and away bets in the long-run. To conclude, it appears that using the adjusted historical win rate to identify value bets isn't an effective betting strategy.
 
 <br>
 In addition to profitability metrics, we can evaluate this model’s accuracy. Assuming an adjusted historical win rate above 50% predicts a home team win (coded as 1), and below 50% predicts an away team win (coded as 0), the model achieved a prediction accuracy of 51% for home games and 57% for away games. This indicates that the model isn’t particularly accurate in predicting game outcomes.
@@ -58,8 +57,8 @@ In addition to profitability metrics, we can evaluate this model’s accuracy. A
 To further evaluate the model, we calculated the F1 score, which balances precision (the percentage of correctly predicted wins out of all predicted wins) and recall (the percentage of correctly predicted wins out of all actual wins). The F1 score for home predictions was 0.42, while for away predictions, it was 0.16. (Note: F1 scores are not percentages but range between 0 and 1.) These scores indicate that the model performs poorly in predicting game outcomes using adjusted historical win rates.
 
 <br>
-Here's a table that summarizes this information.
-<div style="text-align: center; margin: 20px 0;">
+Here's a table that summarizes all this information.
+<div style="text-align: center; margin: 0px 0;">
   <h3 style="margin: 0; font-size: 14px;">Test Data Set Evaluation Using Adj Win Rates</h3>
 </div>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -117,7 +116,7 @@ Here's a table that summarizes this information.
 <br>
 Now lets evaluate the **holdout basketball data set** using the same approach. For brevity, I won't go through the results in detail and I will present the summary table of results instead. You can see that the results are similar to the test data set in terms of both profitability and accuracy.  
 
-<div style="text-align: center; margin: 20px 0;">
+<div style="text-align: center; margin: 0px 0;">
   <h3 style="margin: 0; font-size: 14px;">Holdout Basketball Data Set Evaluation Using Adj Win Rates</h3>
 </div>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -176,13 +175,13 @@ Now lets evaluate the **holdout basketball data set** using the same approach. F
 
 Now, let’s move on to the machine learning models! The first model we’ll explore is a RF model to estimate home and away team wins. We'll use these binary predictions and convert them into home and away team win probabilities. Here’s the procedure I used to develop the RF models:
 
-	1.	**Hyperparameter Tuning**: I tested various combinations of RF parameters, including the number of estimators (10, 20, 30, 40), maximum depth (3, 5, 10, 15), minimum samples required to split a node (10, 20), and minimum samples required per leaf (10, 20).
+1.	**Hyperparameter Tuning**: I tested various combinations of RF parameters, including the number of estimators (10, 20, 30, 40), maximum depth (3, 5, 10, 15), minimum samples required to split a node (10, 20), and minimum samples required per leaf (10, 20).
  
-	2.	**Evaluation Metric**: I used accuracy as the primary evaluation metric, as the goal was to predict the binary outcome of whether the home team won. This means the loss function I used to assess performance was binary cross-entropy loss.
+2.	**Evaluation Metric**: I used accuracy as the primary evaluation metric, as the goal was to predict the binary outcome of whether the home team won. This means the loss function I used to assess performance was binary cross-entropy loss.
  
-	3.	**Validation**: After identifying the best model through hyperparameter tuning, I evaluated its performance on the validation set to ensure it generalizes well to unseen data.
+3.	**Validation**: After identifying the best model through hyperparameter tuning, I evaluated its performance on the validation set to ensure it generalizes well to unseen data.
  
-	4.	**Testing**: Finally, I tested the best-performing model on the test dataset.
+4.	**Testing**: Finally, I tested the best-performing model on the test dataset.
 
 <br>
 Here are the results for the test data set.
