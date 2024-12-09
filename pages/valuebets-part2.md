@@ -7,6 +7,7 @@ permalink: /pages/valuebets-part2
 ## Identifying Value Bets in Sports Using Machine Learning Part 2
 
 If you need to read [Part 1](/projects/valuebets).
+<br>
 Skip to [Part 3](/pages/valuebets-part3).
 
 # Results
@@ -19,7 +20,7 @@ Shape of the entire dataset: (157859, 43).
 
 <br>
 
-First let's examine the *average home and away odds* given by Oddsportal. This is our main dependent variable in our analysis later on.
+First let's examine the **average home and away odds** given by Oddsportal.
 <br>
 
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -55,7 +56,7 @@ First let's examine the *average home and away odds* given by Oddsportal. This i
 </table>
 
 <br>
-We can see that home teams are generally more favored than away teams. We can visualize the distribution of the average home and away odds as well.
+Generally speaking, home teams are more favored than away teams. Let's visualize the distribution of the average home and away odds as well.
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_kde_avg_odds.png" alt="Overall Distribution of Odds Type" width="600" /> </div>
 
@@ -119,7 +120,7 @@ It appears that the distribution of home and away odds is bi-model, which makes 
 
 --- 
 
-Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are, or their *average odds deviation*.
+Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are, or their **average odds deviation**.
 
 <br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -160,7 +161,8 @@ Since we have many bookmakers, let's take a look at how spread out each bookmake
 </table>
 
 <br>
-Generally speaking, it seems that the average bookmaker favors both the home and away team more than the average odds reported by Oddsportal as indicated by the negative sign (remember negative means the favorite is more likely to win).
+On average, bookmakers tend to favor the home team more than the average odds set by the platform Oddsportal as the mean average deviation for bookmakers' home odds are 5 lower than the average home odds.
+Let's break this down by sport as shown below.
 
 <br>
 <div style="text-align: center; margin: 0 auto;">
@@ -233,20 +235,22 @@ Generally speaking, it seems that the average bookmaker favors both the home and
 </div>
 
 <br>
-It seems like we see the greatest deviations in basketball > American-football > soccer. These descriptive stats may be difficult to interpret, so let's visualize this average deviation by bookmakers for the different odds types.
+If we examine this by sport, it appears that the greatest deviations follow this order: basketball > American-football > soccer. 
+We can also visualize the deviation by bookmakers (first) and by bookmaker and sport (second) below.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Overall Average Deviation Odds by Bookmaker" width="600" /> </div>
-
-When comparing the three sports, some bookmakers consistently seem to be inflating both home and away team odds simultaneously. There doesn't appear to be any bookmakers inflating home odds while deflating away odds, or vice versa. Interestingly, for soccer, most bookmakers tend to deflate both home and away team odds by making them more positive (lower perceived likelihood for these events). 
 
 <br>
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Sport Specific Deviation Odds by Bookmaker" width="950" /> </div>
 
+<br>
+When comparing the three sports, some bookmakers consistently seem to be inflating both home and away team odds simultaneously. There doesn't appear to be any bookmakers inflating home odds while deflating away odds, or vice versa. Interestingly, for football/soccer, most bookmakers tend to deflate both home and away team odds by making them more positive (lower perceived likelihood for these events). 
+
 ---
 
-On the topic of bookmakers, let's also look at *bookmaker margins*. This is the charge a bookmaker usually takes for setting the bet. The average margin for all bookmakers and games is 4% (SD = 0.6%). We can also compare the margin across sports.
+On the topic of bookmakers, let's also look at **bookmaker margins**. This is the charge a bookmaker usually takes for setting the bet. The average margin for all bookmakers and games is 4% (SD = 0.6%). We can also compare the margin across sports shown below.
 
 <br>
 
@@ -254,7 +258,7 @@ On the topic of bookmakers, let's also look at *bookmaker margins*. This is the 
 
 ---
 
-Next, let's look at the *adjusted historical win rate variable* (i.e. the win rate conditional on whether the team was favored or considered an underdog). For the entire dataset, the average home team adjusted historical win rate is 41% while the away team adjusted historical win rate is 38%. This may not be particularly meaningful to know because those two win rates are averaged across all the teams. Instead, what I'll show you is the adjusted historical win rate for my favorite sports teams.
+Next, let's look at the **adjusted historical win rate variable** (i.e. win rate that is adjusted based on whether the team was favored or considered an underdog). For the entire dataset, the average home team adjusted historical win rate is 41% while the away team adjusted historical win rate is 38%. This may not be particularly meaningful to know because those two win rates are averaged across all the teams. Instead, what I'll show you is the adjusted historical win rate for my favorite sports teams.
 
 <br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; font-size: 12px; margin: 0 auto; border: 1px solid #ddd;">
@@ -283,10 +287,11 @@ Next, let's look at the *adjusted historical win rate variable* (i.e. the win ra
     </tr>
   </tbody>
 </table>
+<br>
 
 ---
 
-It might also be interesting to examine *win and loss streaks*. In the table, we can see that out of all the games, home and away win streaks represent about 14% of the games wherease home and away loss streaks represent about 7% of the games.
+It might also be interesting to examine **win and loss streaks**. In the table, we can see that out of all the games, home and away win streaks represent about 14% of the games whereas home and away loss streaks represent about 7% of the games.
 
 <br>
 <table style="border-collapse: collapse; width: 80%; text-align: center; margin: 0 auto; font-size: 12px; border: 1px solid #ddd;">
@@ -317,36 +322,37 @@ It might also be interesting to examine *win and loss streaks*. In the table, we
 </table>
 
 <br>
-I was also curious to know which teams have the most win and loss streaks. So across all three sports, Manchester City holds the highest win streak percentage, with 47% of their home games and 43% of their away games resulting in consecutive wins. On the other hand, Sheffield United leads in loss streaks, with 31% of their home games and 33% of their away games ending in consecutive losses. I wouldn't have guessed to see the same team dominating home AND away win streaks and another team consistently dominating home AND away loss streaks.
+I was also curious to know which teams have the most win and loss streaks. So across all three sports, Manchester City holds the highest win streak percentage, with 47% of their home games as part of a streak and 43% of their away games as part of a streak. On the other hand, Sheffield United leads in loss streaks, with 31% of their home games as part of a losing streak and 33% of their away games as part of a losing streak. Go figure.
+<br>
 
 ---
 
-Another interesting variable to examine is *upset frequency*. Since this variable is binary, grouping it by season allows me to calculate the proportion of upsets for each season. We can see that this number appears to be around 30% for all sports give or take.
+Another interesting variable to examine is **upset frequency**. Since this variable is binary, grouping it by season allows me to calculate the proportion of upsets for each season. We can see that this number appears to be around 30% for all sports give or take.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset_freq.png" alt="Upset Frequency" width="900" /> </div>
 
-Are upsets more likely to occur for home or away teams? Surprisingly, what I found was that upsets are significantly more likely for a home underdog defeating a favored away team than the other way around. This could be some evidence to highlight the mythical "home court advantage"! The three asterisks (***) denote a p-value less than 0.001.
+Are upsets more likely to occur for home or away teams? Surprisingly, what I found was that upsets are significantly more likely when a home underdog defeats a favored away team than the other way around. This could be some evidence to demonstrate "home court advantage"! The three asterisks (***) denote a p-value less than 0.001.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset.png" alt="Upset Frequency" width="900" /> </div>
 
 ---
 
-We can also explore home and away score differentials. I calculated a *standardized home and away rolling score differential* for the last 5 games every team played at home or away. The overall average home rolling score differential is 0.009 while the average away rolling score differential is 0.017. The distributions of both appear quite similar.
+We can also explore home and away score differentials. I calculated a **standardized home and away rolling score differential** for the last 5 games every team played at home or away. The overall average home rolling score differential is 0.009 while the average away rolling score differential is 0.017. The distributions of both appear quite similar.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_dist_roll_scorediff.png" alt="Distribution Rolling Home and Away Score Differential" width="900" /> </div>
 
 ---
 
-Almost done exploring our features. We still need to examine *home and away team ELO ratings*. The overall average home ELO rating is 702.90 while the average away ELO rating is 702.33. I'll plot the distributions of the average home and away ELO ratings by sport across all the seasons.
+Almost done exploring our features. We still need to examine **home and away team ELO ratings**. The overall average home ELO rating is 702.90 while the average away ELO rating is 702.33. I'll plot the distributions of the average home and away ELO ratings by sport across all the seasons.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_elo_rating.png" alt="Distribution of Home and Away ELO Ratings" width="900" /> </div>
 
 <br>
-What might be interesting to know is the average home and away ELO ratings for teams with a higher than 50% historical win rate vs lower than 50% historical win rate.
+What might be interesting to know is the average home and away ELO ratings for teams with a higher than 50% adjusted historical win rate vs lower than 50% adjusted historical win rate.
 
 <br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; font-size: 12px; margin: 0 auto; border: 1px solid #ddd;">
@@ -375,10 +381,11 @@ What might be interesting to know is the average home and away ELO ratings for t
     </tr>
   </tbody>
 </table>
+<br>
 
 ---
 
-Lastly, we can examine *similar home and away team ELO ratings*. The overall average similar home team ELO rating is 1239.34 while the overall average similar away team ELO rating is 1214.07. Again, I'll plot the distributions of the average similar home and away team ELO ratings by sport across all the seasons. 
+Lastly, we can examine **similar home and away team ELO ratings**. The overall average similar home team ELO rating is 1239.34 while the overall average similar away team ELO rating is 1214.07. Again, I'll plot the distributions of the average similar home and away team ELO ratings by sport across all the seasons. 
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_sim_elo_rating.png" alt="Distribution of SIMILAR Home and Away ELO Ratings" width="900" /> </div>
