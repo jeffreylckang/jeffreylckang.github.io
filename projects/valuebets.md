@@ -167,13 +167,13 @@ To evaluate betting performance, I will compare each model using two key metrics
 
 1. **Theoretical Expected Value (EV)**: This assesses the theoretical expected return on each incremental value bet, telling us in the short run how profitable strategies are. The reason this is theoretical is because the formula uses the model implied probability of winning and not the actual probability of winning set by the bookmaker.
    
-<br>
-$$\text{EV} = (\text{Probability of Win} \times \text{Profit}) - (\text{Probability of Loss} \times \text{Bet Amount})$$
+    <br>
+    $$\text{EV} = (\text{Probability of Win} \times \text{Profit}) - (\text{Probability of Loss} \times \text{Bet Amount})$$
 
 2. **Return on Investment (ROI)**: This metric will evaluate the total returns over time, telling us in the long run how profitable strategies are.
    
-<br>
-$$\text{ROI} = \frac{\text{Net Profit}}{\text{Total Bet Amount}} \times 100$$
+    <br>
+    $$\text{ROI} = \frac{\text{Net Profit}}{\text{Total Bet Amount}} \times 100$$
 
 <br>
 Additionally, I will benchmark each model's EV and ROI against a baseline "dummy" strategy of consistently betting on the home or away team.  
