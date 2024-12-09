@@ -169,6 +169,7 @@ To evaluate betting performance, I will compare each model using two key metrics
    
     <br>
     $$\text{EV} = (\text{Probability of Win} \times \text{Profit}) - (\text{Probability of Loss} \times \text{Bet Amount})$$
+    <br>
 
 2. **Return on Investment (ROI)**: This metric will evaluate the total returns over time, telling us in the long run how profitable strategies are.
    
