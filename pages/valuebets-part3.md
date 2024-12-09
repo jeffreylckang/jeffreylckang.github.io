@@ -30,9 +30,6 @@ To start, I will calculate EV and ROI using the adjusted historical win rates fo
 Here is how we are going to identify value bets. Recall that a value bet is defined as a situation where the bettor believes or the model predicts that the odds/probabilites are more favorable than what the bookmaker has set. For example, if the model predicts a higher win probability for the home team than the implied probability derived from the bookmaker's set home odds, than that would be considered a value bet.
 
 > Model estimated win probability > Bookmaker set win probability
-
-    OR 
-
 > Model estimated win probability - Bookmaker set win probability > 0 
 
 One more note. Recall that on the previous page we found that the average bookmaker margin of the entire dataset for home and away moneyline bets is around 4%. I'll round that number up to 5% and consider that as the margin to beat in terms of classifying value bets.
@@ -58,7 +55,7 @@ To further evaluate the model, we calculated the F1 score, which balances precis
 
 <br>
 Here's a table that summarizes all this information.
-<div style="text-align: center; margin: 0px 0;">
+<div style="text-align: center; margin: 0; padding: 0;">
   <h3 style="margin: 0; font-size: 14px;">Test Data Set Evaluation Using Adj Win Rates</h3>
 </div>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -116,7 +113,7 @@ Here's a table that summarizes all this information.
 <br>
 Now lets evaluate the **holdout basketball data set** using the same approach. For brevity, I won't go through the results in detail and I will present the summary table of results instead. You can see that the results are similar to the test data set in terms of both profitability and accuracy.  
 
-<div style="text-align: center; margin: 0px 0;">
+<div style="text-align: center; margin: 0; padding:0;">
   <h3 style="margin: 0; font-size: 14px;">Holdout Basketball Data Set Evaluation Using Adj Win Rates</h3>
 </div>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
@@ -186,7 +183,7 @@ Now, let’s move on to the machine learning models! The first model we’ll exp
 <br>
 Here are the results for the test data set.
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Test Data Set Evaluation Using RF</h3>
+<h3 style="text-align: center; font-size: 14px; margin-bottom: 0px;">Test Data Set Evaluation Using RF</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <thead>
     <tr style="background-color: #f2f2f2;">
@@ -240,12 +237,12 @@ Here are the results for the test data set.
 </table>
 
 <br>
-We can see that compared to the baseline model, the RF model classified significantly more home and away bets as value bets. Additionally, of the value bets, many of them were correct value bets (50% for home value bets and 36% for away value bets!). Both home and away value bets offer significantly higher EV than betting on all the home or away team bets. However, in the long-run, betting on the home and away value bets still doesn't offer a positive return compared to the baseline model (though away value bets almost have a positive ROI). In terms of accuracy and the F1 score, this RF model does significantly better in predicting game outcomes.
+We can see that compared to the baseline model, the RF model classified significantly more home and away bets as value bets. Additionally, of the value bets, many of them were correct value bets (50% for home value bets and 36% for away value bets!). Both home and away value bets offer significantly higher EV than betting on all the home or away team bets. However, in the long-run, betting on the home and away value bets still doesn't seem like a viable strategy (despite the positive ROI of the away value bet) because the returns are negative or tiny (2%). In terms of accuracy and the F1 score, this RF model does significantly better in predicting game outcomes than the baseline model, so at least we see some improvement there.
 
 <br>
 Let's also examine the results for the holdout basketball data set. 
 
-<h3 style="text-align: center; font-size: 14px; margin-bottom: 10px;">Holdout Basketball Data Set Evaluation Using RF</h3>
+<h3 style="text-align: center; font-size: 14px; margin-bottom: 0px;">Holdout Basketball Data Set Evaluation Using RF</h3>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <thead>
     <tr style="background-color: #f2f2f2;">
