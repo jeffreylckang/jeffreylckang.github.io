@@ -6,6 +6,7 @@ permalink: /projects/valuebets
 
 ## Identifying Value Bets in Sports Using Machine Learning
 [Skip to Part 2](/pages/valuebets-part2)
+<br>
 [Skip to Part 3](/pages/valuebets-part3)
 
 <br><br>
@@ -106,24 +107,24 @@ First I'll filter out all the games in which the outcome ended in a draw. I did 
     - I created two variables for every game:
         - 'average deviation of home odds': Deviation between each bookmaker's home odds and the average home odds provided by Oddsportal
         - 'average deviation of away odds'
-    - This should help quantify the variance in odds across bookmakers for each game.
+    - This feature should help quantify the variance in odds across bookmakers for each game.
 
 - **Win and Loss Streaks**:
     - I created four variables for every game that reset upon each new season:
         - 'home team win streak' and 'away team win streak': Binary variable that indicates if a team has won 3 consecutive games at home or away.
         - 'home team loss streak' and 'away team loss streak': Binary variable that indicates if a team has lost 3 consecutive games at home or away.
-    - This should help me capture what is known as momentum or recent form in sports.
+    - This feature should help me capture what is known as momentum or recent form in sports.
  
 - **Upsets**:
     - An 'upset' occurs when the favored team (lower odds) loses so for example if the home team is favored but the away team wins.
-    - This is a binary variable for 1 if the underdog team wins and 0 if the favored team wins.
+    - This feature is a binary variable for 1 if the underdog team wins and 0 if the favored team wins.
  
 - **Rolling Score Differential**:
     - I created two variables for every game that reset upon each new season:
         - 'rolling average home differential': Averages the last 5 score differentials for the team when it is at home.
         - 'rolling average away differential'
     - The score differentials are standardized by sport to account for the fact that the three sports have different scoring magnitudes.
-    - This should help quantify team performance similar to momentum or recent form but in a numerical form.
+    - This feature should help quantify team performance similar to momentum or recent form but in a numerical form.
 
 - **Adjusted Historical Win Rates**:
     - I created two variables for every game:
@@ -147,7 +148,7 @@ First I'll filter out all the games in which the outcome ended in a draw. I did 
         - 'similar home team elo': Average of the top two most similar elo rated home teams.
         - 'similar away team elo'
             - Similarities were first calculated using cosine similarity.
-        - This leverages cross-sport data for evaluating matchups.
+        - These features leverage cross-sport data for evaluating matchups.
 
 #### Procedure
 
@@ -160,6 +161,7 @@ To identify value bets, I will compare the following models:
 3. **Neural Network (NN) models**:
     - **Feedforward NN**: I will train a simple feedforward NN with three hidden layers and one output layer. This model will be trained exclusively on a single sport data (basketball).
     - **Neural Collaborative Filtering (NCF) Model**: I will train an NCF model with three hidden layers and one output layer using data from all sports. The collaborative filtering component leverages embeddings of teams and sports data to identify cross-sport patterns, potentially improving the ability to evaluate value bets.
+
 <br>
 To evaluate betting performance, I will compare each model using two key metrics:
 
@@ -169,6 +171,7 @@ To evaluate betting performance, I will compare each model using two key metrics
 $$\text{EV} = (\text{Probability of Win} \times \text{Profit}) - (\text{Probability of Loss} \times \text{Bet Amount})$$
 
 2. **Return on Investment (ROI)**: This metric will evaluate the total returns over time, telling us in the long run how profitable strategies are.
+   
 <br>
 $$\text{ROI} = \frac{\text{Net Profit}}{\text{Total Bet Amount}} \times 100$$
 
@@ -181,7 +184,6 @@ The data will be split as follows:
 - 10% Validation
 - 10% Test  
 
-<br>
 In addition, I will hold out the 2022-2023 NBA season as a separate test set to evaluate the models' generalizability on completely unseen data.  
 
 <br>
