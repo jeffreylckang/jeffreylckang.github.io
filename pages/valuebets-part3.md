@@ -30,6 +30,8 @@ To start, I will calculate EV and ROI using the adjusted historical win rates fo
 Here is how we are going to identify value bets. Recall that a value bet is defined as a situation where the bettor believes or the model predicts that the odds/probabilites are more favorable than what the bookmaker has set. For example, if the model predicts a higher win probability for the home team than the implied probability derived from the bookmaker's set home odds, than that would be considered a value bet.
 
 > Model estimated win probability > Bookmaker set win probability
+
+<br>
 > Model estimated win probability - Bookmaker set win probability > 0 
 
 One more note. Recall that on the previous page we found that the average bookmaker margin of the entire dataset for home and away moneyline bets is around 4%. I'll round that number up to 5% and consider that as the margin to beat in terms of classifying value bets.
@@ -298,11 +300,11 @@ Let's also examine the results for the holdout basketball data set.
 
 <br>
 We can see similar results as the test data set. Interestingly, we find a positive ROI for away value bets, which suggests that using a RF model to identify away value bets can be barely profitable. Overall, the RF model appears to offer significant improvement when it comes to profitability compared to the baseline model of using adjusted historical team win rates. In addition, the accuracy and F1 scores have significantly improved.
+
 <br>
 
 ---
 
-<br>
 Before moving onto the next model, I thought it would be worthwhile to use the RF model to estimate EV directly instead of estimating probabilites. This might produce results that are better optimized for profitability rather than probability. The procedure that follows is exactly the same, except now the dependent variable to estimate is the EV of the home and away bets (this also means that we will be using the root mean squared error or RMSE) as the loss function. 
 
 <br>
@@ -456,6 +458,7 @@ Can a more complex ML model outperform the RF models in profitability? To test t
 
 <br>
 The NN model trained on basketball data shows similar patterns to the RF models. Away value bets outperform home value bets, with an EV exceeding $10 (indicating a return greater than the initial wager) and a positive ROI. Notably, the ROI for away value bets is significantly higher than the equivalent RF model (1.68%) and comparable to the ROI of the RF model estimating EV (27.96%). Additionally, the high accuracy and F1 scores suggest this NN model performs well in predicting game outcomes.
+
 <br>
 
 ---
@@ -626,6 +629,7 @@ Similar to the previous NN model, this NCF model architecture includes three hid
 
 <br>
 By now it should be no surprise that away value bets consistently outperform home value bets in both EV and ROI. This pattern holds for both the test set and the holdout basktball dataset. This NCF model achieves the highest ROI for away value bets, with 36.44% on the test set data and 28.09% on the holdout basketball data--outperforming all previous models. Lastly, this NCF model demonstrates high accuracy and F1 scores on both datasets, indicating strong performance in predicting game outcomes.
+
 <br>
 
 ---
@@ -738,6 +742,7 @@ Why might this be the case? Why are away value bets more profitable than home va
 
 <br>
 In addition to upsets, the distribution of payouts may differ between away and home value bets. To see this, I can classify value bets into categories of low (<33%), medium (between 33% and 67%), or high (>67%) win probability and analyze their average payouts. The table below illustrates this distribution.
+    
 <br>
 
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
