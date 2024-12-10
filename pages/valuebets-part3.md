@@ -30,8 +30,7 @@ To start, I will calculate EV and ROI using the adjusted historical win rates fo
 Here is how we are going to identify value bets. Recall that a value bet is defined as a situation where the bettor believes or the model predicts that the odds/probabilites are more favorable than what the bookmaker has set. For example, if the model predicts a higher win probability for the home team than the implied probability derived from the bookmaker's set home odds, than that would be considered a value bet.
 
 > Model estimated win probability > Bookmaker set win probability
-
-<br>
+> OR
 > Model estimated win probability - Bookmaker set win probability > 0 
 
 One more note. Recall that on the previous page we found that the average bookmaker margin of the entire dataset for home and away moneyline bets is around 4%. I'll round that number up to 5% and consider that as the margin to beat in terms of classifying value bets.
