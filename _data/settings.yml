@@ -4,7 +4,7 @@
 menu:
 - {name: 'About', url: '/'}
 - {name: 'Projects', url: 'projects'}
-- {name: 'Resume', url: '/Kang_Jeffrey_Resume.pdf'}
+- {name: 'Resume', url: 'Kang_Jeffrey_Resume.pdf'}
 - {name: 'Contact', url: 'contact'}
 
 #-------------------------------
