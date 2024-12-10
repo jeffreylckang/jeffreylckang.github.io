@@ -22,7 +22,7 @@ permalink: /
         and societal behavior led me to pursue a PhD in Behavioral Science (Marketing).
       </p><br>
       <p>
-        Now, I'm eager for my next challenge--building models that can create tangible and meaningful impact (something I thought was lacking in graduate research).
+        Now, I'm eager for my next challenge--building models that can create tangible and meaningful impact.
       </p><br>
       <p>
         When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: 
