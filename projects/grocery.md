@@ -86,7 +86,7 @@ Since I'm interested in device type and payment method, I'll examine how these f
 
 <br>
 
-Let's take a quick look at each outcome variable. We'll start with the basket cost. We've already seen the average order cost from the table above, so I'll plot the distribution of the order cost.
+Let's take a quick look at each outcome variable. We'll start with the order cost. We've already seen the average order cost from the table above, so I'll plot the distribution of the order cost.
 
 <br>
 
@@ -131,8 +131,6 @@ While this distribution looks a bit more normal, notice that peaks at each unit.
 <br>
 
 ---
-
-<br>
 
 Having examined the outcome variables, let's dive into some of the more exciting aspects of the data. First, I'll explore the proportion of **device types** used by the customers in the data.
 
@@ -372,8 +370,6 @@ Order variety appears to be equal amongst the different devices. I won't present
 
 ---
 
-<br>
-
 Next, let's examine the proportion of **payment methods** used by the customers in the data.
 
 <br>
@@ -548,8 +544,6 @@ As expected, Wechat payment customers seem to purchase the most quantity and var
 
 ---
 
-<br>
-
 Let's quickly look at the proportion of **customer membership**.
 
 <br>
@@ -607,8 +601,6 @@ The means demonstrate that non-members spend more, purchase more items, and have
 
 ---
 
-<br>
-
 Last but not least, let's examine the distribution of **region**.
 
 <br>
@@ -621,7 +613,7 @@ As mentioned before, the data comes from an online grocery store that services m
 
 <br>
 
-Okay, we finished learning about our variables. Let's move onto the results! [Part2](/pages/grocery-part2)
+Okay, we finished learning about our variables. Let's move onto the results! [Part 2](/pages/grocery-part2)
 
 <br>
 
