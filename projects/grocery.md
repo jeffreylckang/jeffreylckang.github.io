@@ -40,6 +40,8 @@ I obtained two transaction-level sales datasets. The first dataset contains 591,
 
 I merged the two datasets by matching customer IDs and order numbers to create a dataset at the order or "shopping cart" level. To do this, I aggregated the columns of each order from the first dataset, allowing me to consolidate each customer's shopping cart for the same variables present in the order-level dataset. I then excluded orders in which the delivery status was not completed (as some orders were refunded or canceled). Furthermore, I excluded orders of which the shopping cart cost was less than \$1 because such transactions aren't very meaningful in this analysis (I don't have a good explanation as to why there are transactions less than \$2 in the data but my best guess is that the company had some filler charges to customers?). As a result, the final dataset for analysis contains 109,010 orders made by 29,592 unique customers. Below is a table that reports some summary statistics of the data.
 
+<br>
+
 <div style="text-align: center;">
   <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
     <caption style="font-weight: bold; margin-bottom: 10px;">Descriptive Statistics of Transaction Data</caption>
@@ -136,7 +138,7 @@ Having examined the outcome variables, let's dive into some of the more exciting
 
 <br>
 
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/grocery/Device_Type_Distribution.png" alt="Device Type Frequency" width="600" /> </div>
+<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/grocery/Device_Distribution.png" alt="Device Type Frequency" width="600" /> </div>
 
 <br>
 
@@ -541,6 +543,8 @@ For order quantity and order variety, I'll focus on user-level results rather th
 <br>
 
 As expected, Wechat payment customers seem to purchase the most quantity and variety compared to the other payment methods.
+
+<br>
 
 ---
 
