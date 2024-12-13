@@ -14,7 +14,7 @@ A few years ago, I was very fortunate enough to obtain transaction-level online 
 
 # Introduction
 
-Given the nature of this data, I wanted to explore how different factors influence consumer behavior. For instance, many consumers own both a smartphone and a laptop/PC giving them the flexibility to choose which device to use for purchases. Does the device type impact spending amount or the products purchased? Anecdotally, making purchases on a phone feels more spontaneous compared to a laptop/PC, which in the context of groceries might lead to more "vice" purchases.
+Given the nature of this data, I wanted to explore how different factors influence consumer behavior. For instance, many consumers own both a smartphone and a laptop/PC giving them the flexibility to choose which device to use for purchases. Does the device type impact spending amount or the products purchased? Anecdotally, making purchases on a phone feels more spontaneous compared to a laptop/PC, which in the context of groceries might lead to more smaller purchases.
 
 <br>
 
