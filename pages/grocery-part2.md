@@ -8,8 +8,6 @@ permalink: /pages/grocery-part2
 
 [Return to Part 1](/projects/grocery)
 
-<br>
-
 # Results
 
 To evaluate how device type and payment methods impact consumer shopping behavior, I conducted some linear-mixed effects regression models on my three outcome variables: order cost, order quantity, and order variety. These regression models are similar to linear regression models in that they account for fixed effects (e.g. predictors like device type and payment method), but the main difference is that they also account for random effects (e.g. customer-level variation across multiple orders). Without going too much into the details, I'm employing this linear mixed effects model because the observations are not assumed to be independent so I will be able to better estimate the effects of the predictors. For all the models, I will control for the region of the customer, the month of the order, and the membership status.
@@ -217,9 +215,11 @@ We see a similar pattern as the regression table where PC customers spend the mo
 **Why do PC Users spend more?**
 
 As hypothesized, customers who shop for groceries using a laptop/PC spend more than those using other devices. To understand why, normally one would conduct experiments (or A/B tests as they are called) where the device type, PC vs smartphone, is manipulated. This approach would establish a causal relationship first and then one would test this causal relationship on other variables that reveal the underlying psychological processes. The current evidence is only correlational at best as there is no experimental manipulation. However, A/B tests are time-consuming and costly, so instead how about I propose two possible explanations.
-**1. Thinking vs Feeling Mindset **
+
+**1. Thinking vs Feeling Mindset**
 One theory is that shopping on a PC encourages a more deliberate, planned approach whereas shopping on a smartphone promotes more impulsive buying. This could be because PCs are often associated with work and analytical thinking, prompting more thoughtful decision-making. Alternatively, it could also be that there are two types of shoppers, PC shoppers and smartphone shoppers, and PC shoppers are inherently more deliberate than smartphone shoppers. Without an experiment, its difficult to distinguish between these two possibilities but either way, deliberate thinking may lead to larger grocery orders as customers think ahead and add everything they might need.
-**2. Larger Screen, More Visibility **
+
+**2. Larger Screen, More Visibility**
 A more obvious and simpler explanation (not as cool psychologically imo) is attention. We have all heard of the saying "out of sight, out of mind" right? PCs have larger screens, allowing more products to be displayed. As a result, shoppers simply see more items, consider more items, and purchase these items they may not have seen/thought about otherwise. This increase in exposure essentially leads to larger orders. 
 
 <br>
@@ -228,12 +228,7 @@ A more obvious and simpler explanation (not as cool psychologically imo) is atte
 
 Unexpectedly, I found that customers spend the most on grocery orders when they pay using Wechat. As hypothesized, the results also showed that paying by a prepaid balance leads to a higher order cost than paying by credit card. As I discussed in the introduction, one might initially think that shoppers would spend the most paying by credit card. This is because the "pain of paying" is more abstract (you don't physically see the money going out of your hands) and it is decoupled from the consumption (you get to consume first and pay later). So what psychological mechanism could explain these discrepancies?
 
-<br>
-
-**Fungibility of Money **
-
-<br>
-
+**Fungibility of Money**
 Fungibility refers to the interchangeability of an asset, meaning that each unit is identical and can be substituted for another. In the case of money, a \$20 bill is fungible because it can be exchanged for another \$20 bill, twenty \$1 bills, or other equivalent combinations. You can think of fungibility as substitutability.
 
 <br>
