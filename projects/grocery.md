@@ -34,7 +34,7 @@ Let's analyze the data and see if these hypotheses hold true! This project will 
 
 # Data
 
-I obtained two transaction-level sales datasets. The first dataset contains 591,140 orders made by 57,077 unique customers for the year 2021. Each observation in this dataset contains a customer's ID, their order number, the order date, the delivery date, the status of delivery, the total cost of the order, the payment method, the geographical region in the U.S., and the membership status. The second dataset contains 1,765,641 products made by 31,778 unique customers from January to May of 2021. Each observation in the second dataset contains a product purchased by a customer, the customer ID, the associated order number, the order date, the delivery date, the quantity of the product purchased, the price of the product, the product category, and the U.S. geographical region.
+I obtained two transaction-level sales datasets. The first dataset contains 591,140 orders made by 57,077 unique customers for the year 2021. Each observation in this dataset contains a customer's ID, their order number, the order date, the delivery date, the status of delivery, the total cost of the order, the payment method, the geographical region in the U.S., and the membership status. The second dataset contains 1,765,641 products made by 31,778 unique customers from the months February, April, and May of 2021. Each observation in the second dataset contains a product purchased by a customer, the customer ID, the associated order number, the order date, the delivery date, the quantity of the product purchased, the price of the product, the product category, and the U.S. geographical region.
 
 <br>
 
