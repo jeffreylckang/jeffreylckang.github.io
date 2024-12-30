@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Using ML to Identify Value Bets Part 2
+title: Using ML to Identify Value Bets EDA
 permalink: /pages/valuebets-part2
 ---
 
-## Identifying Value Bets in Sports Using Machine Learning Part 2
+## Identifying Value Bets in Sports Using Machine Learning EDA
 
 If you need to read [Part 1](/projects/valuebets).
 <br>
-Skip to [Part 3](/pages/valuebets-part3).
+Skip to [Part 2](/pages/valuebets-part3).
+<br>
+Check out the [Methodology](/pages/valuebets-method)
 
 # Results
 
@@ -416,9 +418,11 @@ I'll also examine the average difference between the team ELO rating and the sim
 
 ---
 
-Now that we have explored our data, let's move onto the modeling.
-
-Continue to [Part 3](/pages/valuebets-part3).
+If you need to read [Part 1](/projects/valuebets).
+<br>
+Skip to [Part 2](/pages/valuebets-part3).
+<br>
+Check out the [Methodology](/pages/valuebets-method)
 
 <br>
 

@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Using ML to Identify Value Bets Part 3
+title: Using ML to Identify Value Bets Part 2
 permalink: /pages/valuebets-part3
 ---
 
-## Identifying Value Bets in Sports Using Machine Learning Part 3
+## Identifying Value Bets in Sports Using Machine Learning Part 2
 
 Return to [Part 1](/projects/valuebets).
 <br>
-Return to [Part 2](/pages/valuebets-part2).
+Go to [Methodology](/pages/valuebets-method).
+<br>
+Go to [Exploratory Data Analysis](/pages/valuebets-part2).
 
 # Results
 
