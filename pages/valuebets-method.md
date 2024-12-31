@@ -6,6 +6,12 @@ permalink: /pages/valuebets-method
 
 ## Identifying Value Bets in Sports Using Machine Learning: Methodology
 
+[Return to Part 1](/projects/valuebets)
+<br>
+[Go to Exploratory Data Analysis](/pages/valuebets-part2)
+<br>
+[Go to Part 2](/pages/valuebets-part3)
+
 # Methodology
 
 I'll outline my data preprocessing, feature engineering and procedure used for this project. 

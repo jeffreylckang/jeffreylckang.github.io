@@ -8,15 +8,13 @@ permalink: /pages/valuebets-part2
 
 If you need to read [Part 1](/projects/valuebets).
 <br>
-Skip to [Part 2](/pages/valuebets-part3).
+Go to [Part 2](/pages/valuebets-part3).
 <br>
 Check out the [Methodology](/pages/valuebets-method)
 
-# Results
+# Exploring the Data
 
 In this section, we are going to first understand our data.
-
-#### Exploring the Data
 
 Shape of the entire dataset: (157859, 43). 
 
