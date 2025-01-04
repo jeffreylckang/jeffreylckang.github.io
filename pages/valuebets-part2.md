@@ -353,7 +353,7 @@ Another interesting variable to examine is **upset frequency**. Since this varia
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset_freq.png" alt="Upset Frequency" width="900" /> </div>
 
-Are upsets more likely to occur for home or away teams? Surprisingly, what I found was that upsets are significantly more likely when a home underdog defeats a favored away team than the other way around. This could be some evidence to demonstrate "home court advantage"! The three asterisks (***) denote a p-value less than 0.001.
+Are upsets more likely to occur for home or away teams? Surprisingly, what I found was that upsets are significantly more likely when an away underdog defeats a favored home team compared to the other way around. The three asterisks (***) denote a p-value less than 0.001.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_upset.png" alt="Upset Frequency" width="900" /> </div>
