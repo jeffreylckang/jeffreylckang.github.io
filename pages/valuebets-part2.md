@@ -14,9 +14,7 @@ Check out the [Methodology](/pages/valuebets-method)
 
 # Exploring the Data
 
-In this section, we are going to first understand our data.
-
-Shape of the entire dataset: (157859, 43). 
+In this section, let's explore the data. The total number of rows in this data set is 149,627. 
 
 <br>
 
@@ -130,184 +128,11 @@ It appears that the distribution of home and away odds is bi-model, which makes 
 
 --- 
 
-Since we have many bookmakers, let's take a look at how spread out each bookmaker's home and away odds are, or their **average odds deviation**.
-
-<br>
-<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
-  <caption style="font-weight: bold; margin-bottom: 10px;">Average Odds Deviation Summary</caption>
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 8px;"></th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Odds</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Odds</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Mean</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-4.93</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-0.84</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.10</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Min</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-7586.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-6667.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">-506.00</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Max</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">8333.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">3334.00</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">446.00</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;"><strong>Std Dev</strong></td>
-      <td style="border: 1px solid #ddd; padding: 8px;">164.48</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">64.24</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">24.70</td>
-    </tr>
-  </tbody>
-</table>
-
-<br>
-On average, bookmakers tend to favor the home team more than the average odds set by the platform Oddsportal as the mean average deviation for bookmakers' home odds are 5 lower than the average home odds.
-Let's break this down by sport as shown below.
-
-<br>
-<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
-  <caption style="font-weight: bold; margin-bottom: 10px;">Average Odds Deviation By Sport Summary</caption>
-    <thead>
-      <tr style="background-color: #f2f2f2;">
-        <th style="border: 1px solid #ddd; padding: 8px;"></th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Mean</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Min</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Max</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Home Odds Std Dev</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Mean</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Min</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Max</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Away Odds Std Dev</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Mean</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Min</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Max</th>
-        <th style="border: 1px solid #ddd; padding: 8px;">Draw Odds Std Dev</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;"><strong>american-football</strong></td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-2.08</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-3333.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">3000.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">64.90</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-0.47</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-938.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">443.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">37.18</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;"><strong>basketball</strong></td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-7.58</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-7586.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">8333.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">206.09</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-1.23</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-6667.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">3334.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">69.93</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-</td>
-      </tr>
-      <tr>
-        <td style="border: 1px solid #ddd; padding: 8px;"><strong>football</strong></td>
-        <td style="border: 1px solid #ddd; padding: 8px;">0.23</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-2083.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">917.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">45.04</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-0.06</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-1120.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">1114.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">64.63</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">0.10</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">-506.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">446.00</td>
-        <td style="border: 1px solid #ddd; padding: 8px;">24.70</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<br>
-If we examine this by sport, it appears that the greatest deviations follow this order: basketball > American-football > soccer. 
-We can also visualize the deviation by bookmakers (first) and by bookmaker and sport (second) below.
-
-<br>
-<div style="text-align: center;">
-  <figure>
-    <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/overall_deviation_bookmaker.png" alt="Average Odds Deviation by Bookmaker" width="600"/>
-  </figure>
-</div>
-
-<br>
-
-<div style="text-align: center;">
-  <figure>
-    <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_deviation_bookmakers.png" alt="Average Odds Deviation by Sport" width="950"/>
-  </figure>
-</div>
-
-<br>
-When comparing the three sports, some bookmakers consistently seem to be inflating both home and away team odds simultaneously. There doesn't appear to be any bookmakers inflating home odds while deflating away odds, or vice versa. Interestingly, for football/soccer, most bookmakers tend to deflate both home and away team odds by making them more positive (lower perceived likelihood for these events). 
-
----
-
-On the topic of bookmakers, let's also look at **bookmaker margins**. This is the charge a bookmaker usually takes for setting the bet. The average margin for all bookmakers and games is 4% (SD = 0.6%). We can also compare the margin across sports shown below.
+It's important to remember that in every sportsbook context, bookmakers set **bookmaker margins**. This is the charge a bookmaker usually takes for setting the bet. The average margin for all bookmakers and games in my collected data is about 4% (SD = 0.6%). We can also compare the margin across sports shown below.
 
 <br>
 
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/avg_margin_by_bookmaker_sport.png" alt="Avg Margin by Bookmaker and Sport" width="600" /> </div>
-
----
-
-Next, let's look at the **adjusted historical win rate variable** (i.e. win rate that is adjusted based on whether the team was favored or considered an underdog). For the entire dataset, the average home team adjusted historical win rate is 41% while the away team adjusted historical win rate is 38%. This may not be particularly meaningful to know because those two win rates are averaged across all the teams. Instead, what I'll show you is the adjusted historical win rate for my favorite sports teams.
-
-<br>
-<table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
-  <caption style="font-weight: bold; margin-bottom: 10px;">Adjusted Historical Home and Away Win Rate</caption>
-  <thead>
-    <tr style="background-color: #f2f2f2;">
-      <th style="border: 1px solid #ddd; padding: 8px;">Team</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Home Win Rate</th>
-      <th style="border: 1px solid #ddd; padding: 8px;">Away Win Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;">Los Angeles Lakers</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.4139</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.3785</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;">San Francisco 49ers</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.4185</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.3801</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #ddd; padding: 8px;">Tottenham</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.4771</td>
-      <td style="border: 1px solid #ddd; padding: 8px;">0.4376</td>
-    </tr>
-  </tbody>
-</table>
-<br>
 
 ---
 
@@ -360,14 +185,7 @@ Are upsets more likely to occur for home or away teams? Surprisingly, what I fou
 
 ---
 
-We can also explore home and away score differentials. I calculated a **standardized home and away rolling score differential** for the last 5 games every team played at home or away. The overall average home rolling score differential is 0.009 while the average away rolling score differential is 0.017. The distributions of both appear quite similar.
-
-<br>
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_dist_roll_scorediff.png" alt="Distribution Rolling Home and Away Score Differential" width="900" /> </div>
-
----
-
-Almost done exploring our features. We still need to examine **home and away team ELO ratings**. The overall average home ELO rating is 702.90 while the average away ELO rating is 702.33. I'll plot the distributions of the average home and away ELO ratings by sport across all the seasons.
+Let's also take a look at **home and away team ELO ratings**. The overall average home ELO rating is 702.90 while the average away ELO rating is 702.33. I'll plot the distributions of the average home and away ELO ratings by sport across all the seasons.
 
 <br>
 <div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_elo_rating.png" alt="Distribution of Home and Away ELO Ratings" width="900" /> </div>
@@ -405,20 +223,10 @@ What might be interesting to know is the average home and away ELO ratings for t
 </table>
 <br>
 
----
-
-Lastly, we can examine **similar home and away team ELO ratings**. The overall average similar home team ELO rating is 1239.34 while the overall average similar away team ELO rating is 1214.07. Again, I'll plot the distributions of the average similar home and away team ELO ratings by sport across all the seasons. 
-
+With that, we can move onto the analysis [Part 2](/pages/valuebets-part3).
 <br>
-<div style="text-align: center;"> <img src="https://jeffreylckang.github.io/assets/img/projects/valuebets/grid_sim_elo_rating.png" alt="Distribution of SIMILAR Home and Away ELO Ratings" width="900" /> </div>
-
-I'll also examine the average difference between the team ELO rating and the similar team ELO rating, just to get a sense of how the ELO rating differs from the "cross sport" ELO rating. The average difference between the home team ELO rating and the similar home team ELO rating is -536.44 whereas the average difference between Away team ELO rating and Similar Away team ELO rating is -511.74. 
-
----
 
 If you need to read [Part 1](/projects/valuebets).
-<br>
-Skip to [Part 2](/pages/valuebets-part3).
 <br>
 Check out the [Methodology](/pages/valuebets-method)
 
