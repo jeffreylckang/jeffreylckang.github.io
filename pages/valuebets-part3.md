@@ -62,7 +62,7 @@ Here's the procedure I used to develop the RF model.
 How many value bets can the RF model identify? For the test data set, among all home bets, 58% were classified as value bets compared to 41% of all away bets were identified as value bets. Of the 58% home value bets, 52% were “correct” in the sense that the home team actually won, while 37% of away value bets were correct.
 
 ### Profitability: expected value
-How about profitability? First, I'll calculate the **EV** of home and away value bets using the RF model estimated probabilities. We can interpret this as how profitable each singular bet is. One point I would like to mention is that I am not using the implied probabilities from the bookmakers' odds because I would find an EV of 0 for all home and away bets. Bookmakers set the EV intentionally to zero when they assign their odds.
+How about profitability? First, I'll calculate the *EV* of home and away value bets using the RF model estimated probabilities. We can interpret this as how profitable each singular bet is. One point I would like to mention is that I am not using the implied probabilities from the bookmakers' odds because I would find an EV of 0 for all home and away bets. Bookmakers set the EV intentionally to zero when they assign their odds.
 
 - For home value bets, the average EV for a $10 wager was $6.85. Not so great because this is less than our initial wager amount. For away value bets, the average EV for a $10 wager was $10.44, which is pretty good -- we're at least getting a few cents more than our initial wager amount. 
 
