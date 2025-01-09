@@ -71,8 +71,8 @@ First I'll filter out all the games in which the outcome ended in a draw. I did 
 
 - **Away Odds and Elo Mismatch**:
     - This variable assigns a 1 if there is a difference in whether the away team was favored by the odds or the Elo ratings and 0 if there is no mismatch. For instance, if the away team is favored by the odds (the home odds > away odds) but the away team is not favored by the Elo ratings (the home elo rating < the away elo rating), then this variable is assigned a 1 because there is a mismatch.
+      
 <br>
----
 
 [Return to Part 1](/projects/valuebets)
 <br>
