@@ -58,10 +58,10 @@ Here's the procedure I used to develop the RF model.
  
 4.	**Testing**: Finally, I tested the best-performing model on the test dataset.
 
-### Random Forest value bets
+### Proportion of value bets
 How many value bets can the RF model identify? For the test data set, among all home bets, 58% were classified as value bets compared to 41% of all away bets were identified as value bets. Of the 58% home value bets, 52% were “correct” in the sense that the home team actually won, while 37% of away value bets were correct.
 
-### Random Forest expected value
+### Profitability: expected value
 How about profitability? First, I'll calculate the **EV** of home and away value bets using the RF model estimated probabilities. We can interpret this as how profitable each singular bet is. One point I would like to mention is that I am not using the implied probabilities from the bookmakers' odds because I would find an EV of 0 for all home and away bets. Bookmakers set the EV intentionally to zero when they assign their odds.
 
 - For home value bets, the average EV for a $10 wager was $6.85. Not so great because this is less than our initial wager amount. For away value bets, the average EV for a $10 wager was $10.44, which is pretty good -- we're at least getting a few cents more than our initial wager amount. 
@@ -70,20 +70,18 @@ How about profitability? First, I'll calculate the **EV** of home and away value
 
 We can draw two conclusions from this. First, it seems that betting on away value bets is a better strategy than betting on home value bets. Second, using the RF model to identify what bets to make is better than blindly betting on all home or all away moneyline bets. 
 
-### Random Forest return on investment
+### Profitability: return on investment
 While EV measures the profitability of each individual bet, we can use *ROI* to evaluate long-term profitability. To calculate ROI, I'll divide the difference between the total payout and the total amount wagered by the total amount wagered. This measures the ROI as a percentage of the total amount wagered.
 
 - For home value bets, the ROI for a $10 wager was -48% while for away value bets, the ROI was also -14%. Yikes! Even though you may earn a few extra cents betting on away value bets in terms of the EV for a single bet, the overall strategy of betting on away value bets is not profitable over the course of many bets.
 
 - For all home and away bets, the ROI for a $10 wager was -98%. Double yikes!!
 
-### Random Forest accuracy
+### Accuracy
 In addition to profitability metrics, we can evaluate this model’s *accuracy*. I'll simply compare the number of times the RF model predicted a home team win and compare it to the number of times the home team actually won in the data. The RF model's accuracy was 89%, which is pretty accurate. We can also calculate the RF model's F1 score, which is a metric that is similar to accuracy but tells us how well a model balances precision and recall. Precision is the percentage of correctly predicted wins out of all predicted wins and recall is the percentage of correctly predicted wins out of all actual wins. I often get this confused so a helpful way to think about this to think about a fire alarm system. Precision is how many times did the fire alarm correctly go off when there was an actual fire? Recall is how many actual fires did the alarm detect? The RF model had a F1 score of 0.91 for predicting home team wins versus a 0.87 score for predicting away team wins (Note that F1 scores are not percentages but range between 0 and 1). So overall, the RF model does a decent job at predicting the binary win outcome.
 
 
 ### Here's a table that summarizes all this information.
-
-<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using RF</caption>
   <thead>
@@ -147,18 +145,16 @@ The NCF model uses game features between teams (i.e. item features between users
 <br>
 For hyperparameter tuning, I adjusted the dropout rate, learning rate, weight decay, and the number of embedding dimensions. I used a 5-fold cross validation method to evaluate performance, trained the model in batches of size 64, and ran 20 epochs. Once the model was optimized, I evaluated its performance on the validation set and then applied it to the test data. Finally, I implemented an ensemble approach, training 10 models and averaging their binary home team win predictions to obtain probabilities.
 
-### Neural Collaborative Filtering value bets
+### Proportion of value bets
 So how did this NCF model fare? First, the NCF model identified 50% of all home bets as home value bets compared to 40% of all away bets as away value bets. Out of the 50% home value bets, 44% were correct home value bets. Out of the 40% away value bets, 33% were correct away value bets. 
 
-### Neural Collaborative Filtering profitability
+### Profitability
 In terms of *EV*, for home value bets, the average EV for a $10 wager was $5.32 whereas for away value bets the average EV was $7.29. Not so great compared to the RF model. However, in terms of *ROI*, for home value bets the ROI was -38% while the ROI for away value bets was 0.26%! This is great news in the sense that the ROI for away value bets was finally positive!
 
-### Neural Collaborative Filtering accuracy
+### Accuracy
 In terms of *accuracy*, the NCF model performed similarly to the RF model with an accuracy of 86%. The NCF model also had an F1 score of 0.88 for the home value bets and 0.83 for away value bets.
 
 ### The table below summarizes this information.
-
-<br>
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
   <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using NCF</caption>
   <thead>
