@@ -20,7 +20,7 @@ permalink: /projects/valuebets
  
 A quick Google search reveals 2 common sports betting strategies: **arbitrage betting** or **value betting**. Arbitrage betting involves placing multiple bets on the same event, often using different bookmakers, to guarantee a positive return. This works because bookmakers typically set different odds for the same bets. Value betting on the other hand is a strategy where bettors identify bets they believe have a higher probability of occuring than what the bookmaker believes when setting the odds. 
 
-<br>
+### Value betting
 
 Between the two, value betting seems more intuitive to me for two reasons. One, I'm too lazy to open different betting apps to place arbitrage bets. Two, I often evaluate betting events such as whether Lebron James will score more than 15+ points by judging whether the odds of this event reflect how likely I think that event will occur.
 
@@ -30,7 +30,11 @@ But the process of judging the "true" odds of an event occuring feels very subje
 
 <br>
 
-For starters, a simple and hypothetical method might be to survey a thousand sports fans and ask their opinion about the probability of an event occuring. This idea leverages the [wisdom-of-the-crowd effect](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) and seems like a pretty solid approach. However, it's not very feasible to collect a thousand responses for each betting event as that would take too much time and money. Here is where machine learning (ML) comes into play. I could train a model on sports betting events, using data such as bookmaker odds and actual outcomes, to predict probabilities of teams winning or losing. I could then use these model-predicted probabilities to identify value bets by comparing them to the bookmaker’s implied probabilities (derived from the odds). Then I can evaluate whether betting on these value bets leads to profit based on expected value (EV) and return on investment (ROI).
+For starters, a simple and hypothetical method might be to survey a thousand sports fans and ask their opinion about the probability of an event occuring. This idea leverages the [wisdom-of-the-crowd effect](https://en.wikipedia.org/wiki/Wisdom_of_the_crowd) and seems like a pretty solid approach. However, it's not very feasible to collect a thousand responses for each betting event as that would take too much time and money. 
+
+### Procedure
+
+Here is where machine learning (ML) comes into play. I could train a model on sports betting events, using data such as bookmaker odds and actual outcomes, to predict probabilities of teams winning or losing. I could then use these model-predicted probabilities to identify value bets by comparing them to the bookmaker’s implied probabilities (derived from the odds). Then I can evaluate whether betting on these value bets leads to profit based on expected value (EV) and return on investment (ROI).
 
 # Data
 
