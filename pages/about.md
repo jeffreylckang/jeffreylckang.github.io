@@ -25,10 +25,13 @@ permalink: /
         Now, I'm eager for my next challenge--building models that can create tangible and meaningful impact.
       </p><br>
       <p>
-        When I'm not deep in datasets or pondering human behavior, I'm appreciating the small but beautiful moments in life: 
-        the delight of discovering new songs (check out what I'm listening to below), the harmony of a perfect food and wine pairing, and the shared indignation my friends 
-        and I feel over a missed foul call against the Lakers.
+      When I'm not obsessing over data or human behavior, I'm appreciating some of the small and beautiful moments in life:
       </p>
+      <ul>
+        <li>The delight of discovering new songs (check out what I'm listening to below).</li>
+        <li>The pleasure of that first bite after hunger has taken over.</li>
+        <li>The harmony of protests my friends and I make over a missed foul call against the Lakers.</li>
+      </ul>
     </div>
   </div>
 </section>
