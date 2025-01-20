@@ -9,18 +9,19 @@
                     background-size: cover; 
                     background-position: center; 
                     display: flex; 
-                    align-items: flex-end; 
+                    align-items: center; 
                     justify-content: center; 
                     border: 1px solid #ddd; 
                     box-sizing: border-box; 
                     flex: 0 1 500px; 
                     margin: 0; 
-                    color: #fff; 
                     text-align: center; 
-                    background-color: rgba(0, 0, 0, 0.6); 
-                    font-size: 1.2rem; 
-                    padding: 1rem;">
-          <strong>{{ project.name }} <i class="fa fa-arrow-right" aria-hidden="true"></i></strong>
+                    font-size: 1.5rem; 
+                    font-weight: bold; 
+                    padding: 1rem; 
+                    color: white; 
+                    mix-blend-mode: difference;">
+          {{ project.name }} <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
       </a>
     {% endfor %}
