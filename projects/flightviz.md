@@ -12,7 +12,9 @@ I've always been curious about finding the optimal time to purchase flight ticke
 
 Read about the data collection using [Amadeus' Flight Offers API](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search) [here](/pages/flightvizdata).
 
-# 
+<iframe src = "https://public.tableau.com/views/FlightViz_17406859972340/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" width = "100%" height = "600px"></iframe>
+
+
 ### Research Question: How do flight prices fluctuate over time?
 1. Are there specific number dates (out of 30) when flight tickets are cheaper or more expensive? compare to all data average. Maybe use a calendar as the viz 
 2. Are there specific days of the week when flight tickets are cheaper or more expensive? compare to all data average. Can use week calendar as the viz.
