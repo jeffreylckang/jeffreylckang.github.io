@@ -13,7 +13,7 @@ menu:
 projects:
 - {name: 'Using ML to Identify Value Bets',   url: 'valuebets'}
 - {name: 'Understanding Grocery Shopping Payments',   url: 'grocery'}
-- {name: 'Visualizing Flight Prices',   url: 'flights'}
+- {name: 'Visualizing Flight Prices',   url: 'flightviz'}
 
 #-------------------------------
 
