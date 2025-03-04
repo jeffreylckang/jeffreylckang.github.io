@@ -24,7 +24,7 @@ Some key takeaways:
 
 <br>
 
-<img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="600">
+<img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="900">
 
 This visualization shows:
 1. Weekly averages of the flight ticket prices by month for all the data
@@ -33,8 +33,9 @@ This visualization shows:
 
 <br>
 
-<img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="600">
-
+<p align="center">
+    <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="800">
+</p>
 
 
 <br>
