@@ -21,20 +21,24 @@ Some key takeaways:
 3. Cheapest days to fly are early on in the month (1st, 2nd, 3rd) whereas the middle of the month (13th, 14th, 15th) and the end of the month (30th, 31st) are more expensive.
 4. *Delta Airlines* offers the cheapest tickets of the 4 airlines (Delta, American, British Airways, and Virgin Atlantic). 
 5. Try to avoid buying tickets 10, 40, and 90 days in advance as ticket prices have the highest price volatility on those days in advance. Buying tickets *12-20 or 50-70* days in advance seems the cheapest time to buy (closest to average ticket prices). 
-
-<br>
-
-<img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="900">
+<p align="center">
+    <img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="800">
+</p>
 
 This visualization shows:
 1. Weekly averages of the flight ticket prices by month for all the data
 2. Weekday averages of the flight ticket prices for all the data
 3. Weekday average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each weekday relative to a "grand average".
-
-<br>
-
 <p align="center">
     <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="800">
+</p>
+
+<p align="center">
+    <img src="../assets/img/projects/flightviz/AirlineAverages.png" alt="AirlineAverages" width="800">
+</p>
+
+<p align="center">
+    <img src="../assets/img/projects/flightviz/AirlineAverages.png" alt="AirlineAverages" width="800">
 </p>
 
 
