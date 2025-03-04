@@ -36,7 +36,7 @@ This visualization shows:
 ---
 
 <p align="center">
-    <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="300">
+    <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="400">
 </p>
 <br>
 This visualization shows:
