@@ -21,6 +21,7 @@ Some key takeaways:
 3. Cheapest days to fly are early on in the month (1st, 2nd, 3rd) whereas the middle of the month (13th, 14th, 15th) and the end of the month (30th, 31st) are more expensive.
 4. *Delta Airlines* offers the cheapest tickets of the 4 airlines (Delta, American, British Airways, and Virgin Atlantic). 
 5. Try to avoid buying tickets 10, 40, and 90 days in advance as ticket prices have the highest price volatility on those days in advance. Buying tickets *12-20 or 50-70* days in advance seems the cheapest time to buy (closest to average ticket prices). 
+---
 <p align="center">
     <img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="700">
 </p>
@@ -29,6 +30,7 @@ This visualization shows:
 1. Weekly averages of the flight ticket prices by month for all the data
 2. Weekday averages of the flight ticket prices for all the data
 3. Weekday average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each weekday relative to a "grand average".
+---
 <p align="center">
     <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="300">
 </p>
@@ -36,7 +38,7 @@ This visualization shows:
 This visualization shows:
 1. Daily averages of the flight ticket prices for all the data
 2. Daily average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each day relative to a "grand average".
-
+---
 <p align="center">
     <img src="../assets/img/projects/flightviz/AirlinesAverages.png" alt="AirlinesAverages" width="500">
 </p>
@@ -45,7 +47,7 @@ These graphs show:
 1. A box-and-whisker plot of the spread/distribution of ticket prices by airline with the black dot representing the mean ticket price.
 2. The average flight price deviation by airline. In other words, how much more or less expensive is each airline compared to a "grand average".
 Note that AA = American, BA = British Airways, DL = Delta, and VS = Virgin Atlantic
-
+---
 <p align="center">
     <img src="../assets/img/projects/flightviz/FlightPricesbyDays.png" alt="DayinAdvance" width="600">
 </p>
@@ -54,7 +56,7 @@ These line graphs show:
 1. Average ticket price for all flights by the number of days in advance.
 2. The standard deviation of the average ticket price for all flights by the number of days in advance. This helps visualize the price volatility of each day in advance.
 Note that the current day can be adjusted in the Tableau workbook.
-
+---
 <p align="center">
     <img src="../assets/img/projects/flightviz/FlightPricesVisualization.png" alt="FlightPriceCounts" width="600">
 </p>
