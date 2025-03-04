@@ -20,13 +20,11 @@ Some key takeaways:
 2. June is the most expensive month (unsurprisingly because of summer travel?).
 3. Cheapest days to fly are early on in the month (1st, 2nd, 3rd) whereas the middle of the month (13th, 14th, 15th) and the end of the month (30th, 31st) are more expensive.
 4. *Delta Airlines* offers the cheapest tickets of the 4 airlines (Delta, American, British Airways, and Virgin Atlantic). 
-5. Try to avoid buying tickets 10, 40, and 90 days in advance as ticket prices have the highest price volatility on those days in advance. Buying tickets *12-20 or 50-70 days in advance* seems the cheapest time to buy (closest to average ticket prices). 
+5. Try to avoid buying tickets 10, 40, and 90 days in advance as ticket prices have the highest price volatility on those days in advance. Buying tickets *12-20 or 50-70* days in advance seems the cheapest time to buy (closest to average ticket prices). 
 
 <br>
 
-<div style="width: 600px;">
-  ![HeatMapWeeklyAverages](../assets/img/projects/flightviz/HeatMapWeeklyAverages.png)
-</div>
+<img src="../assets/img/projects/flightviz/HeatMapWeeklyAverages.png" alt="HeatmapWeek" width="600">
 
 This visualization shows:
 1. Weekly averages of the flight ticket prices by month for all the data
@@ -35,9 +33,7 @@ This visualization shows:
 
 <br>
 
-<div style="width: 600px;">
-  ![HeatMapDayAverages](../assets/img/projects/flightviz/HeatMapDayAverages.png)
-</div>
+<img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="600">
 
 
 
