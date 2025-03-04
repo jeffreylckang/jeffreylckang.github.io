@@ -21,7 +21,7 @@ Below are some visualizations of flight ticket prices of a **round trip Premium 
 If you want to read about how I collected the data using [Amadeus' Flight Offers API](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search), [click here](/pages/flightvizdata).
 <br>
 
-![HeatMapWeeklyAverages](assets/img/projects/flightviz/Heat Map Weekly Averages - Flight Visualizer.png)
+![HeatMapWeeklyAverages](assets/img/projects/flightviz/HeatMapWeeklyAverages.png)
 
 
 
