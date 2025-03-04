@@ -8,25 +8,42 @@ permalink: /projects/flightviz
 
 ### How do flight ticket prices fluctuate over time?
 
-I've always been curious about finding the optimal time to purchase flight tickets, so I decided to collect some data on it. 
+I've always been curious about finding the optimal time to purchase flight tickets, so I decided to collect some data on it using [Amadeus' Flight Offers API](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search). Below are some visualizations of flight ticket prices of a **round trip Premium Economy** flight ticket from **New York (JFK) to London (LHR)**. Due to API restrictions, I decided to collect flight ticket prices for one flight only. I collected flight price data every 2 days for departures up to 120 days in advance. So far, I h ave collected data up until June, and will be updating this page monthly with new data for the upcoming months. 
+
+<br>
+
+If you want to interact with the visualizations, you can access them [here](https://public.tableau.com/app/profile/jeffrey.kang2292/viz/FlightVisualizer/HeatMapWeeklyAverages#1).
 
 <br>
 Some key takeaways:
-1. uaoeu
-2. uaoeu
-3. uaoeuao
+1. *Monday* and *Tuesday* are the weekdays with the cheapest ticket prices whereas Thursday and Friday are the most expensive.
+2. June is the most expensive month (unsurprisingly because of summer travel?).
+3. Cheapest days to fly are early on in the month (1st, 2nd, 3rd) whereas the middle of the month (13th, 14th, 15th) and the end of the month (30th, 31st) are more expensive.
+4. *Delta Airlines* offers the cheapest tickets of the 4 airlines (Delta, American, British Airways, and Virgin Atlantic). 
+5. Try to avoid buying tickets 10, 40, and 90 days in advance as ticket prices have the highest price volatility on those days in advance. Buying tickets *12-20 or 50-70 days in advance* seems the cheapest time to buy (closest to average ticket prices). 
 
 <br>
 
-Below are some visualizations of flight ticket prices of a **round trip Premium Economy** flight ticket from **New York (JFK) to London (LHR)**. If you want to interact with the visualizations, you can access them [here](https://public.tableau.com/app/profile/jeffrey.kang2292/viz/FlightVisualizer/HeatMapWeeklyAverages#1).
+<div style="width: 600px;">
+  ![HeatMapWeeklyAverages](../assets/img/projects/flightviz/HeatMapWeeklyAverages.png)
+</div>
+
+This visualization shows:
+1. Weekly averages of the flight ticket prices by month for all the data
+2. Weekday averages of the flight ticket prices for all the data
+3. Weekday average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each weekday relative to a "grand average".
 
 <br>
 
-If you want to read about how I collected the data using [Amadeus' Flight Offers API](https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search), [click here](/pages/flightvizdata).
+<div style="width: 600px;">
+  ![HeatMapDayAverages](../assets/img/projects/flightviz/HeatMapDayAverages.png)
+</div>
+
+
 
 <br>
 
-![HeatMapWeeklyAverages](../assets/img/projects/flightviz/HeatMapWeeklyAverages.png)
+
 
 
 
