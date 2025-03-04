@@ -30,7 +30,7 @@ This visualization shows:
 2. Weekday averages of the flight ticket prices for all the data
 3. Weekday average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each weekday relative to a "grand average".
 <p align="center">
-    <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="500">
+    <img src="../assets/img/projects/flightviz/HeatMapDayAverages.png" alt="HeatmapDay" width="300">
 </p>
 <br>
 This visualization shows:
@@ -38,7 +38,7 @@ This visualization shows:
 2. Daily average deviation of the flight ticket prices for all the data. In other words, how much more or less expensive are flight ticket prices for each day relative to a "grand average".
 
 <p align="center">
-    <img src="../assets/img/projects/flightviz/AirlinesAverages.png" alt="AirlinesAverages" width="800">
+    <img src="../assets/img/projects/flightviz/AirlinesAverages.png" alt="AirlinesAverages" width="500">
 </p>
 <br>
 These graphs show:
@@ -47,7 +47,7 @@ These graphs show:
 Note that AA = American, BA = British Airways, DL = Delta, and VS = Virgin Atlantic
 
 <p align="center">
-    <img src="../assets/img/projects/flightviz/FlightPricesbyDays.png" alt="DayinAdvance" width="800">
+    <img src="../assets/img/projects/flightviz/FlightPricesbyDays.png" alt="DayinAdvance" width="600">
 </p>
 <br>
 These line graphs show:
@@ -56,7 +56,7 @@ These line graphs show:
 Note that the current day can be adjusted in the Tableau workbook.
 
 <p align="center">
-    <img src="../assets/img/projects/flightviz/FlightPricesVisualization.png" alt="FlightPriceCounts" width="800">
+    <img src="../assets/img/projects/flightviz/FlightPricesVisualization.png" alt="FlightPriceCounts" width="600">
 </p>
 <br>
 This visualization shows:
