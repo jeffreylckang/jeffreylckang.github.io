@@ -64,7 +64,7 @@ To identify value bets, I will compare the following models:
 
 1. **Random Forest Model**: A random forest model will be trained on data from all sports to see if it can better identify value bets that result in improved betting performance compared to the baseline.
 
-2. **Neural Collaborative Filtering (NCF) Model**: I will train an NCF model with four hidden layers (two shared sport layers and two sport-specific layers) and one output layer using data from all sports. I'm using a collaborative filtering model because I'm hoping to use the multi-sport dimensionality to leverage cross-sport patterns. My genius thought process is that there should be some underlying mechanisms that occur across different sports that can be used to help evaluate what makes a value bet for moneyline bets.
+2. **Hybrid Neural Collaborative Filtering (NCF) Model**: I will build a model inspired by recommendation systems--but instead of matching users with products, I'm matching sports teams (when they are home and away) with game details. Each team gets its own learned profile, and each game's features are used to capture important details about that matchup. The model uses two hidden layers: a shared layer that learns patterns common across all sports games and a sport-specific layer that captures unique aspects of each sport. By combining these layers, the model leverages both general and sport-specific patterns to predict the outcome of games to identify value bets.
 
 <br>
 To evaluate betting performance, I will compare each model using two key metrics:
