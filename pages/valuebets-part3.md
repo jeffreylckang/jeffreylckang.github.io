@@ -135,28 +135,28 @@ In addition to profitability metrics, we can evaluate this model’s *accuracy*.
   </tbody>
 </table>
 
-#### Model 2: Neural Collaborative Filtering 
+#### Model 2: Hybrid Neural Collaborative Filtering 
 
-The second machine learning model I tested was a Neural Collaborative Filtering (NCF) model inspired by recommendation systems models. Unlike a traditional neural network, this model was designed to incorporate the multi-dimensionality of the three sports in my data. My aim was for the model to learn relationships between teams across different sports, based on my hypothesis that there could be an underlying mechanism which explains a value bet in any sport.
+The second machine learning model I tested was a Hybrid Neural Collaborative Filtering (HNCF) model inspired by recommendation systems model. Traditionally, a NCF model learns user and item embeddings--think of it as comparing the ratings that multiple users give to various shows. In this sports context, I treated each team as a 'user'. However, instead of having discrete 'items' or 'shows', I have game-level features. You can think of these game-level features as content in content-based recommendation systems. Thus, rather using a user-item interaction, I combine the team embeddings with a representation of the game features. I'm assuming there is some shared similarity between teams across sports, so incorporating these multi-dimensional fetaures should help improve the model's prediction.
 
 <br>
-The NCF model uses game features between teams (i.e. item features between users in recommendation systems) and maps them onto a higher-dimensional embedding space. This allows the model to learn complex, non-linear interactions between teams. The architecture includes four hidden layers: the first two are shared layers for all sports, while the last two are sport-specific layers. The final output layer uses a softmax activation function and is trained with a binary cross-entropy loss function. 
+The HNCF model maps game features (similar to item details in recommendation systems) into a space where complex, non-linear interactions between teams can be learned. The architecture includes four hidden layers: the first two are shared layers for all sports, while last two are sport-specific layers. The final output layer uses a sigmoid activation function and is trained with a binary cross-entropy loss function. 
 
 <br>
 For hyperparameter tuning, I adjusted the dropout rate, learning rate, weight decay, and the number of embedding dimensions. I used a 5-fold cross validation method to evaluate performance, trained the model in batches of size 64, and ran 20 epochs. Once the model was optimized, I evaluated its performance on the validation set and then applied it to the test data. Finally, I implemented an ensemble approach, training 10 models and averaging their binary home team win predictions to obtain probabilities.
 
 ### Proportion of value bets
-So how did this NCF model fare? First, the NCF model identified 50% of all home bets as home value bets compared to 40% of all away bets as away value bets. Out of the 50% home value bets, 44% were correct home value bets. Out of the 40% away value bets, 33% were correct away value bets. 
+So how did this HNCF model fare? First, the HNCF model identified 50% of all home bets as home value bets compared to 40% of all away bets as away value bets. Out of the 50% home value bets, 44% were correct home value bets. Out of the 40% away value bets, 33% were correct away value bets. 
 
 ### Profitability
 In terms of *EV*, for home value bets, the average EV for a $10 wager was $5.32 whereas for away value bets the average EV was $7.29. Not so great compared to the RF model. However, in terms of *ROI*, for home value bets the ROI was -38% while the ROI for away value bets was 0.26%! This is great news in the sense that the ROI for away value bets was finally positive!
 
 ### Accuracy
-In terms of *accuracy*, the NCF model performed similarly to the RF model with an accuracy of 86%. The NCF model also had an F1 score of 0.88 for the home value bets and 0.83 for away value bets.
+In terms of *accuracy*, the HNCF model performed similarly to the RF model with an accuracy of 86%. The HNCF model also had an F1 score of 0.88 for the home value bets and 0.83 for away value bets.
 
 ### The table below summarizes this information.
 <table style="border-collapse: collapse; width: 70%; text-align: center; margin: 0 auto; font-size: 12px;">
-  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using NCF</caption>
+  <caption style="font-weight: bold; margin-bottom: 10px;">Test Data Set Evaluation Using HNCF</caption>
   <thead>
     <tr style="background-color: #f2f2f2;">
       <th style="border: 1px solid #ddd; padding: 8px;">Metric</th>
@@ -210,7 +210,7 @@ In terms of *accuracy*, the NCF model performed similarly to the RF model with a
 
 # Conclusion
 
-The goal of this project was to develop a ML model capable of evaluating moneyline sports bets to identify profitable bets. Depending on which profitability metric you prioritize, I found both the Random Forest and the Neural Collaborative Filtering model to be adequate. Though I may prefer the NCF model simply because it does better on ROI which means in the long-run you end up net positive (assuming you bet only on away moneyline bets). That gives me slightly more confidence in that model.
+The goal of this project was to develop a ML model capable of evaluating moneyline sports bets to identify profitable bets. Depending on which profitability metric you prioritize, I found both the Random Forest and the Neural Collaborative Filtering model to be adequate. Though I may prefer the HNCF model simply because it does better on ROI which means in the long-run you end up net positive (assuming you bet only on away moneyline bets). That gives me slightly more confidence in that model.
 
 ### Distribution of value bet payouts
 An interesting observation from the results is that away value bets are more profitable than home value bets. I never would've predicted this, so to understand why, I decided to dig into the findings. First, I looked at the distribution of payouts for both correct home and away value bets (I'm examining correct value bets because these are the bets that pay out). I classified correct value bets into three categories: low (<33%), medium (33%<X< 67%), and high (>67%) probability of winning. The table below illustrates this distribution.
