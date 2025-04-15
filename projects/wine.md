@@ -29,14 +29,34 @@ I collected wine vintage scores from [Wine Enthusiast](https://www.wineenthusias
 <br>
 
 The table below shows some descriptive statistics of the wine vintage scores.
+<br>
 
-| Statistic   | Value       |
-|-------------|-------------|
-| Mean        | 91.67      |
-| Standard Deviation | 3.27      |
-| Median      | 92.00      |
-| Minimum     | 81.00      |
-| Maximum     | 100.00      |
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black; text-align: center;">Statistic</th>
+    <th style="border: 1px solid black; text-align: center;">Value</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; text-align: center;">Mean</td>
+    <td style="border: 1px solid black; text-align: center;">91.67</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; text-align: center;">Standard Deviation</td>
+    <td style="border: 1px solid black; text-align: center;">3.27</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; text-align: center;">Median</td>
+    <td style="border: 1px solid black; text-align: center;">92.00</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; text-align: center;">Minimum</td>
+    <td style="border: 1px solid black; text-align: center;">81.00</td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black; text-align: center;">Maximum</td>
+    <td style="border: 1px solid black; text-align: center;">100.00</td>
+  </tr>
+</table>
 
 <br>
 
@@ -162,11 +182,13 @@ A useful plot that I always like to perform is a correlation heatmap of my predi
 </p>
 <br>
 
-The variables that had a significant correlation with VintageScore are denoted with the *, **, or ***, representing significance at the <0.05, <0.01, or <0.001 level respectively.
+The variables that had a significant correlation with VintageScore are denoted with the \*, \*\*, or \*\*\*, representing significance at the <0.05, <0.01, or <0.001 level respectively.
 
 <br>
 
 Interestingly, we see that AvgMonthWindSpd, or the average monthly wind speed, is positively related to VintageScore. This means that the higher the monthly wind speed, the higher the vintage score. While I know nothing about growing vines, this may seem quite counter-intuitive because the higher the wind speed, the more potential damage to the grape vines. However, some quick research suggests that more wind could act as a proxy for good air circulation, which benefits the grape vines by drying them (preventing damp conditions) and moderating temperatures.
+
+<br>
 
 We also see that DaysRainMonth, so the number of days where it rained in that month, is negatively associated with VintageScore. This means that the more that it rained in a month, the lower the VintageScore. This could make sense because too much rain could mean that 1) the grape vines have more susceptibility to diseases (moisture for fungal spores) and 2) less sunny days so less photosynthesis.
 
@@ -175,5 +197,8 @@ We also see that DaysRainMonth, so the number of days where it rained in that mo
 So next, we'll move onto building a time series model that can potentially predict vintage scores!
 
 [Go to Part 2 Forecasting](/pages/wine-part2)
+
+<br>
+
 [Go to Part 3 Important Features](/pages/wine-part3)
 
