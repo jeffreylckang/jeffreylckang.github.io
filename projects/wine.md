@@ -10,6 +10,8 @@ permalink: /projects/wine
 <br>
 [Go to Part 3 Important Features](/pages/wine-part3)
 
+<br>
+
 Drinking wine is one of my favorite hobbies, and I genuinely get excited each time I have a glass as I try to figure out how 'good' a wine tastes. It's fun to compare my own subjective ratings with more 'objective' vintage scores. Different organizations hand these out, and all of them in some sense score a wine based on the year it was made. 
 
 <br>
@@ -28,7 +30,8 @@ I collected wine vintage scores from [Wine Enthusiast](https://www.wineenthusias
 
 <br>
 
-The table below shows some descriptive statistics of the wine vintage scores.
+The table below shows some descriptive statistics of the wine **vintage scores**.
+
 <br>
 
 <table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
@@ -66,112 +69,531 @@ Correpsonding historical weather data for the same 16 regions was sourced from [
 
 The historical weather data contains observations at the daily level, but for the purposes of my analysis, I'll be aggregating the data to the monthly level. To handle missing observations, I imputed them hierarchically: first via forward fill (using the previous month's value), then backward fill (using the next month's values), and finally using the overall mean or zero (if it made logical sense) for any remaining missing entries. To get a sense of the weather data, let's take a look at the different variables that were tracked. Since there are more than 10+ variables, and not all of them were consistently recorded, I'll present a table below showing the features that I plan to include in my modeling and analysis part.
 
-| Variable             | Mean   | Median | Standard Deviation | Minimum | Maximum | Units |
-|----------------------|--------|--------|--------------------|---------|---------|-------|
-| AvgMonthTemp         | 58.07  | 56.41  | 15.47              | 28.81   | 152.80  | F     |
-| AvgMonthTempLow      | 47.45  | 46.05  | 12.06              | 18.53   | 140.73  | F     |
-| AvgMonthTempHigh     | 68.69  | 66.88  | 20.25              | 34.95   | 173.50  | F     |
-| AvgMonthDew          | 46.23  | 46.25  | 8.62               | 18.59   | 69.46   | F     |
-| AvgMonthDewLow       | 41.46  | 41.29  | 8.81               | 10.23   | 64.75   | F     |
-| AvgMonthDewHigh      | 51.00  | 51.16  | 8.62               | 19.40   | 79.79   | F     |
-| AvgMonthWindSpd      | 7.30   | 7.09   | 1.79               | 0.86    | 23.73   | mph   |
-| AvgMonthVis          | 7.32   | 6.31   | 3.30               | 1.98    | 25.13   | mi    |
-| AvgMonthMinVis       | 4.56   | 4.40   | 1.83               | 0.39    | 15.56   | mi    |
-| AvgMonthMaxVis       | 10.08  | 9.77   | 6.02               | 3.28    | 40.49   | mi    |
-| AvgMonthPressure     | 30.03  | 30.01  | 0.17               | 28.95   | 34.78   | Hg    |
-| AvgMonthMinPressure  | 29.95  | 29.94  | 0.14               | 27.30   | 30.42   | Hg    |
-| AvgMonthMaxPressure  | 30.11  | 30.08  | 0.29               | 29.72   | 39.75   | Hg    |
-| MaxMonthTempHigh     | 84.38  | 80.60  | 25.95              | 42.80   | 206.60  | F     |
-| MaxMonthDewHigh      | 60.71  | 60.08  | 11.57              | 19.40   | 210.20  | F     |
-| MaxMonthMaxWindSpd   | 26.21  | 24.17  | 13.04              | 3.45    | 391.26  | mph   |
-| MaxMonthMaxPressure  | 30.73  | 30.35  | 7.46               | 29.98   | 295.27  | Hg    |
-| MaxMonthSnowDepth    | 0.66   | 0.00   | 4.03               | 0.00    | 92.52   | in    |
-| MaxMonthPrecip       | 0.34   | 0.05   | 0.58               | 0.00    | 6.05    | in    |
-| MinMonthTempLow      | 36.33  | 35.60  | 11.16              | -5.80   | 68.00   | F     |
-| MinMonthDewLow       | 26.73  | 28.04  | 14.53              | -142.60 | 55.40   | F     |
-| MinMonthMinPressure  | 29.46  | 29.62  | 1.84               | 0.00    | 30.21   | Hg    |
-| SumMonthPrecip       | 0.88   | 0.00   | 2.08               | 0.00    | 17.99   | in    |
-| SumMonthSnowDepth    | 0.18   | 0.00   | 2.81               | 0.00    | 92.52   | in    |
-| DaysRainMonth        | 3.72   | 0.00   | 6.18               | 0.00    | 30.00   | days  |
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Mean</th>
+      <th>Median</th>
+      <th>Standard Deviation</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Units</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AvgMonthTemp</td>
+      <td>58.07</td>
+      <td>56.41</td>
+      <td>15.47</td>
+      <td>28.81</td>
+      <td>152.80</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthTempLow</td>
+      <td>47.45</td>
+      <td>46.05</td>
+      <td>12.06</td>
+      <td>18.53</td>
+      <td>140.73</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthTempHigh</td>
+      <td>68.69</td>
+      <td>66.88</td>
+      <td>20.25</td>
+      <td>34.95</td>
+      <td>173.50</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthDew</td>
+      <td>46.23</td>
+      <td>46.25</td>
+      <td>8.62</td>
+      <td>18.59</td>
+      <td>69.46</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthDewLow</td>
+      <td>41.46</td>
+      <td>41.29</td>
+      <td>8.81</td>
+      <td>10.23</td>
+      <td>64.75</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthDewHigh</td>
+      <td>51.00</td>
+      <td>51.16</td>
+      <td>8.62</td>
+      <td>19.40</td>
+      <td>79.79</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>AvgMonthWindSpd</td>
+      <td>7.30</td>
+      <td>7.09</td>
+      <td>1.79</td>
+      <td>0.86</td>
+      <td>23.73</td>
+      <td>mph</td>
+    </tr>
+    <tr>
+      <td>AvgMonthVis</td>
+      <td>7.32</td>
+      <td>6.31</td>
+      <td>3.30</td>
+      <td>1.98</td>
+      <td>25.13</td>
+      <td>mi</td>
+    </tr>
+    <tr>
+      <td>AvgMonthMinVis</td>
+      <td>4.56</td>
+      <td>4.40</td>
+      <td>1.83</td>
+      <td>0.39</td>
+      <td>15.56</td>
+      <td>mi</td>
+    </tr>
+    <tr>
+      <td>AvgMonthMaxVis</td>
+      <td>10.08</td>
+      <td>9.77</td>
+      <td>6.02</td>
+      <td>3.28</td>
+      <td>40.49</td>
+      <td>mi</td>
+    </tr>
+    <tr>
+      <td>AvgMonthPressure</td>
+      <td>30.03</td>
+      <td>30.01</td>
+      <td>0.17</td>
+      <td>28.95</td>
+      <td>34.78</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>AvgMonthMinPressure</td>
+      <td>29.95</td>
+      <td>29.94</td>
+      <td>0.14</td>
+      <td>27.30</td>
+      <td>30.42</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>AvgMonthMaxPressure</td>
+      <td>30.11</td>
+      <td>30.08</td>
+      <td>0.29</td>
+      <td>29.72</td>
+      <td>39.75</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>MaxMonthTempHigh</td>
+      <td>84.38</td>
+      <td>80.60</td>
+      <td>25.95</td>
+      <td>42.80</td>
+      <td>206.60</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>MaxMonthDewHigh</td>
+      <td>60.71</td>
+      <td>60.08</td>
+      <td>11.57</td>
+      <td>19.40</td>
+      <td>210.20</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>MaxMonthMaxWindSpd</td>
+      <td>26.21</td>
+      <td>24.17</td>
+      <td>13.04</td>
+      <td>3.45</td>
+      <td>391.26</td>
+      <td>mph</td>
+    </tr>
+    <tr>
+      <td>MaxMonthMaxPressure</td>
+      <td>30.73</td>
+      <td>30.35</td>
+      <td>7.46</td>
+      <td>29.98</td>
+      <td>295.27</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>MaxMonthSnowDepth</td>
+      <td>0.66</td>
+      <td>0.00</td>
+      <td>4.03</td>
+      <td>0.00</td>
+      <td>92.52</td>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>MaxMonthPrecip</td>
+      <td>0.34</td>
+      <td>0.05</td>
+      <td>0.58</td>
+      <td>0.00</td>
+      <td>6.05</td>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>MinMonthTempLow</td>
+      <td>36.33</td>
+      <td>35.60</td>
+      <td>11.16</td>
+      <td>-5.80</td>
+      <td>68.00</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>MinMonthDewLow</td>
+      <td>26.73</td>
+      <td>28.04</td>
+      <td>14.53</td>
+      <td>-142.60</td>
+      <td>55.40</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>MinMonthMinPressure</td>
+      <td>29.46</td>
+      <td>29.62</td>
+      <td>1.84</td>
+      <td>0.00</td>
+      <td>30.21</td>
+      <td>Hg</td>
+    </tr>
+    <tr>
+      <td>SumMonthPrecip</td>
+      <td>0.88</td>
+      <td>0.00</td>
+      <td>2.08</td>
+      <td>0.00</td>
+      <td>17.99</td>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>SumMonthSnowDepth</td>
+      <td>0.18</td>
+      <td>0.00</td>
+      <td>2.81</td>
+      <td>0.00</td>
+      <td>92.52</td>
+      <td>in</td>
+    </tr>
+    <tr>
+      <td>DaysRainMonth</td>
+      <td>3.72</td>
+      <td>0.00</td>
+      <td>6.18</td>
+      <td>0.00</td>
+      <td>30.00</td>
+      <td>days</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Basic Descriptives
 
 Let's also explore the data a bit more by looking at how VintageScores changes based on wine type.
 
-| WineType              | Mean VintageScore |
-|-----------------------|-------------------|
-| Amarone               | 90.62          |
-| Barolo                | 94.05          |
-| Bolgheri              | 91.42          |
-| Cabernet Sauvignon    | 91.86          |
-| Chablis               | 93.04          |
-| Chardonnay            | 91.18          |
-| Chenin Blanc          | 92.00          |
-| Chianti               | 91.62          |
-| Gamay                 | 91.38          |
-| Gewurztraminer        | 91.27          |
-| Merlot                | 93.00          |
-| Pinot Noir            | 91.95          |
-| Semillon              | 92.54          |
-| Soave                 | 90.15          |
-| Syrah                 | 92.79          |
-| Zinfandel             | 90.04          |
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>WineType</th>
+      <th>Mean VintageScore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amarone</td>
+      <td>90.62</td>
+    </tr>
+    <tr>
+      <td>Barolo</td>
+      <td>94.05</td>
+    </tr>
+    <tr>
+      <td>Bolgheri</td>
+      <td>91.42</td>
+    </tr>
+    <tr>
+      <td>Cabernet Sauvignon</td>
+      <td>91.86</td>
+    </tr>
+    <tr>
+      <td>Chablis</td>
+      <td>93.04</td>
+    </tr>
+    <tr>
+      <td>Chardonnay</td>
+      <td>91.18</td>
+    </tr>
+    <tr>
+      <td>Chenin Blanc</td>
+      <td>92.00</td>
+    </tr>
+    <tr>
+      <td>Chianti</td>
+      <td>91.62</td>
+    </tr>
+    <tr>
+      <td>Gamay</td>
+      <td>91.38</td>
+    </tr>
+    <tr>
+      <td>Gewurztraminer</td>
+      <td>91.27</td>
+    </tr>
+    <tr>
+      <td>Merlot</td>
+      <td>93.00</td>
+    </tr>
+    <tr>
+      <td>Pinot Noir</td>
+      <td>91.95</td>
+    </tr>
+    <tr>
+      <td>Semillon</td>
+      <td>92.54</td>
+    </tr>
+    <tr>
+      <td>Soave</td>
+      <td>90.15</td>
+    </tr>
+    <tr>
+      <td>Syrah</td>
+      <td>92.79</td>
+    </tr>
+    <tr>
+      <td>Zinfandel</td>
+      <td>90.04</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
 It's also interesting to look at the highest VintageScores given to each wine.
 
-| WineType              | Max VintageScore |
-|-----------------------|------------------|
-| Amarone               | 94         |
-| Barolo                | 99         |
-| Bolgheri              | 97         |
-| Cabernet Sauvignon    | 100         |
-| Chablis               | 96         |
-| Chardonnay            | 96         |
-| Chenin Blanc          | 96         |
-| Chianti               | 96         |
-| Gamay                 | 96         |
-| Gewurztraminer        | 95         |
-| Merlot                | 98         |
-| Pinot Noir            | 98         |
-| Semillon              | 96         |
-| Soave                 | 94         |
-| Syrah                 | 99         |
-| Zinfandel             | 94         |
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>WineType</th>
+      <th>Max VintageScore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amarone</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Barolo</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>Bolgheri</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Cabernet Sauvignon</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Chablis</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Chardonnay</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Chenin Blanc</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Chianti</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Gamay</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Gewurztraminer</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>Merlot</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Pinot Noir</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>Semillon</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>Soave</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Syrah</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>Zinfandel</td>
+      <td>94</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
 Finally, how does VintageScore vary based on the year?
 
-| Year | Mean VintageScore |
-|------|-------------------|
-| 1998 | 88.91          |
-| 1999 | 89.41          |
-| 2000 | 88.23          |
-| 2001 | 91.86          |
-| 2002 | 88.62          |
-| 2003 | 88.90          |
-| 2004 | 91.04          |
-| 2005 | 92.17          |
-| 2006 | 90.13          |
-| 2007 | 91.61          |
-| 2008 | 90.74          |
-| 2009 | 92.94          |
-| 2010 | 93.09          |
-| 2011 | 91.09          |
-| 2012 | 92.23          |
-| 2013 | 91.64          |
-| 2014 | 91.91          |
-| 2015 | 93.95          |
-| 2016 | 93.91          |
-| 2017 | 92.04          |
-| 2018 | 92.78          |
-| 2019 | 93.91          |
-| 2020 | 92.09          |
-| 2021 | 93.26          |
-| 2022 | 92.87          |
-| 2023 | 93.35          |
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Mean VintageScore</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1998</td>
+      <td>88.91</td>
+    </tr>
+    <tr>
+      <td>1999</td>
+      <td>89.41</td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>88.23</td>
+    </tr>
+    <tr>
+      <td>2001</td>
+      <td>91.86</td>
+    </tr>
+    <tr>
+      <td>2002</td>
+      <td>88.62</td>
+    </tr>
+    <tr>
+      <td>2003</td>
+      <td>88.90</td>
+    </tr>
+    <tr>
+      <td>2004</td>
+      <td>91.04</td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>92.17</td>
+    </tr>
+    <tr>
+      <td>2006</td>
+      <td>90.13</td>
+    </tr>
+    <tr>
+      <td>2007</td>
+      <td>91.61</td>
+    </tr>
+    <tr>
+      <td>2008</td>
+      <td>90.74</td>
+    </tr>
+    <tr>
+      <td>2009</td>
+      <td>92.94</td>
+    </tr>
+    <tr>
+      <td>2010</td>
+      <td>93.09</td>
+    </tr>
+    <tr>
+      <td>2011</td>
+      <td>91.09</td>
+    </tr>
+    <tr>
+      <td>2012</td>
+      <td>92.23</td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>91.64</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>91.91</td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>93.95</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>93.91</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>92.04</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>92.78</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>93.91</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>92.09</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>93.26</td>
+    </tr>
+    <tr>
+      <td>2022</td>
+      <td>92.87</td>
+    </tr>
+    <tr>
+      <td>2023</td>
+      <td>93.35</td>
+    </tr>
+  </tbody>
+</table>
 
 <br>
 
@@ -195,10 +617,8 @@ We also see that DaysRainMonth, so the number of days where it rained in that mo
 <br>
 
 So next, we'll move onto building a time series model that can potentially predict vintage scores!
-
-[Go to Part 2 Forecasting](/pages/wine-part2)
-
 <br>
-
+[Go to Part 2 Forecasting](/pages/wine-part2)
+<br>
 [Go to Part 3 Important Features](/pages/wine-part3)
 
