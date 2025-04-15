@@ -71,243 +71,243 @@ The historical weather data contains observations at the daily level, but for th
 
 <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Variable</th>
-      <th>Mean</th>
-      <th>Median</th>
-      <th>Standard Deviation</th>
-      <th>Minimum</th>
-      <th>Maximum</th>
-      <th>Units</th>
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+  <thead style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <th style="border: 1px solid black; text-align: center;">Variable</th>
+      <th style="border: 1px solid black; text-align: center;">Mean</th>
+      <th style="border: 1px solid black; text-align: center;">Median</th>
+      <th style="border: 1px solid black; text-align: center;">Standard Deviation</th>
+      <th style="border: 1px solid black; text-align: center;">Minimum</th>
+      <th style="border: 1px solid black; text-align: center;">Maximum</th>
+      <th style="border: 1px solid black; text-align: center;">Units</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>AvgMonthTemp</td>
-      <td>58.07</td>
-      <td>56.41</td>
-      <td>15.47</td>
-      <td>28.81</td>
-      <td>152.80</td>
-      <td>F</td>
+  <tbody style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthTemp</td>
+      <td style="border: 1px solid black; text-align: center;">58.07</td>
+      <td style="border: 1px solid black; text-align: center;">56.41</td>
+      <td style="border: 1px solid black; text-align: center;">15.47</td>
+      <td style="border: 1px solid black; text-align: center;">28.81</td>
+      <td style="border: 1px solid black; text-align: center;">152.80</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthTempLow</td>
-      <td>47.45</td>
-      <td>46.05</td>
-      <td>12.06</td>
-      <td>18.53</td>
-      <td>140.73</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthTempLow</td>
+      <td style="border: 1px solid black; text-align: center;">47.45</td>
+      <td style="border: 1px solid black; text-align: center;">46.05</td>
+      <td style="border: 1px solid black; text-align: center;">12.06</td>
+      <td style="border: 1px solid black; text-align: center;">18.53</td>
+      <td style="border: 1px solid black; text-align: center;">140.73</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthTempHigh</td>
-      <td>68.69</td>
-      <td>66.88</td>
-      <td>20.25</td>
-      <td>34.95</td>
-      <td>173.50</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center;">68.69</td>
+      <td style="border: 1px solid black; text-align: center;">66.88</td>
+      <td style="border: 1px solid black; text-align: center;">20.25</td>
+      <td style="border: 1px solid black; text-align: center;">34.95</td>
+      <td style="border: 1px solid black; text-align: center;">173.50</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthDew</td>
-      <td>46.23</td>
-      <td>46.25</td>
-      <td>8.62</td>
-      <td>18.59</td>
-      <td>69.46</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthDew</td>
+      <td style="border: 1px solid black; text-align: center;">46.23</td>
+      <td style="border: 1px solid black; text-align: center;">46.25</td>
+      <td style="border: 1px solid black; text-align: center;">8.62</td>
+      <td style="border: 1px solid black; text-align: center;">18.59</td>
+      <td style="border: 1px solid black; text-align: center;">69.46</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthDewLow</td>
-      <td>41.46</td>
-      <td>41.29</td>
-      <td>8.81</td>
-      <td>10.23</td>
-      <td>64.75</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthDewLow</td>
+      <td style="border: 1px solid black; text-align: center;">41.46</td>
+      <td style="border: 1px solid black; text-align: center;">41.29</td>
+      <td style="border: 1px solid black; text-align: center;">8.81</td>
+      <td style="border: 1px solid black; text-align: center;">10.23</td>
+      <td style="border: 1px solid black; text-align: center;">64.75</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthDewHigh</td>
-      <td>51.00</td>
-      <td>51.16</td>
-      <td>8.62</td>
-      <td>19.40</td>
-      <td>79.79</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthDewHigh</td>
+      <td style="border: 1px solid black; text-align: center;">51.00</td>
+      <td style="border: 1px solid black; text-align: center;">51.16</td>
+      <td style="border: 1px solid black; text-align: center;">8.62</td>
+      <td style="border: 1px solid black; text-align: center;">19.40</td>
+      <td style="border: 1px solid black; text-align: center;">79.79</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>AvgMonthWindSpd</td>
-      <td>7.30</td>
-      <td>7.09</td>
-      <td>1.79</td>
-      <td>0.86</td>
-      <td>23.73</td>
-      <td>mph</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</td>
+      <td style="border: 1px solid black; text-align: center;">7.30</td>
+      <td style="border: 1px solid black; text-align: center;">7.09</td>
+      <td style="border: 1px solid black; text-align: center;">1.79</td>
+      <td style="border: 1px solid black; text-align: center;">0.86</td>
+      <td style="border: 1px solid black; text-align: center;">23.73</td>
+      <td style="border: 1px solid black; text-align: center;">mph</td>
     </tr>
-    <tr>
-      <td>AvgMonthVis</td>
-      <td>7.32</td>
-      <td>6.31</td>
-      <td>3.30</td>
-      <td>1.98</td>
-      <td>25.13</td>
-      <td>mi</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthVis</td>
+      <td style="border: 1px solid black; text-align: center;">7.32</td>
+      <td style="border: 1px solid black; text-align: center;">6.31</td>
+      <td style="border: 1px solid black; text-align: center;">3.30</td>
+      <td style="border: 1px solid black; text-align: center;">1.98</td>
+      <td style="border: 1px solid black; text-align: center;">25.13</td>
+      <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
-    <tr>
-      <td>AvgMonthMinVis</td>
-      <td>4.56</td>
-      <td>4.40</td>
-      <td>1.83</td>
-      <td>0.39</td>
-      <td>15.56</td>
-      <td>mi</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthMinVis</td>
+      <td style="border: 1px solid black; text-align: center;">4.56</td>
+      <td style="border: 1px solid black; text-align: center;">4.40</td>
+      <td style="border: 1px solid black; text-align: center;">1.83</td>
+      <td style="border: 1px solid black; text-align: center;">0.39</td>
+      <td style="border: 1px solid black; text-align: center;">15.56</td>
+      <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
-    <tr>
-      <td>AvgMonthMaxVis</td>
-      <td>10.08</td>
-      <td>9.77</td>
-      <td>6.02</td>
-      <td>3.28</td>
-      <td>40.49</td>
-      <td>mi</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxVis</td>
+      <td style="border: 1px solid black; text-align: center;">10.08</td>
+      <td style="border: 1px solid black; text-align: center;">9.77</td>
+      <td style="border: 1px solid black; text-align: center;">6.02</td>
+      <td style="border: 1px solid black; text-align: center;">3.28</td>
+      <td style="border: 1px solid black; text-align: center;">40.49</td>
+      <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
-    <tr>
-      <td>AvgMonthPressure</td>
-      <td>30.03</td>
-      <td>30.01</td>
-      <td>0.17</td>
-      <td>28.95</td>
-      <td>34.78</td>
-      <td>Hg</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthPressure</td>
+      <td style="border: 1px solid black; text-align: center;">30.03</td>
+      <td style="border: 1px solid black; text-align: center;">30.01</td>
+      <td style="border: 1px solid black; text-align: center;">0.17</td>
+      <td style="border: 1px solid black; text-align: center;">28.95</td>
+      <td style="border: 1px solid black; text-align: center;">34.78</td>
+      <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
-    <tr>
-      <td>AvgMonthMinPressure</td>
-      <td>29.95</td>
-      <td>29.94</td>
-      <td>0.14</td>
-      <td>27.30</td>
-      <td>30.42</td>
-      <td>Hg</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: center;">29.95</td>
+      <td style="border: 1px solid black; text-align: center;">29.94</td>
+      <td style="border: 1px solid black; text-align: center;">0.14</td>
+      <td style="border: 1px solid black; text-align: center;">27.30</td>
+      <td style="border: 1px solid black; text-align: center;">30.42</td>
+      <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
-    <tr>
-      <td>AvgMonthMaxPressure</td>
-      <td>30.11</td>
-      <td>30.08</td>
-      <td>0.29</td>
-      <td>29.72</td>
-      <td>39.75</td>
-      <td>Hg</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: center;">30.11</td>
+      <td style="border: 1px solid black; text-align: center;">30.08</td>
+      <td style="border: 1px solid black; text-align: center;">0.29</td>
+      <td style="border: 1px solid black; text-align: center;">29.72</td>
+      <td style="border: 1px solid black; text-align: center;">39.75</td>
+      <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
-    <tr>
-      <td>MaxMonthTempHigh</td>
-      <td>84.38</td>
-      <td>80.60</td>
-      <td>25.95</td>
-      <td>42.80</td>
-      <td>206.60</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center;">84.38</td>
+      <td style="border: 1px solid black; text-align: center;">80.60</td>
+      <td style="border: 1px solid black; text-align: center;">25.95</td>
+      <td style="border: 1px solid black; text-align: center;">42.80</td>
+      <td style="border: 1px solid black; text-align: center;">206.60</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>MaxMonthDewHigh</td>
-      <td>60.71</td>
-      <td>60.08</td>
-      <td>11.57</td>
-      <td>19.40</td>
-      <td>210.20</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</td>
+      <td style="border: 1px solid black; text-align: center;">60.71</td>
+      <td style="border: 1px solid black; text-align: center;">60.08</td>
+      <td style="border: 1px solid black; text-align: center;">11.57</td>
+      <td style="border: 1px solid black; text-align: center;">19.40</td>
+      <td style="border: 1px solid black; text-align: center;">210.20</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>MaxMonthMaxWindSpd</td>
-      <td>26.21</td>
-      <td>24.17</td>
-      <td>13.04</td>
-      <td>3.45</td>
-      <td>391.26</td>
-      <td>mph</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthMaxWindSpd</td>
+      <td style="border: 1px solid black; text-align: center;">26.21</td>
+      <td style="border: 1px solid black; text-align: center;">24.17</td>
+      <td style="border: 1px solid black; text-align: center;">13.04</td>
+      <td style="border: 1px solid black; text-align: center;">3.45</td>
+      <td style="border: 1px solid black; text-align: center;">391.26</td>
+      <td style="border: 1px solid black; text-align: center;">mph</td>
     </tr>
-    <tr>
-      <td>MaxMonthMaxPressure</td>
-      <td>30.73</td>
-      <td>30.35</td>
-      <td>7.46</td>
-      <td>29.98</td>
-      <td>295.27</td>
-      <td>Hg</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: center;">30.73</td>
+      <td style="border: 1px solid black; text-align: center;">30.35</td>
+      <td style="border: 1px solid black; text-align: center;">7.46</td>
+      <td style="border: 1px solid black; text-align: center;">29.98</td>
+      <td style="border: 1px solid black; text-align: center;">295.27</td>
+      <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
-    <tr>
-      <td>MaxMonthSnowDepth</td>
-      <td>0.66</td>
-      <td>0.00</td>
-      <td>4.03</td>
-      <td>0.00</td>
-      <td>92.52</td>
-      <td>in</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthSnowDepth</td>
+      <td style="border: 1px solid black; text-align: center;">0.66</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">4.03</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">92.52</td>
+      <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
-    <tr>
-      <td>MaxMonthPrecip</td>
-      <td>0.34</td>
-      <td>0.05</td>
-      <td>0.58</td>
-      <td>0.00</td>
-      <td>6.05</td>
-      <td>in</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MaxMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: center;">0.34</td>
+      <td style="border: 1px solid black; text-align: center;">0.05</td>
+      <td style="border: 1px solid black; text-align: center;">0.58</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">6.05</td>
+      <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
-    <tr>
-      <td>MinMonthTempLow</td>
-      <td>36.33</td>
-      <td>35.60</td>
-      <td>11.16</td>
-      <td>-5.80</td>
-      <td>68.00</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MinMonthTempLow</td>
+      <td style="border: 1px solid black; text-align: center;">36.33</td>
+      <td style="border: 1px solid black; text-align: center;">35.60</td>
+      <td style="border: 1px solid black; text-align: center;">11.16</td>
+      <td style="border: 1px solid black; text-align: center;">-5.80</td>
+      <td style="border: 1px solid black; text-align: center;">68.00</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>MinMonthDewLow</td>
-      <td>26.73</td>
-      <td>28.04</td>
-      <td>14.53</td>
-      <td>-142.60</td>
-      <td>55.40</td>
-      <td>F</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MinMonthDewLow</td>
+      <td style="border: 1px solid black; text-align: center;">26.73</td>
+      <td style="border: 1px solid black; text-align: center;">28.04</td>
+      <td style="border: 1px solid black; text-align: center;">14.53</td>
+      <td style="border: 1px solid black; text-align: center;">-142.60</td>
+      <td style="border: 1px solid black; text-align: center;">55.40</td>
+      <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
-    <tr>
-      <td>MinMonthMinPressure</td>
-      <td>29.46</td>
-      <td>29.62</td>
-      <td>1.84</td>
-      <td>0.00</td>
-      <td>30.21</td>
-      <td>Hg</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">MinMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: center;">29.46</td>
+      <td style="border: 1px solid black; text-align: center;">29.62</td>
+      <td style="border: 1px solid black; text-align: center;">1.84</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">30.21</td>
+      <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
-    <tr>
-      <td>SumMonthPrecip</td>
-      <td>0.88</td>
-      <td>0.00</td>
-      <td>2.08</td>
-      <td>0.00</td>
-      <td>17.99</td>
-      <td>in</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">SumMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: center;">0.88</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">2.08</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">17.99</td>
+      <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
-    <tr>
-      <td>SumMonthSnowDepth</td>
-      <td>0.18</td>
-      <td>0.00</td>
-      <td>2.81</td>
-      <td>0.00</td>
-      <td>92.52</td>
-      <td>in</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</td>
+      <td style="border: 1px solid black; text-align: center;">0.18</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">2.81</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">92.52</td>
+      <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
-    <tr>
-      <td>DaysRainMonth</td>
-      <td>3.72</td>
-      <td>0.00</td>
-      <td>6.18</td>
-      <td>0.00</td>
-      <td>30.00</td>
-      <td>days</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: left;">DaysRainMonth</td>
+      <td style="border: 1px solid black; text-align: center;">3.72</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">6.18</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">30.00</td>
+      <td style="border: 1px solid black; text-align: center;">days</td>
     </tr>
   </tbody>
 </table>
@@ -318,77 +318,77 @@ Let's also explore the data a bit more by looking at how VintageScores changes b
 
 <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>WineType</th>
-      <th>Mean VintageScore</th>
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+  <thead style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <th style="border: 1px solid black; text-align: center;">WineType</th>
+      <th style="border: 1px solid black; text-align: center;">Mean VintageScore</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>Amarone</td>
-      <td>90.62</td>
+  <tbody style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Amarone</td>
+      <td style="border: 1px solid black; text-align: center;">90.62</td>
     </tr>
-    <tr>
-      <td>Barolo</td>
-      <td>94.05</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Barolo</td>
+      <td style="border: 1px solid black; text-align: center;">94.05</td>
     </tr>
-    <tr>
-      <td>Bolgheri</td>
-      <td>91.42</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Bolgheri</td>
+      <td style="border: 1px solid black; text-align: center;">91.42</td>
     </tr>
-    <tr>
-      <td>Cabernet Sauvignon</td>
-      <td>91.86</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Cabernet Sauvignon</td>
+      <td style="border: 1px solid black; text-align: center;">91.86</td>
     </tr>
-    <tr>
-      <td>Chablis</td>
-      <td>93.04</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chablis</td>
+      <td style="border: 1px solid black; text-align: center;">93.04</td>
     </tr>
-    <tr>
-      <td>Chardonnay</td>
-      <td>91.18</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chardonnay</td>
+      <td style="border: 1px solid black; text-align: center;">91.18</td>
     </tr>
-    <tr>
-      <td>Chenin Blanc</td>
-      <td>92.00</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chenin Blanc</td>
+      <td style="border: 1px solid black; text-align: center;">92.00</td>
     </tr>
-    <tr>
-      <td>Chianti</td>
-      <td>91.62</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chianti</td>
+      <td style="border: 1px solid black; text-align: center;">91.62</td>
     </tr>
-    <tr>
-      <td>Gamay</td>
-      <td>91.38</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Gamay</td>
+      <td style="border: 1px solid black; text-align: center;">91.38</td>
     </tr>
-    <tr>
-      <td>Gewurztraminer</td>
-      <td>91.27</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Gewurztraminer</td>
+      <td style="border: 1px solid black; text-align: center;">91.27</td>
     </tr>
-    <tr>
-      <td>Merlot</td>
-      <td>93.00</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Merlot</td>
+      <td style="border: 1px solid black; text-align: center;">93.00</td>
     </tr>
-    <tr>
-      <td>Pinot Noir</td>
-      <td>91.95</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Pinot Noir</td>
+      <td style="border: 1px solid black; text-align: center;">91.95</td>
     </tr>
-    <tr>
-      <td>Semillon</td>
-      <td>92.54</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Semillon</td>
+      <td style="border: 1px solid black; text-align: center;">92.54</td>
     </tr>
-    <tr>
-      <td>Soave</td>
-      <td>90.15</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Soave</td>
+      <td style="border: 1px solid black; text-align: center;">90.15</td>
     </tr>
-    <tr>
-      <td>Syrah</td>
-      <td>92.79</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Syrah</td>
+      <td style="border: 1px solid black; text-align: center;">92.79</td>
     </tr>
-    <tr>
-      <td>Zinfandel</td>
-      <td>90.04</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Zinfandel</td>
+      <td style="border: 1px solid black; text-align: center;">90.04</td>
     </tr>
   </tbody>
 </table>
@@ -399,77 +399,77 @@ It's also interesting to look at the highest VintageScores given to each wine.
 
 <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>WineType</th>
-      <th>Max VintageScore</th>
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+  <thead style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <th style="border: 1px solid black; text-align: center;">WineType</th>
+      <th style="border: 1px solid black; text-align: center;">Max VintageScore</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>Amarone</td>
-      <td>94</td>
+  <tbody style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Amarone</td>
+      <td style="border: 1px solid black; text-align: center;">94</td>
     </tr>
-    <tr>
-      <td>Barolo</td>
-      <td>99</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Barolo</td>
+      <td style="border: 1px solid black; text-align: center;">99</td>
     </tr>
-    <tr>
-      <td>Bolgheri</td>
-      <td>97</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Bolgheri</td>
+      <td style="border: 1px solid black; text-align: center;">97</td>
     </tr>
-    <tr>
-      <td>Cabernet Sauvignon</td>
-      <td>100</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Cabernet Sauvignon</td>
+      <td style="border: 1px solid black; text-align: center;">100</td>
     </tr>
-    <tr>
-      <td>Chablis</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chablis</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Chardonnay</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chardonnay</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Chenin Blanc</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chenin Blanc</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Chianti</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Chianti</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Gamay</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Gamay</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Gewurztraminer</td>
-      <td>95</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Gewurztraminer</td>
+      <td style="border: 1px solid black; text-align: center;">95</td>
     </tr>
-    <tr>
-      <td>Merlot</td>
-      <td>98</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Merlot</td>
+      <td style="border: 1px solid black; text-align: center;">98</td>
     </tr>
-    <tr>
-      <td>Pinot Noir</td>
-      <td>98</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Pinot Noir</td>
+      <td style="border: 1px solid black; text-align: center;">98</td>
     </tr>
-    <tr>
-      <td>Semillon</td>
-      <td>96</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Semillon</td>
+      <td style="border: 1px solid black; text-align: center;">96</td>
     </tr>
-    <tr>
-      <td>Soave</td>
-      <td>94</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Soave</td>
+      <td style="border: 1px solid black; text-align: center;">94</td>
     </tr>
-    <tr>
-      <td>Syrah</td>
-      <td>99</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Syrah</td>
+      <td style="border: 1px solid black; text-align: center;">99</td>
     </tr>
-    <tr>
-      <td>Zinfandel</td>
-      <td>94</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">Zinfandel</td>
+      <td style="border: 1px solid black; text-align: center;">94</td>
     </tr>
   </tbody>
 </table>
@@ -480,117 +480,117 @@ Finally, how does VintageScore vary based on the year?
 
 <br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Mean VintageScore</th>
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+  <thead style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <th style="border: 1px solid black; text-align: center;">Year</th>
+      <th style="border: 1px solid black; text-align: center;">Mean VintageScore</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td>1998</td>
-      <td>88.91</td>
+  <tbody style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">1998</td>
+      <td style="border: 1px solid black; text-align: center;">88.91</td>
     </tr>
-    <tr>
-      <td>1999</td>
-      <td>89.41</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">1999</td>
+      <td style="border: 1px solid black; text-align: center;">89.41</td>
     </tr>
-    <tr>
-      <td>2000</td>
-      <td>88.23</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2000</td>
+      <td style="border: 1px solid black; text-align: center;">88.23</td>
     </tr>
-    <tr>
-      <td>2001</td>
-      <td>91.86</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2001</td>
+      <td style="border: 1px solid black; text-align: center;">91.86</td>
     </tr>
-    <tr>
-      <td>2002</td>
-      <td>88.62</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2002</td>
+      <td style="border: 1px solid black; text-align: center;">88.62</td>
     </tr>
-    <tr>
-      <td>2003</td>
-      <td>88.90</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2003</td>
+      <td style="border: 1px solid black; text-align: center;">88.90</td>
     </tr>
-    <tr>
-      <td>2004</td>
-      <td>91.04</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2004</td>
+      <td style="border: 1px solid black; text-align: center;">91.04</td>
     </tr>
-    <tr>
-      <td>2005</td>
-      <td>92.17</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2005</td>
+      <td style="border: 1px solid black; text-align: center;">92.17</td>
     </tr>
-    <tr>
-      <td>2006</td>
-      <td>90.13</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2006</td>
+      <td style="border: 1px solid black; text-align: center;">90.13</td>
     </tr>
-    <tr>
-      <td>2007</td>
-      <td>91.61</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2007</td>
+      <td style="border: 1px solid black; text-align: center;">91.61</td>
     </tr>
-    <tr>
-      <td>2008</td>
-      <td>90.74</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2008</td>
+      <td style="border: 1px solid black; text-align: center;">90.74</td>
     </tr>
-    <tr>
-      <td>2009</td>
-      <td>92.94</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2009</td>
+      <td style="border: 1px solid black; text-align: center;">92.94</td>
     </tr>
-    <tr>
-      <td>2010</td>
-      <td>93.09</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2010</td>
+      <td style="border: 1px solid black; text-align: center;">93.09</td>
     </tr>
-    <tr>
-      <td>2011</td>
-      <td>91.09</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2011</td>
+      <td style="border: 1px solid black; text-align: center;">91.09</td>
     </tr>
-    <tr>
-      <td>2012</td>
-      <td>92.23</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2012</td>
+      <td style="border: 1px solid black; text-align: center;">92.23</td>
     </tr>
-    <tr>
-      <td>2013</td>
-      <td>91.64</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2013</td>
+      <td style="border: 1px solid black; text-align: center;">91.64</td>
     </tr>
-    <tr>
-      <td>2014</td>
-      <td>91.91</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2014</td>
+      <td style="border: 1px solid black; text-align: center;">91.91</td>
     </tr>
-    <tr>
-      <td>2015</td>
-      <td>93.95</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2015</td>
+      <td style="border: 1px solid black; text-align: center;">93.95</td>
     </tr>
-    <tr>
-      <td>2016</td>
-      <td>93.91</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2016</td>
+      <td style="border: 1px solid black; text-align: center;">93.91</td>
     </tr>
-    <tr>
-      <td>2017</td>
-      <td>92.04</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2017</td>
+      <td style="border: 1px solid black; text-align: center;">92.04</td>
     </tr>
-    <tr>
-      <td>2018</td>
-      <td>92.78</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2018</td>
+      <td style="border: 1px solid black; text-align: center;">92.78</td>
     </tr>
-    <tr>
-      <td>2019</td>
-      <td>93.91</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2019</td>
+      <td style="border: 1px solid black; text-align: center;">93.91</td>
     </tr>
-    <tr>
-      <td>2020</td>
-      <td>92.09</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2020</td>
+      <td style="border: 1px solid black; text-align: center;">92.09</td>
     </tr>
-    <tr>
-      <td>2021</td>
-      <td>93.26</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2021</td>
+      <td style="border: 1px solid black; text-align: center;">93.26</td>
     </tr>
-    <tr>
-      <td>2022</td>
-      <td>92.87</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2022</td>
+      <td style="border: 1px solid black; text-align: center;">92.87</td>
     </tr>
-    <tr>
-      <td>2023</td>
-      <td>93.35</td>
+    <tr style="border: 1px solid black;">
+      <td style="border: 1px solid black; text-align: center;">2023</td>
+      <td style="border: 1px solid black; text-align: center;">93.35</td>
     </tr>
   </tbody>
 </table>
