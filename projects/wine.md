@@ -74,10 +74,10 @@ The historical weather data contains observations at the daily level, but for th
 <table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: center;">Variable</th>
-      <th style="border: 1px solid black; text-align: center;">Mean</th>
-      <th style="border: 1px solid black; text-align: center;">Median</th>
-      <th style="border: 1px solid black; text-align: center;">Standard Deviation</th>
+      <th style="border: 1px solid black; text-align: center; padding: 8px;">Variable</th>
+      <th style="border: 1px solid black; text-align: center; padding: 8px;">Mean</th>
+      <th style="border: 1px solid black; text-align: center; padding: 8px;">Median</th>
+      <th style="border: 1px solid black; text-align: center; padding: 8px;">Standard Deviation</th>
       <th style="border: 1px solid black; text-align: center;">Minimum</th>
       <th style="border: 1px solid black; text-align: center;">Maximum</th>
       <th style="border: 1px solid black; text-align: center;">Units</th>
@@ -85,26 +85,26 @@ The historical weather data contains observations at the daily level, but for th
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthTemp</td>
-      <td style="border: 1px solid black; text-align: center;">58.07</td>
-      <td style="border: 1px solid black; text-align: center;">56.41</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthTemp</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">58.07</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">56.41</td>
       <td style="border: 1px solid black; text-align: center;">15.47</td>
       <td style="border: 1px solid black; text-align: center;">28.81</td>
       <td style="border: 1px solid black; text-align: center;">152.80</td>
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthTempLow</td>
-      <td style="border: 1px solid black; text-align: center;">47.45</td>
-      <td style="border: 1px solid black; text-align: center;">46.05</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthTempLow</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">47.45</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">46.05</td>
       <td style="border: 1px solid black; text-align: center;">12.06</td>
       <td style="border: 1px solid black; text-align: center;">18.53</td>
       <td style="border: 1px solid black; text-align: center;">140.73</td>
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthTempHigh</td>
-      <td style="border: 1px solid black; text-align: center;">68.69</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">68.69</td>
       <td style="border: 1px solid black; text-align: center;">66.88</td>
       <td style="border: 1px solid black; text-align: center;">20.25</td>
       <td style="border: 1px solid black; text-align: center;">34.95</td>
@@ -112,17 +112,17 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthDew</td>
-      <td style="border: 1px solid black; text-align: center;">46.23</td>
-      <td style="border: 1px solid black; text-align: center;">46.25</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthDew</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">46.23</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">46.25</td>
       <td style="border: 1px solid black; text-align: center;">8.62</td>
       <td style="border: 1px solid black; text-align: center;">18.59</td>
       <td style="border: 1px solid black; text-align: center;">69.46</td>
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthDewLow</td>
-      <td style="border: 1px solid black; text-align: center;">41.46</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthDewLow</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">41.46</td>
       <td style="border: 1px solid black; text-align: center;">41.29</td>
       <td style="border: 1px solid black; text-align: center;">8.81</td>
       <td style="border: 1px solid black; text-align: center;">10.23</td>
@@ -130,8 +130,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthDewHigh</td>
-      <td style="border: 1px solid black; text-align: center;">51.00</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthDewHigh</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">51.00</td>
       <td style="border: 1px solid black; text-align: center;">51.16</td>
       <td style="border: 1px solid black; text-align: center;">8.62</td>
       <td style="border: 1px solid black; text-align: center;">19.40</td>
@@ -139,8 +139,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</td>
-      <td style="border: 1px solid black; text-align: center;">7.30</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthWindSpd</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">7.30</td>
       <td style="border: 1px solid black; text-align: center;">7.09</td>
       <td style="border: 1px solid black; text-align: center;">1.79</td>
       <td style="border: 1px solid black; text-align: center;">0.86</td>
@@ -148,8 +148,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">mph</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthVis</td>
-      <td style="border: 1px solid black; text-align: center;">7.32</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthVis</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">7.32</td>
       <td style="border: 1px solid black; text-align: center;">6.31</td>
       <td style="border: 1px solid black; text-align: center;">3.30</td>
       <td style="border: 1px solid black; text-align: center;">1.98</td>
@@ -157,8 +157,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinVis</td>
-      <td style="border: 1px solid black; text-align: center;">4.56</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthMinVis</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">4.56</td>
       <td style="border: 1px solid black; text-align: center;">4.40</td>
       <td style="border: 1px solid black; text-align: center;">1.83</td>
       <td style="border: 1px solid black; text-align: center;">0.39</td>
@@ -166,8 +166,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxVis</td>
-      <td style="border: 1px solid black; text-align: center;">10.08</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthMaxVis</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">10.08</td>
       <td style="border: 1px solid black; text-align: center;">9.77</td>
       <td style="border: 1px solid black; text-align: center;">6.02</td>
       <td style="border: 1px solid black; text-align: center;">3.28</td>
@@ -175,8 +175,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">mi</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthPressure</td>
-      <td style="border: 1px solid black; text-align: center;">30.03</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthPressure</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">30.03</td>
       <td style="border: 1px solid black; text-align: center;">30.01</td>
       <td style="border: 1px solid black; text-align: center;">0.17</td>
       <td style="border: 1px solid black; text-align: center;">28.95</td>
@@ -184,8 +184,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinPressure</td>
-      <td style="border: 1px solid black; text-align: center;">29.95</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">29.95</td>
       <td style="border: 1px solid black; text-align: center;">29.94</td>
       <td style="border: 1px solid black; text-align: center;">0.14</td>
       <td style="border: 1px solid black; text-align: center;">27.30</td>
@@ -193,8 +193,8 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</td>
-      <td style="border: 1px solid black; text-align: center;">30.11</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">AvgMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: center; padding: 8px;">30.11</td>
       <td style="border: 1px solid black; text-align: center;">30.08</td>
       <td style="border: 1px solid black; text-align: center;">0.29</td>
       <td style="border: 1px solid black; text-align: center;">29.72</td>
@@ -202,7 +202,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">84.38</td>
       <td style="border: 1px solid black; text-align: center;">80.60</td>
       <td style="border: 1px solid black; text-align: center;">25.95</td>
@@ -211,7 +211,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthDewHigh</td>
       <td style="border: 1px solid black; text-align: center;">60.71</td>
       <td style="border: 1px solid black; text-align: center;">60.08</td>
       <td style="border: 1px solid black; text-align: center;">11.57</td>
@@ -220,7 +220,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthMaxWindSpd</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthMaxWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">26.21</td>
       <td style="border: 1px solid black; text-align: center;">24.17</td>
       <td style="border: 1px solid black; text-align: center;">13.04</td>
@@ -229,7 +229,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">mph</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">30.73</td>
       <td style="border: 1px solid black; text-align: center;">30.35</td>
       <td style="border: 1px solid black; text-align: center;">7.46</td>
@@ -238,7 +238,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthSnowDepth</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">0.66</td>
       <td style="border: 1px solid black; text-align: center;">0.00</td>
       <td style="border: 1px solid black; text-align: center;">4.03</td>
@@ -247,7 +247,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.34</td>
       <td style="border: 1px solid black; text-align: center;">0.05</td>
       <td style="border: 1px solid black; text-align: center;">0.58</td>
@@ -256,7 +256,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MinMonthTempLow</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MinMonthTempLow</td>
       <td style="border: 1px solid black; text-align: center;">36.33</td>
       <td style="border: 1px solid black; text-align: center;">35.60</td>
       <td style="border: 1px solid black; text-align: center;">11.16</td>
@@ -265,7 +265,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MinMonthDewLow</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MinMonthDewLow</td>
       <td style="border: 1px solid black; text-align: center;">26.73</td>
       <td style="border: 1px solid black; text-align: center;">28.04</td>
       <td style="border: 1px solid black; text-align: center;">14.53</td>
@@ -274,7 +274,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">F</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MinMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">MinMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">29.46</td>
       <td style="border: 1px solid black; text-align: center;">29.62</td>
       <td style="border: 1px solid black; text-align: center;">1.84</td>
@@ -283,7 +283,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">Hg</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">SumMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">SumMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.88</td>
       <td style="border: 1px solid black; text-align: center;">0.00</td>
       <td style="border: 1px solid black; text-align: center;">2.08</td>
@@ -292,7 +292,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">SumMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">0.18</td>
       <td style="border: 1px solid black; text-align: center;">0.00</td>
       <td style="border: 1px solid black; text-align: center;">2.81</td>
@@ -301,7 +301,7 @@ The historical weather data contains observations at the daily level, but for th
       <td style="border: 1px solid black; text-align: center;">in</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">DaysRainMonth</td>
+      <td style="border: 1px solid black; text-align: left; padding: 8px;">DaysRainMonth</td>
       <td style="border: 1px solid black; text-align: center;">3.72</td>
       <td style="border: 1px solid black; text-align: center;">0.00</td>
       <td style="border: 1px solid black; text-align: center;">6.18</td>
