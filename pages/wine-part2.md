@@ -24,7 +24,7 @@ To simplify the initial time series modeling, I'll focus on analyzing a single w
 
 <br>
 <p align="center">
-    <img src="../assets/img/projects/wine/PN_decompose.png" alt="PN_decompose" width="400">
+    <img src="../assets/img/projects/wine/PN_decompose.png" alt="PN_decompose" width="600">
 </p>
 <br>
 
@@ -53,7 +53,7 @@ The next step is to identify the underlying temporal structure of VintageScore. 
 
 <br> 
 <p align="center">
-    <img src="../assets/img/projects/wine/PN_ACF_Differenced.png" alt="PN_ACF" width="400">
+    <img src="../assets/img/projects/wine/PN_ACF_Differenced.png" alt="PN_ACF" width="600">
 </p>
 <br>
 
@@ -61,7 +61,7 @@ Based on the ACF plot, it seems like there is a significant spike at lag 1, so i
 
 <br>
 <p align="center">
-    <img src="../assets/img/projects/wine/PN_PACF_Differenced.png" alt="PN_PACF" width="400">
+    <img src="../assets/img/projects/wine/PN_PACF_Differenced.png" alt="PN_PACF" width="600">
 </p>
 <br>
 
@@ -72,7 +72,7 @@ Based on the PACF plot, it seems like there is a significant spike at lag 5 and 
 Finally, we can get to the modeling! I'll model VintageScore first using an **ARIMAX** (Autoregressive Integrated Moving Average with eXogenous variables) model. This model structure allows VintageScore to be predicted based on its own past values, past errors and additional weather features. For an ARIMAX model, we need to choose 3 parameters, p, d, and q. Based on the analysis above, We might choose p=5, d=1, and q=1. However, I ran this model and found that the model didn't converge. Instead, I discovered that an ARIMAX (p=1, d=1, and q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 70%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -216,11 +216,18 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
 </table>
 <br>
 
-How do we interpret the results? Let's first start by evaluating how the model performed. We'll look at the metrics at the bottom. First, the Ljung-Box test checks for remaining autocorrelation in the residuals. Since the p-value, 0.13, is greater than 0.05, we fail to reject the null hypothesis of no autocorrelation so this checks the box. Next, the Jarque-Bera test evaluates the normality of the residuals. Since the p-value is 0.55, we also fail to reject the null hypothesis that the residuals are normally distributed, which also checks the box. Then, the test for heteroskedasticity examines whether the variance of the residuals is constant. The corresponding p-value is less than 0.05, which means that we reject the null hypothesis of homoscedasticity and conclude that the residual variance changes over time. This isn't a good sign.
+How do we interpret the results? Let's first start by evaluating how the model performed. We'll look at the metrics at the bottom. 
+- First, the Ljung-Box test checks for remaining autocorrelation in the residuals. Since the p-value, 0.13, is greater than 0.05, we fail to reject the null hypothesis of no autocorrelation so this checks the box.
+- Next, the Jarque-Bera test evaluates the normality of the residuals. Since the p-value is 0.55, we also fail to reject the null hypothesis that the residuals are normally distributed, which also checks the box.
+- Then, the test for heteroskedasticity examines whether the variance of the residuals is constant. The corresponding p-value is less than 0.05, which means that we reject the null hypothesis of homoscedasticity and conclude that the residual variance changes over time. This isn't a good sign.
 
 <br>
 
-Let's interpret the results to see what effects weather has on vintage scores. To no surprise, region plays a large role in determining vintage scores, as confirmed by the significant coefficients for the regional dummy variables (reference level for region is Wilamette Valley; KSTS represents Sonoma County and LFSD represents Burgundy). After controlling for region, we can see two weather variables that are still significant or marginally significant in terms of their effect on vintage scores: *AvgMonthWindSpd* and *SumMonthSnowDepth*. *AvgMonthWindSpd* is the monthly wind speed average in mph and it shows a positive coefficient and is marginally significant (p=0.076). This suggests that higher average wind speeds might be beneficial, potentially by aiding vine drying and reducing disease risk. More statistically significant (p=0.048) is *SumMonthSnowDepth*, which is the monthly average of the total snow amount in inches. Counter-intuitively it also has a positive coefficient, meaning that greater snow accumulation is associated with higher vintage scores. Why? No idea but my best guess after some research is that snow possibly insulates the vines against severe winter cold, acting as a valuable protector and a source of spring moisture upon melting.
+Let's interpret the results to see what effects weather has on vintage scores. 
+- To no surprise, region plays a large role in determining vintage scores, as confirmed by the significant coefficients for the regional dummy variables (reference level for region is Wilamette Valley; KSTS represents Sonoma County and LFSD represents Burgundy).
+- After controlling for region, we can see two weather variables that are still significant or marginally significant in terms of their effect on vintage scores: *AvgMonthWindSpd* and *SumMonthSnowDepth*.
+- **AvgMonthWindSpd* is the monthly wind speed average in mph and it shows a positive coefficient and is marginally significant (p=0.076). This suggests that higher average wind speeds might be beneficial, potentially by aiding vine drying and reducing disease risk. More statistically significant (p=0.048) is
+- **SumMonthSnowDepth*, which is the monthly average of the total snow amount in inches. Counter-intuitively it also has a positive coefficient, meaning that greater snow accumulation is associated with higher vintage scores. Why? No idea but my best guess after some research is that snow possibly insulates the vines against severe winter cold, acting as a valuable protector and a source of spring moisture upon melting.
 
 <br>
 
@@ -237,7 +244,7 @@ Although heteroskedasticity was detected in the model residuals, it's also cruci
 To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)** model, which extends the ARIMAX framework by adding specific parameters to handle seasonality. The parameters of SARIMAX are similar to ARIMAX but with the addition of seasonal orders P (seasonal AR), D (seasonal differencing), and Q (seasonal MA), along with the seasonal period S. I would choose S=12 because of the natural annual weather cycle and choose D=1 to reflect seasonal differencing (D=1). After testing various combinations, the setting of SARIMAX (p=4, d=0, q=0, P=0, D=1, Q=0, S=12) was the only model that converged. 
 
 <br>
-<table style="border-collapse: collapse; width: 70%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">SARIMAX(4, 0, 0)x(0, 1, 0, 12) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -410,7 +417,7 @@ To ensure the findings aren't unique to Pinot Noir, I replicated the entire mode
 Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 70%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -558,7 +565,9 @@ Similar to the findings for Pinot Noir, the ARIMAX model diagnostics for Caberne
 
 <br>
 
-Looking at the coefficients, regional effects remained highly significant, with both KSTS (Sonoma County) and LFBD (Bordeaux) differing significantly from the Napa Valley reference level. *MaxMonthTempHigh*—which represents the single highest daily temperature recorded within a given month—showed a significant negative coefficient. This suggests that months experiencing more extreme peak temperatures are associated with lower vintage scores. Furthermore, *AvgMonthVis* (average monthly visibility) was positively and significantly related to scores, implying that better visibility (likely indicating clearer skies and more sunshine for photosynthesis) is beneficial. Notably, these significant weather predictors (*MaxMonthTempHigh*, *AvgMonthVis*) differ from those highlighted in the Pinot Noir model (*AvgMonthWindSpd*, *SumMonthSnowDepth*).
+- Looking at the coefficients, regional effects remained highly significant, with both KSTS (Sonoma County) and LFBD (Bordeaux) differing significantly from the Napa Valley reference level. 
+- *MaxMonthTempHigh*—which represents the single highest daily temperature recorded within a given month—showed a significant negative coefficient. This suggests that months experiencing more extreme peak temperatures are associated with lower vintage scores.
+- Furthermore, *AvgMonthVis* (average monthly visibility) was positively and significantly related to scores, implying that better visibility (likely indicating clearer skies and more sunshine for photosynthesis) is beneficial. Notably, these significant weather predictors (*MaxMonthTempHigh*, *AvgMonthVis*) differ from those highlighted in the Pinot Noir model (*AvgMonthWindSpd*, *SumMonthSnowDepth*).
 
 <br>
 
@@ -566,7 +575,7 @@ While the model's residuals didn't fully satisfy the normality and homoscedastic
 
 <br>
 <p align="center">
-    <img src="../assets/img/projects/wine/CB_AvsP.png" alt="CB_ActualvsPredicted" width="400">
+    <img src="../assets/img/projects/wine/CB_AvsP.png" alt="CB_ActualvsPredicted" width="600">
 </p>
 <br>
 
