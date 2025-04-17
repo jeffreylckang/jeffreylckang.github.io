@@ -72,7 +72,7 @@ Based on the PACF plot, it seems like there is a significant spike at lag 5 and 
 Finally, we can get to the modeling! I'll model VintageScore first using an **ARIMAX** (Autoregressive Integrated Moving Average with eXogenous variables) model. This model structure allows VintageScore to be predicted based on its own past values, past errors and additional weather features. For an ARIMAX model, we need to choose 3 parameters, p, d, and q. Based on the analysis above, We might choose p=5, d=1, and q=1. However, I ran this model and found that the model didn't converge. Instead, I discovered that an ARIMAX (p=1, d=1, and q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 80%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -87,7 +87,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">0.2798</td>
       <td style="border: 1px solid black; text-align: center;">0.158</td>
       <td style="border: 1px solid black; text-align: center;">1.776</td>
@@ -96,7 +96,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.589</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthDewHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.2642</td>
       <td style="border: 1px solid black; text-align: center;">0.209</td>
       <td style="border: 1px solid black; text-align: center;">1.265</td>
@@ -105,7 +105,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.674</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.2483</td>
       <td style="border: 1px solid black; text-align: center;">0.318</td>
       <td style="border: 1px solid black; text-align: center;">0.782</td>
@@ -114,7 +114,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.871</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthPrecip</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.0266</td>
       <td style="border: 1px solid black; text-align: center;">0.113</td>
       <td style="border: 1px solid black; text-align: center;">0.236</td>
@@ -123,7 +123,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.247</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MinMonthMinPressure</th>
+      <td style="border: 1px solid black; text-align: center;">MinMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">-0.7424</td>
       <td style="border: 1px solid black; text-align: center;">0.983</td>
       <td style="border: 1px solid black; text-align: center;">-0.755</td>
@@ -132,7 +132,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">1.185</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</th>
+      <td style="border: 1px solid black; text-align: center;">SumMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">2.1032</td>
       <td style="border: 1px solid black; text-align: center;">1.065</td>
       <td style="border: 1px solid black; text-align: center;">1.975</td>
@@ -141,7 +141,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">4.190</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.0255</td>
       <td style="border: 1px solid black; text-align: center;">0.179</td>
       <td style="border: 1px solid black; text-align: center;">0.143</td>
@@ -150,7 +150,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.376</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthVis</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis</td>
       <td style="border: 1px solid black; text-align: center;">-0.2104</td>
       <td style="border: 1px solid black; text-align: center;">0.162</td>
       <td style="border: 1px solid black; text-align: center;">-1.300</td>
@@ -159,7 +159,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.107</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">DaysRainMonth</th>
+      <td style="border: 1px solid black; text-align: center;">DaysRainMonth</td>
       <td style="border: 1px solid black; text-align: center;">-0.0028</td>
       <td style="border: 1px solid black; text-align: center;">0.117</td>
       <td style="border: 1px solid black; text-align: center;">-0.024</td>
@@ -168,7 +168,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">0.227</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_KSTS</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_KSTS</td>
       <td style="border: 1px solid black; text-align: center;">0.5794</td>
       <td style="border: 1px solid black; text-align: center;">0.266</td>
       <td style="border: 1px solid black; text-align: center;">2.176</td>
@@ -177,7 +177,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">1.101</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_LFSD</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_LFSD</td>
       <td style="border: 1px solid black; text-align: center;">1.9893</td>
       <td style="border: 1px solid black; text-align: center;">0.315</td>
       <td style="border: 1px solid black; text-align: center;">6.319</td>
@@ -186,7 +186,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">2.606</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L1</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.3001</td>
       <td style="border: 1px solid black; text-align: center;">0.035</td>
       <td style="border: 1px solid black; text-align: center;">-8.455</td>
@@ -195,7 +195,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">-0.231</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ma.L1</th>
+      <td style="border: 1px solid black; text-align: center;">ma.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.8730</td>
       <td style="border: 1px solid black; text-align: center;">0.017</td>
       <td style="border: 1px solid black; text-align: center;">-51.616</td>
@@ -204,7 +204,7 @@ Finally, we can get to the modeling! I'll model VintageScore first using an **AR
       <td style="border: 1px solid black; text-align: center;">-0.840</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">sigma2</th>
+      <td style="border: 1px solid black; text-align: center;">sigma2</td>
       <td style="border: 1px solid black; text-align: center;">6.4129</td>
       <td style="border: 1px solid black; text-align: center;">0.346</td>
       <td style="border: 1px solid black; text-align: center;">18.539</td>
@@ -244,7 +244,7 @@ Although heteroskedasticity was detected in the model residuals, it's also cruci
 To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)** model, which extends the ARIMAX framework by adding specific parameters to handle seasonality. The parameters of SARIMAX are similar to ARIMAX but with the addition of seasonal orders P (seasonal AR), D (seasonal differencing), and Q (seasonal MA), along with the seasonal period S. I would choose S=12 because of the natural annual weather cycle and choose D=1 to reflect seasonal differencing (D=1). After testing various combinations, the setting of SARIMAX (p=4, d=0, q=0, P=0, D=1, Q=0, S=12) was the only model that converged. 
 
 <br>
-<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 80%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">SARIMAX(4, 0, 0)x(0, 1, 0, 12) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -259,7 +259,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">0.2359</td>
       <td style="border: 1px solid black; text-align: center;">0.156</td>
       <td style="border: 1px solid black; text-align: center;">1.514</td>
@@ -268,7 +268,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.541</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthDewHigh</td>
       <td style="border: 1px solid black; text-align: center;">-0.0794</td>
       <td style="border: 1px solid black; text-align: center;">0.204</td>
       <td style="border: 1px solid black; text-align: center;">-0.389</td>
@@ -277,7 +277,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.320</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.3548</td>
       <td style="border: 1px solid black; text-align: center;">0.296</td>
       <td style="border: 1px solid black; text-align: center;">1.198</td>
@@ -286,7 +286,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.935</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthPrecip</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.0957</td>
       <td style="border: 1px solid black; text-align: center;">0.106</td>
       <td style="border: 1px solid black; text-align: center;">0.907</td>
@@ -295,7 +295,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.303</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MinMonthMinPressure</th>
+      <td style="border: 1px solid black; text-align: center;">MinMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">-0.7425</td>
       <td style="border: 1px solid black; text-align: center;">0.956</td>
       <td style="border: 1px solid black; text-align: center;">-0.777</td>
@@ -304,7 +304,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">1.131</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</th>
+      <td style="border: 1px solid black; text-align: center;">SumMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">1.2342</td>
       <td style="border: 1px solid black; text-align: center;">0.846</td>
       <td style="border: 1px solid black; text-align: center;">1.458</td>
@@ -313,7 +313,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">2.893</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.2530</td>
       <td style="border: 1px solid black; text-align: center;">0.155</td>
       <td style="border: 1px solid black; text-align: center;">1.629</td>
@@ -322,7 +322,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.557</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthVis</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis</td>
       <td style="border: 1px solid black; text-align: center;">0.0691</td>
       <td style="border: 1px solid black; text-align: center;">0.144</td>
       <td style="border: 1px solid black; text-align: center;">0.480</td>
@@ -331,7 +331,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.351</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">DaysRainMonth</th>
+      <td style="border: 1px solid black; text-align: center;">DaysRainMonth</td>
       <td style="border: 1px solid black; text-align: center;">-0.0412</td>
       <td style="border: 1px solid black; text-align: center;">0.117</td>
       <td style="border: 1px solid black; text-align: center;">-0.352</td>
@@ -340,7 +340,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.188</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_KSTS</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_KSTS</td>
       <td style="border: 1px solid black; text-align: center;">0.8087</td>
       <td style="border: 1px solid black; text-align: center;">0.244</td>
       <td style="border: 1px solid black; text-align: center;">3.319</td>
@@ -349,7 +349,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">1.286</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_LFSD</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_LFSD</td>
       <td style="border: 1px solid black; text-align: center;">2.1886</td>
       <td style="border: 1px solid black; text-align: center;">0.284</td>
       <td style="border: 1px solid black; text-align: center;">7.703</td>
@@ -358,7 +358,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">2.746</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L1</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.2502</td>
       <td style="border: 1px solid black; text-align: center;">0.030</td>
       <td style="border: 1px solid black; text-align: center;">-8.459</td>
@@ -367,7 +367,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">-0.192</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L2</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L2</td>
       <td style="border: 1px solid black; text-align: center;">-0.0391</td>
       <td style="border: 1px solid black; text-align: center;">0.029</td>
       <td style="border: 1px solid black; text-align: center;">-1.329</td>
@@ -376,7 +376,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.019</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L3</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L3</td>
       <td style="border: 1px solid black; text-align: center;">0.0863</td>
       <td style="border: 1px solid black; text-align: center;">0.030</td>
       <td style="border: 1px solid black; text-align: center;">2.922</td>
@@ -385,7 +385,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.144</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L4</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L4</td>
       <td style="border: 1px solid black; text-align: center;">0.1455</td>
       <td style="border: 1px solid black; text-align: center;">0.033</td>
       <td style="border: 1px solid black; text-align: center;">4.414</td>
@@ -394,7 +394,7 @@ To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)**
       <td style="border: 1px solid black; text-align: center;">0.210</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">sigma2</th>
+      <td style="border: 1px solid black; text-align: center;">sigma2</td>
       <td style="border: 1px solid black; text-align: center;">11.2420</td>
       <td style="border: 1px solid black; text-align: center;">0.484</td>
       <td style="border: 1px solid black; text-align: center;">23.236</td>
@@ -417,7 +417,7 @@ To ensure the findings aren't unique to Pinot Noir, I replicated the entire mode
 Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 80%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -432,7 +432,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">0.0229</td>
       <td style="border: 1px solid black; text-align: center;">0.179</td>
       <td style="border: 1px solid black; text-align: center;">0.128</td>
@@ -441,7 +441,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.373</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthDewHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.2841</td>
       <td style="border: 1px solid black; text-align: center;">0.274</td>
       <td style="border: 1px solid black; text-align: center;">1.037</td>
@@ -450,7 +450,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.821</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.1486</td>
       <td style="border: 1px solid black; text-align: center;">0.385</td>
       <td style="border: 1px solid black; text-align: center;">0.386</td>
@@ -459,7 +459,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.903</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthPrecip</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">-0.1055</td>
       <td style="border: 1px solid black; text-align: center;">0.135</td>
       <td style="border: 1px solid black; text-align: center;">-0.782</td>
@@ -468,7 +468,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.159</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MinMonthMinPressure</th>
+      <td style="border: 1px solid black; text-align: center;">MinMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">-0.4337</td>
       <td style="border: 1px solid black; text-align: center;">1.100</td>
       <td style="border: 1px solid black; text-align: center;">-0.394</td>
@@ -477,7 +477,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">1.721</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</th>
+      <td style="border: 1px solid black; text-align: center;">SumMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">0.7998</td>
       <td style="border: 1px solid black; text-align: center;">1.138</td>
       <td style="border: 1px solid black; text-align: center;">0.703</td>
@@ -486,7 +486,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">3.030</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</th>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">-0.3727</td>
       <td style="border: 1px solid black; text-align: center;">0.135</td>
       <td style="border: 1px solid black; text-align: center;">-2.755</td>
@@ -495,7 +495,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">-0.108</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">AvgMonthVis</th>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis</td>
       <td style="border: 1px solid black; text-align: center;">0.5239</td>
       <td style="border: 1px solid black; text-align: center;">0.139</td>
       <td style="border: 1px solid black; text-align: center;">3.777</td>
@@ -504,7 +504,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.796</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">DaysRainMonth</th>
+      <td style="border: 1px solid black; text-align: center;">DaysRainMonth</td>
       <td style="border: 1px solid black; text-align: center;">0.1286</td>
       <td style="border: 1px solid black; text-align: center;">0.175</td>
       <td style="border: 1px solid black; text-align: center;">0.735</td>
@@ -513,7 +513,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">0.471</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_KSTS</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_KSTS</td>
       <td style="border: 1px solid black; text-align: center;">-1.9702</td>
       <td style="border: 1px solid black; text-align: center;">0.366</td>
       <td style="border: 1px solid black; text-align: center;">-5.386</td>
@@ -522,7 +522,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">-1.253</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">RegionTag_LFBD</th>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_LFBD</td>
       <td style="border: 1px solid black; text-align: center;">1.7317</td>
       <td style="border: 1px solid black; text-align: center;">0.331</td>
       <td style="border: 1px solid black; text-align: center;">5.228</td>
@@ -531,7 +531,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">2.381</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ar.L1</th>
+      <td style="border: 1px solid black; text-align: center;">ar.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.2524</td>
       <td style="border: 1px solid black; text-align: center;">0.033</td>
       <td style="border: 1px solid black; text-align: center;">-7.536</td>
@@ -540,7 +540,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">-0.187</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">ma.L1</th>
+      <td style="border: 1px solid black; text-align: center;">ma.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.8040</td>
       <td style="border: 1px solid black; text-align: center;">0.020</td>
       <td style="border: 1px solid black; text-align: center;">-39.620</td>
@@ -549,7 +549,7 @@ Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
       <td style="border: 1px solid black; text-align: center;">-0.764</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: left;">sigma2</th>
+      <td style="border: 1px solid black; text-align: center;">sigma2</td>
       <td style="border: 1px solid black; text-align: center;">8.1224</td>
       <td style="border: 1px solid black; text-align: center;">0.371</td>
       <td style="border: 1px solid black; text-align: center;">21.874</td>
