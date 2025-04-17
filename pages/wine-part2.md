@@ -72,7 +72,7 @@ Based on the PACF plot, it seems like there is a significant spike at lag 5 and 
 Finally, we can get to the modeling! I'll model VintageScore first using an **ARIMAX** (Autoregressive Integrated Moving Average with eXogenous variables) model. This model structure allows VintageScore to be predicted based on its own past values, past errors and additional weather features. For an ARIMAX model, we need to choose 3 parameters, p, d, and q. Based on the analysis above, We might choose p=5, d=1, and q=1. However, I ran this model and found that the model didn't converge. Instead, I discovered that an ARIMAX (p=1, d=1, and q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -244,7 +244,7 @@ Although heteroskedasticity was detected in the model residuals, it's also cruci
 To account for potential yearly cycles, I'll use a **Seasonal ARIMAX (SARIMAX)** model, which extends the ARIMAX framework by adding specific parameters to handle seasonality. The parameters of SARIMAX are similar to ARIMAX but with the addition of seasonal orders P (seasonal AR), D (seasonal differencing), and Q (seasonal MA), along with the seasonal period S. I would choose S=12 because of the natural annual weather cycle and choose D=1 to reflect seasonal differencing (D=1). After testing various combinations, the setting of SARIMAX (p=4, d=0, q=0, P=0, D=1, Q=0, S=12) was the only model that converged. 
 
 <br>
-<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">SARIMAX(4, 0, 0)x(0, 1, 0, 12) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -417,7 +417,7 @@ To ensure the findings aren't unique to Pinot Noir, I replicated the entire mode
 Based on the data, an ARIMAX (p=1,d=1,q=1) model converged.
 
 <br>
-<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">ARIMA(1, 1, 1) Results</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
