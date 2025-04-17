@@ -223,7 +223,7 @@ How do we interpret the results? Let's first start by evaluating how the model p
 
 <br>
 
-Let's interpret the results to see what effects weather has on vintage scores. 
+Let's interpret the coefficients to see what effects weather has on vintage scores. 
 - To no surprise, region plays a large role in determining vintage scores, as confirmed by the significant coefficients for the regional dummy variables (reference level for region is Wilamette Valley; KSTS represents Sonoma County and LFSD represents Burgundy).
 - After controlling for region, we can see two weather variables that are still significant or marginally significant in terms of their effect on vintage scores: *AvgMonthWindSpd* and *SumMonthSnowDepth*.
 - **AvgMonthWindSpd* is the monthly wind speed average in mph and it shows a positive coefficient and is marginally significant (p=0.076). This suggests that higher average wind speeds might be beneficial, potentially by aiding vine drying and reducing disease risk. More statistically significant (p=0.048) is
@@ -235,7 +235,7 @@ Although heteroskedasticity was detected in the model residuals, it's also cruci
 
 <br>
 <p align="center">
-    <img src="../assets/img/projects/wine/PN_AvsP.png" alt="PN_ActualvsPredicted" width="400">
+    <img src="../assets/img/projects/wine/PN_AvsP.png" alt="PN_ActualvsPredicted" width="700">
 </p>
 <br>
 
@@ -575,7 +575,7 @@ While the model's residuals didn't fully satisfy the normality and homoscedastic
 
 <br>
 <p align="center">
-    <img src="../assets/img/projects/wine/CB_AvsP.png" alt="CB_ActualvsPredicted" width="600">
+    <img src="../assets/img/projects/wine/CB_AvsP.png" alt="CB_ActualvsPredicted" width="700">
 </p>
 <br>
 
