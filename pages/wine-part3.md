@@ -28,12 +28,8 @@ For this linear regression model, I'm going to include fixed effect terms for th
 
 <br>
 <table style="border-collapse: collapse; width: 90%; margin-left: auto; margin-right: auto;">
-  <caption style="text-align: center; font-weight: bold;">OLS Regression Results</caption>
+  <caption style="text-align: center; font-weight: bold;">OLS Regression Diagnostics</caption>
   <tbody style="border: 1px solid black;">
-    <tr style="border: 1px solid black;">
-      <th style="border: 1px solid black; text-align: center;">Dep. Variable:</th>
-      <th style="border: 1px solid black; text-align: center;">VintageScore</th>
-    </tr>
     <tr style="border: 1px solid black;">
       <td style="border: 1px solid black; text-align: center;">R-squared:</td>
       <td style="border: 1px solid black; text-align: center;">0.417</td>
