@@ -31,8 +31,8 @@ For this linear regression model, I'm going to include fixed effect terms for th
   <caption style="text-align: center; font-weight: bold;">OLS Regression Results</caption>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: center;">Dep. Variable:</td>
-      <td style="border: 1px solid black; text-align: center;">VintageScore</td>
+      <th style="border: 1px solid black; text-align: center;">Dep. Variable:</th>
+      <th style="border: 1px solid black; text-align: center;">VintageScore</th>
     </tr>
     <tr style="border: 1px solid black;">
       <td style="border: 1px solid black; text-align: center;">R-squared:</td>
@@ -143,7 +143,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.871</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.0266</td>
       <td style="border: 1px solid black; text-align: center;">0.113</td>
       <td style="border: 1px solid black; text-align: center;">0.236</td>
@@ -170,7 +170,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">4.190</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.0255</td>
       <td style="border: 1px solid black; text-align: center;">0.179</td>
       <td style="border: 1px solid black; text-align: center;">0.143</td>
