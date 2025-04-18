@@ -31,68 +31,68 @@ For this linear regression model, I'm going to include fixed effect terms for th
   <caption style="text-align: center; font-weight: bold;">OLS Regression Results</caption>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Dep. Variable:</td>
-      <td style="border: 1px solid black; text-align: left;">VintageScore</td>
+      <td style="border: 1px solid black; text-align: center;">Dep. Variable:</td>
+      <td style="border: 1px solid black; text-align: center;">VintageScore</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">R-squared:</td>
-      <td style="border: 1px solid black; text-align: left;">0.417</td>
+      <td style="border: 1px solid black; text-align: center;">R-squared:</td>
+      <td style="border: 1px solid black; text-align: center;">0.417</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Model:</td>
-      <td style="border: 1px solid black; text-align: left;">OLS</td>
+      <td style="border: 1px solid black; text-align: center;">Model:</td>
+      <td style="border: 1px solid black; text-align: center;">OLS</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Adj. R-squared:</td>
-      <td style="border: 1px solid black; text-align: left;">0.408</td>
+      <td style="border: 1px solid black; text-align: center;">Adj. R-squared:</td>
+      <td style="border: 1px solid black; text-align: center;">0.408</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Method:</td>
-      <td style="border: 1px solid black; text-align: left;">Least Squares</td>
+      <td style="border: 1px solid black; text-align: center;">Method:</td>
+      <td style="border: 1px solid black; text-align: center;">Least Squares</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">F-statistic:</td>
-      <td style="border: 1px solid black; text-align: left;">47.48</td>
+      <td style="border: 1px solid black; text-align: center;">F-statistic:</td>
+      <td style="border: 1px solid black; text-align: center;">47.48</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Date:</td>
-      <td style="border: 1px solid black; text-align: left;">Thu, 17 Apr 2025</td>
+      <td style="border: 1px solid black; text-align: center;">Date:</td>
+      <td style="border: 1px solid black; text-align: center;">Thu, 17 Apr 2025</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Prob (F-statistic):</td>
-      <td style="border: 1px solid black; text-align: left;">0.00</td>
+      <td style="border: 1px solid black; text-align: center;">Prob (F-statistic):</td>
+      <td style="border: 1px solid black; text-align: center;">0.00</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Time:</td>
-      <td style="border: 1px solid black; text-align: left;">17:11:22</td>
+      <td style="border: 1px solid black; text-align: center;">Time:</td>
+      <td style="border: 1px solid black; text-align: center;">17:11:22</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Log-Likelihood:</td>
-      <td style="border: 1px solid black; text-align: left;">-16347.</td>
+      <td style="border: 1px solid black; text-align: center;">Log-Likelihood:</td>
+      <td style="border: 1px solid black; text-align: center;">-16347.</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">No. Observations:</td>
-      <td style="border: 1px solid black; text-align: left;">7007</td>
+      <td style="border: 1px solid black; text-align: center;">No. Observations:</td>
+      <td style="border: 1px solid black; text-align: center;">7007</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AIC:</td>
-      <td style="border: 1px solid black; text-align: left;">3.290e+04</td>
+      <td style="border: 1px solid black; text-align: center;">AIC:</td>
+      <td style="border: 1px solid black; text-align: center;">3.290e+04</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Df Residuals:</td>
-      <td style="border: 1px solid black; text-align: left;">6902</td>
+      <td style="border: 1px solid black; text-align: center;">Df Residuals:</td>
+      <td style="border: 1px solid black; text-align: center;">6902</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">BIC:</td>
-      <td style="border: 1px solid black; text-align: left;">3.365e+04</td>
+      <td style="border: 1px solid black; text-align: center;">BIC:</td>
+      <td style="border: 1px solid black; text-align: center;">3.365e+04</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Df Model:</td>
-      <td style="border: 1px solid black; text-align: left;">104</td>
+      <td style="border: 1px solid black; text-align: center;">Df Model:</td>
+      <td style="border: 1px solid black; text-align: center;">104</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">Covariance Type:</td>
-      <td style="border: 1px solid black; text-align: left;">nonrobust</td>
+      <td style="border: 1px solid black; text-align: center;">Covariance Type:</td>
+      <td style="border: 1px solid black; text-align: center;">nonrobust</td>
     </tr>
   </tbody>
 </table>
@@ -116,7 +116,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">0.2798</td>
       <td style="border: 1px solid black; text-align: center;">0.158</td>
       <td style="border: 1px solid black; text-align: center;">1.776</td>
@@ -125,7 +125,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.589</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthDewHigh</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthDewHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.2642</td>
       <td style="border: 1px solid black; text-align: center;">0.209</td>
       <td style="border: 1px solid black; text-align: center;">1.265</td>
@@ -134,7 +134,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.674</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.2483</td>
       <td style="border: 1px solid black; text-align: center;">0.318</td>
       <td style="border: 1px solid black; text-align: center;">0.782</td>
@@ -152,7 +152,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.247</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MinMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: center;">MinMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">-0.7424</td>
       <td style="border: 1px solid black; text-align: center;">0.983</td>
       <td style="border: 1px solid black; text-align: center;">-0.755</td>
@@ -161,7 +161,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">1.185</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">SumMonthSnowDepth</td>
+      <td style="border: 1px solid black; text-align: center;">SumMonthSnowDepth</td>
       <td style="border: 1px solid black; text-align: center;">2.1032</td>
       <td style="border: 1px solid black; text-align: center;">1.065</td>
       <td style="border: 1px solid black; text-align: center;">1.975</td>
@@ -179,7 +179,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.376</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthVis</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis</td>
       <td style="border: 1px solid black; text-align: center;">-0.2104</td>
       <td style="border: 1px solid black; text-align: center;">0.162</td>
       <td style="border: 1px solid black; text-align: center;">-1.300</td>
@@ -188,7 +188,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.107</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">DaysRainMonth</td>
+      <td style="border: 1px solid black; text-align: center;">DaysRainMonth</td>
       <td style="border: 1px solid black; text-align: center;">-0.0028</td>
       <td style="border: 1px solid black; text-align: center;">0.117</td>
       <td style="border: 1px solid black; text-align: center;">-0.024</td>
@@ -197,7 +197,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">0.227</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">RegionTag_KSTS</td>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_KSTS</td>
       <td style="border: 1px solid black; text-align: center;">-1.9702</td>
       <td style="border: 1px solid black; text-align: center;">0.366</td>
       <td style="border: 1px solid black; text-align: center;">-5.386</td>
@@ -206,7 +206,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">-1.253</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">RegionTag_LFBD</td>
+      <td style="border: 1px solid black; text-align: center;">RegionTag_LFBD</td>
       <td style="border: 1px solid black; text-align: center;">1.7317</td>
       <td style="border: 1px solid black; text-align: center;">0.331</td>
       <td style="border: 1px solid black; text-align: center;">5.228</td>
@@ -215,7 +215,7 @@ Looking at the model diagnostics, we see that the R^2 is 0.417. This means that 
       <td style="border: 1px solid black; text-align: center;">2.381</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">ar.L1</td>
+      <td style="border: 1px solid black; text-align: center;">ar.L1</td>
       <td style="border: 1px solid black; text-align: center;">-0.2524</td>
       <td style="border: 1px solid black; text-align: center;">0.033</td>
       <td style="border: 1px solid black; text-align: center;">-7.536</td>
@@ -249,7 +249,7 @@ Several weather variables showed statistically significant effects after control
 - Wind: A southerly wind direction (*WindDirectionT.S*, p=0.014) was positively associated with vintage scores. This aligns with the expectation that in the Northern Hemisphere, southerly winds often bring warmer air beneficial for ripening. However, *AvgMonthWindSpd* showed a significant negative coefficient (p=0.029). This contrasts with the positive association found in the Pinot Noir ARIMAX model. It's possible that while moderate wind benefits specific varieties like Pinot Noir (perhaps via disease reduction), higher average wind speeds across all varieties and regions might lead to detrimental effects
 - Pressure: *MaxMonthMaxPressure* (maximum of daily highest pressure in a month) was marginally significant and positive (p=0.057), consistent with the idea that high-pressure systems could indicate stable, sunny weather conducive to good vintages. Its lagged version, MaxMonthMaxPressure_Lag (p=0.001), was also positive and significant, suggesting favorable weather conditions in the previous year may be beneficial to vine health and potential in the current year.
 - Precipitation: *MaxMonthPrecip* (maximum inches of rain in a month) was positive and significant (p=0.034). This  might suggest that having at least one substantial rainfall event (perhaps breaking a dry spell or heatwave) during a key month is beneficial. The lagged effect of rain days (*DaysRainMonth_Lag*, p=0.012) was positive, suggesting that more frequent rainfall in the prior year is beneficial, likely due to recharging deep soil moisture reserves critical for the current season.
-- Snow: *SumMonthSnowDepth** was significantly negative (p=0.014), indicating that higher snow accumulation is generally associated with lower scores in this broad analysis. This contrasts with the positive coefficient seen for Pinot Noir specifically, suggesting the general impact of heavy snow (e.g., potential for damage, delayed season start) might outweigh variety-specific benefits like insulation when averaged across all types.
+- Snow: *SumMonthSnowDepth* was significantly negative (p=0.014), indicating that higher snow accumulation is generally associated with lower scores in this broad analysis. This contrasts with the positive coefficient seen for Pinot Noir specifically, suggesting the general impact of heavy snow (e.g., potential for damage, delayed season start) might outweigh variety-specific benefits like insulation when averaged across all types.
 - Temperature: The lagged minimum lowest daily temperature in a month (*MinMonthTempLow_Lag*, p=0.006) was positive and significant, possibly indicating that milder conditions (less extreme cold) in the preceding winter promote better vine health and subsequent vintage quality. 
 - Dew Point: Both *MinMonthDewLow* (p=0.048), the minimum of the lowest daily dew point and its lag (*MinMonthDewLow_Lag*, p=0.013) were positive and significant. This might suggest that avoiding periods of extremely low dew points (which can indicate either very dry air causing stress, or correlate with very low nighttime temperatures increasing frost risk) is generally beneficial for vine health.
 
@@ -276,7 +276,7 @@ A key advantage of Random Forest models is their ability to provide estimates of
 Looking at the feature importance scores from the trained Random Forest model (excluding the fixed effect terms like year, month, wine type, and region tags, as these are controlled for), we can identify which weather variables the model found most influential:
 
 <br>
-<table style="border-collapse: collapse; width: 50%; margin-left: auto; margin-right: auto;">
+<table style="border-collapse: collapse; width: 70%; margin-left: auto; margin-right: auto;">
   <caption style="text-align: center; font-weight: bold;">Top 20 Feature Importances (Excluding Fixed Effects)</caption>
   <thead style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
@@ -286,83 +286,83 @@ Looking at the feature importance scores from the trained Random Forest model (e
   </thead>
   <tbody style="border: 1px solid black;">
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxVis_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxVis_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.052291</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthVis_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.043316</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxVis</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxVis</td>
       <td style="border: 1px solid black; text-align: center;">0.032641</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthVis</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthVis</td>
       <td style="border: 1px solid black; text-align: center;">0.024829</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthPrecip_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.021852</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthPrecip</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthPrecip</td>
       <td style="border: 1px solid black; text-align: center;">0.020006</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinVis_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMinVis_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.016726</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthWindSpd_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.016238</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthWindSpd</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthWindSpd</td>
       <td style="border: 1px solid black; text-align: center;">0.016089</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinVis</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMinVis</td>
       <td style="border: 1px solid black; text-align: center;">0.015948</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMaxPressure</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMaxPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.012614</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthMaxPressure_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthMaxPressure_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.012283</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinPressure</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMinPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.012211</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.012084</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthPressure</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthPressure</td>
       <td style="border: 1px solid black; text-align: center;">0.012026</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthMinPressure_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthMinPressure_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.011674</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthTemp</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthTemp</td>
       <td style="border: 1px solid black; text-align: center;">0.011430</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthPressure_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthPressure_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.011351</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">MaxMonthTempHigh_Lag</td>
+      <td style="border: 1px solid black; text-align: center;">MaxMonthTempHigh_Lag</td>
       <td style="border: 1px solid black; text-align: center;">0.011220</td>
     </tr>
     <tr style="border: 1px solid black;">
-      <td style="border: 1px solid black; text-align: left;">AvgMonthTempHigh</td>
+      <td style="border: 1px solid black; text-align: center;">AvgMonthTempHigh</td>
       <td style="border: 1px solid black; text-align: center;">0.011173</td>
     </tr>
   </tbody>
@@ -374,7 +374,7 @@ Several key observations stand out from this list:
 - Precipitation Importance: The next most important category appears to be precipitation, specifically the maximum monthly precipitation (MaxMonthPrecip and its lag).
 - Wind Speed: Wind speed variables (AvgMonthWindSpd and its lag) also feature relatively high on the list.
 
-## Takeaways
+# Takeaways
 
 The Random Forest model provided us with a ranking of weather features that contrasts with that of the linear regression model. In particular, visibility variables were not found to be statistically significant predictors. This difference could be a result of the ways these models operate: 
 - Random Forests can capture complex non-linear relationships and interactions between variables automatically. Visibility's impact might be non-linear (e.g., important up to a certain threshold) or highly dependent on interactions with other factors (like temperature or humidity), which the linear model wouldn't easily detect without specific interaction terms being added.
