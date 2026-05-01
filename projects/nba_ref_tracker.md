@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NBA Referee Tracker
-permalink: /projects/NBA Referee Tracker
+permalink: /projects/nba-ref-tracker
 ---
 
 ## NBA Referee Tracker
@@ -22,4 +22,4 @@ Check it out here!
 
 <br>
 
-[https://nba-referee-tracker.onrender.com/]
+https://nba-referee-tracker.onrender.com/
