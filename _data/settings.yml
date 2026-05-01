@@ -15,6 +15,7 @@ projects:
 - {name: 'Understanding Grocery Shopping Payments',   url: 'grocery'}
 - {name: 'Visualizing Flight Prices',   url: 'flightviz'}
 - {name: 'Forecasting Wine Vintage Scores', url: 'wine'}
+- {name: 'NBA Referee Tracker', url: 'nba-ref-tracker'}
 
 #-------------------------------
 
