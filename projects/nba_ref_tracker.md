@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NBA Referee Tracker
-permalink: /projects/NBA Referee Tracker
+permalink: /projects/nba-ref-tracker
 ---
 
 ## NBA Referee Tracker
