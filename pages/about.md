@@ -17,20 +17,15 @@ permalink: /
     <div style="text-align: left; max-width: 90%; width: 700px; margin: 0 auto;">
       <p><br>
         I’m a researcher-turned-data scientist with a passion for uncovering hidden insights about human behavior and 
-        transforming them into stories that matter. My passion stems from my curiosity about the diverse perspectives 
-        that shape how people perceive the world. What began with studying psychology and economics to explore individual
-        and societal behavior led me to pursue a PhD in Behavioral Science (Marketing).
-      </p><br>
-      <p>
-        Now, I'm eager for my next challenge--building models that can create tangible and meaningful impact.
+        transforming them into stories that matter. My journey began by studying individual and societal behavior (psychology and economics) which then led me to     pursue a PhD in Behavioral Science (Marketing). Now, I'm transforming complex health behavior into models that can predict outcomes which positively impact people's lives.
       </p><br>
       <p>
       When I'm not obsessing over data or human behavior, I'm appreciating some of the small and beautiful moments in life:
       </p>
       <ul>
-        <li>The delight of discovering new songs (check out what I'm listening to below).</li>
-        <li>The pleasure of that first bite after hunger has taken over.</li>
-        <li>The harmony of protests my friends and I make over a missed foul call against the Lakers.</li>
+        <li>Discovering a banger for the first time and blasting it 24/7 365 (check out what I'm listening to below).</li>
+        <li>Savoring that dopamine hit when you bite into a fatty piece of otoro sushi.</li>
+        <li>Cheering with random fans as Lucas Moura scores a 96th minute hat-trick to send Tottenham into the Champions League Finals.</li>
       </ul>
     </div>
   </div>
